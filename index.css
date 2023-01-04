@@ -1,86 +1,231 @@
-:root {
-    --yellow: #ECB365;
-    --blue3: #064663;
-    --blue2: #04293A;
-    --blue1: #041C32;
-}
-
 body {
-    background-color: var(--blue1);
-    margin: 0;
-    padding: 0;
+    background-color: #151515;
+    font-family: "Poppins";
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#split1 {
-    background-color: var(--blue3);
-    position: relative;
-    left: 35%;
-    width:65%;
-    height: 100vh;
-}
-
-#title {
-    position: absolute;
-    left: 5vw;
-    top: 10vh;
-    width: max-content;
     height: max-content;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div {
     margin: 0;
     padding: 0;
-    font-size: 70px;
-    z-index: 1;
-    font-weight: 500;
+    max-width: 99%;
 }
 
+/* Title Section */
+.title {
+    position: relative;
+    left: 10rem;
+    top: 2rem;
+    max-width: 300px;
+}
 
-.tiny {
+p {
     font-size: 15px;
 }
 
-.center {
-    width: 750px;
-    height: 500px;
-    border: 1px solid var(--yellow);
-    padding: 3px;
+.paragraph {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 10rem;
+    top: 5rem;
+    max-width: 300px;
 }
 
-.circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #ECB365;
+.paragraph p {
+    max-width: 300px;
+}
+
+.jobTitle {
+    position: relative;
+    left: 10rem;
+    top: 10rem;
+    font-size: 100px;
+    max-width: 70%;
+    z-index: 10;
+}
+
+.self_image {
+    position: absolute;
+    left: 50rem;
+    top: 5rem;
+    z-index: 10;
+    filter: brightness(85%);
+}
+
+.smallTitle {
+    padding: 5px;
+}
+
+.icon {
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.pad {
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    filter: grayscale(100%);
+}
+
+
+/* Languages */
+
+#languageHeader {
+    position: relative;
+    top: 12em
+}
+
+
+#languages {
+    position: relative;
+    top: 25em;
+}
+
+table {
+    border-collapse: collapse;
+}
+  
+td, th {
+    border: 1px solid #5c5c5c;
+    text-align: left;
+    padding: 15px;
+}
+
+td {
+    background-color: #a4a4a4;
+}
+
+td:nth-child(1)
+{
+    background-color: #151515;
+}
+
+
+#about p {
+    color: white;
+}
+
+#about {
+    max-width: 20vw;
+    max-height: 30em;
+    position: relative;
+    left: 70vw;
+    padding: 15px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Projects Section */
+#projects {
+    position: relative;
+    top: 20rem;
+    left: 10rem;
+    width: max-content;
+}
+
+button {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 15px;
+    font-size: larger;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.tiny {
+    padding: 5px;
     font-size: 12px;
 }
 
 
-/* Grid */
-.grid-wrapper {
+/* Grid and Flex */
+
+.box {
+    border: 2px solid #A7A7A7;
+    width: 30vw;
+    height: 200px;
+    font-size: 20px;
+}
+
+
+.flex-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 5em;
+    position: relative;
+    top: 20em;
+}
+
+.flex-container div {
+    padding-top: 1em;
+}
+
+.box:last-child {
+    grid-column: 3 / 4;
+}
+
+.grid-container {
+    max-width: 100%;
+    height: 5000px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    background-color: var(--blue2);
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20em;
 }
 
-.grid-wrapper article {
-    height: 300px;
-    border-radius: 10px;
-    background-color: var(--blue3);
+
+.vert-flex-cont {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column ;
+    justify-content:center;
+    align-items: center;
+    gap: 5em;
+    position: relative;
+    top: 20em;
+}
+
+.vert-flex-cont div {
+    width: 1000px;
+}
+
+.button {
+    width: 115px;
+    height: 25px;
+    background: rgb(83, 83, 83);
+    text-align: center;
+    border-radius: 5px;
     color: white;
-    font-size: larger;
+    line-height: 25px;
+    padding: 10px;
+    position: relative;
+    left: 30px;
 }
 
-.large {
-    font-size: 60px;
-}
-
-#valueInput {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
-    font-weight: 100;
+#footer {
+    border: 1px solid white;
+    padding: 20px;
+    margin: 50px 0 50px 0;
+    text-align: center;
 }

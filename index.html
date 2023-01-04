@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>Paul McSlarrow Portfolio</title>
@@ -6,149 +7,232 @@
     </head>
 
     <body>
+        <!-- Title -->
+        <div class="title">
+            <b>
+            <div style="font-size: 32px;">Paul McSlarrow</div>
+            <div style="font-size: 18px">Computer Science & Business</div>
+            </b>  
+        </div>
 
-        <!-- Section 1 -->
-        <div>
-            <!--Title / Icons-->
-            <div id="title">
-                <div class="tiny">Hi,</div>
-                I'm Paul
-                <div class="tiny">Computer Science / Business</div>
+        <!-- Paragraph 1 -->
+        <div class="paragraph">
+            <p>
+                I am a student at Willamette University extremely
+                curious to learn more about web development
+                (front and backend).
+                In addition to my love for technology,
+                I am also interested in basketball, physics books,
+                and video games.
+            </p>
+        </div>
 
-                <br>
+        <!-- Image and Big Title -->
+        <img class="self_image" src="./images/self_image.png" width="500px" height="600px">
+        <div class="jobTitle">
+            <b>Full Stack Web Developer</b>
+        </div>
 
-                <div class="tiny">
-                    Languages:
-                    <br>
-                    <img src="./images/python.png" width="50px" height="50px">
-                    <img src="./images/c.png" width="50px" height="50px">
-                    <br>
-                    <img src="./images/javascript.png" width="50px" height="50px">
-                    <img src="./images/react.png" width="50px" height="50%">
-                    <br>
-                    <img src="./images/node.png" width="100px" height="50px">
-                    <img src="./images/Expressjs.png" width="150px" height="50px">
-                    <br>
-                    <img src="./images/mongo.png" width="50px" height="50px">
-                    <img src="./images/psql.png" width="50px" height="50px">
+
+        <!-- Three Skills -->
+        <div class="flex-container">
+            <div class="box">
+                <img class="icon" src="./images/computer_.png" width="30px" height="28px"><b>Software Development</b>
+                <p class="pad">
+                    Have used procedural and OOP languages in coursework:
+                    <u>C, Python, JavaScript</u>
+                </p>
+            </div>
+            <div class="box">
+                <img class="icon" src="./images/react.png" width="30px" height="28px"><b>Web Development</b>
+                <p class="pad">
+                    Passionate about full stack development and UI/UX design. 
+                    Engaged in coursework and personal projects with <u>HTML, CSS, 
+                    JS, and the MERN Stack.</u> 
+                </p>
+            </div>
+            <div class="box">
+                <img class="icon" src="./images/database.png" width="30px" height="28px"><b>Databases</b>
+                <p class="pad">
+                    Have taken data engineering courses that 
+                    taught me how to use and query data with:
+                    <u>PostgreSQL and MongoDB</u>
+                </p>
+            </div>
+        </div>
+
+
+        <h1 id="languageHeader">Languages</h1>
+        
+            <div id="languages">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Beginner</th>
+                        <th>Elementary</th>
+                        <th>Intermediate</th>
+                        <th>Advanced</th>
+                        <th>Expert</th>
+                    </tr>
+    
+                    <tbody>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>                        
+                        </tr>
+    
+                        <tr>
+                            <td>React</td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                        </tr>
+    
+                        <tr>
+                            <td>Python</td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                        </tr>
+    
+                        <tr>
+                            <td>PostgreSQL</td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>C</td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                        </tr>
+    
+                        <tr>
+                            <td>Express.js</td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                        </tr>
+    
+                        <tr>
+                            <td>Node.js</td>
+                            <td id="fill"></td>
+                            <td id="fill"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>MongoDB</td>
+                            <td id="fill"></td>
+                        </tr>
+    
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="about">
+                <p>
+                    My syntax knowledge is best with Python because it was the first
+                    language that I ever learned. I have become more skilled and proficient
+                    in JavaScript and React through the projects that I have worked on.
+                    I say that I am "Elementary" at best with Node.js and Express.js because I think
+                    that these backend technologies are dense and I am mostly comfortable with basic things
+                    like creating an API.  
+                </p>
+            </div>
+        
+        
+        <!-- Projects -->
+        <h1 id="projects">Projects</h1>
+
+        <div class="vert-flex-cont">
+
+            <div>
+                <img src="./images/deltaZeta.png">
+                <p class="tiny">Delta Zeta Website -- <i>MongoDB / Express / React / NodeJS / HTML / CSS / JS</i><a class="button" href="https://github.com/Pmcslarrow/DeltaZetaRepo" target="_blank">Github</a></p>
+                <div>
+                    <p>
+                    My most recent project that helped me learn about the frontend and backend well.
+                       The website allows non-members to see the home page and the calendar events. The dashboard
+                       is a simple backend CRUD system that allows the members of the Sigma Chi Chapter with the ability
+                       to edit frontend calendar events and users allowed in the system through MongoDB. 
+                    </p>
                 </div>
             </div>
 
+            <div>
+                <img src="./images/chatroomApp.png">
+                <p class="tiny">Chatroom App -- <i>React / Socket.io / JS / HTML / CSS</i><a class="button" href="https://github.com/Pmcslarrow/ChatroomApp" target="_blank">Github</a></p>
+                <div>
+                    <p>
+                        The Chatroom App was my first ever React project. 
+                        The main design of the website is derived 
+                        from Internet Relay Chat (IRC) design. First though,
+                        the user must enter their name and room they want to join,
+                        which then triggers Socket.io to move the user to a room where
+                        they can communicate with their friends!
+                        <br>
+                        I chose not to deploy this, simply because I didn't want to deal with
+                        the network layer security issues in a language that I was new to.
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="./images/pathfinding.png">
+                <p class="tiny">Pathfinding -- <i>Python</i><a class="button" href="https://github.com/Pmcslarrow/PathfindingVisualization" target="_blank">Github</a></p>
+                <div>
+                    <p>My final project for CS-351 Algorithms course where I implemented a visualization of A* and Dijkstra's algorithm.
+                       The visualization part was learned through TechWithTim, although, the purpose of the project was not purely about the visualization whereas
+                       it was more focused on learning how the algorithm thinks. 
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./images/weatherApp.png">
+                
+                <p class="tiny">Weather App -- <i>HTML / CSS / JS</i><a class="button" href="https://pmcslarrow.github.io/" target="_blank">Github</a></p>
+                <div>
+                    <p>My final project for CS-270 Web Development. This project is one of my favorites
+                        that I have ever developed because it felt like the first time that I was able
+                        to step out of simple syntax learning within a language
+                        and actually apply it to something fun. I used the openweathermap API
+                        to gather information about a given city that is entered by the user.
+                        The user is then able to learn about the previous and next four days
+                        of weather (in F or C).
+                    </p>
+                </div>
+            </div>
 
-            <!--Right Split-->
-            <div id="split1">
-                <div class="center"><img src="./images/dunk.jpg" width="750px" height="500px"></div>
+            <div>
+                <img src="./images/userManagement.png">
+                <p class="tiny">User Management -- <i>PostgreSQL / Express / React / NodeJS</i><a class="button" href="https://github.com/Pmcslarrow/User-Authentication" target="_blank">Github</a></p>
+                <div>
+                    <p>This was a short yet necessary projects that taught me how to interact between the frontend and backend.
+                       I used PostgreSQL as the database system (locally) to create the project, although, when I later implemented the same User Management
+                       system into my Delta Zeta Project, I adjusted everything that was postgreSQL onto MongoDB Atlas.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" onclick="window.open('./files/resume.pdf')">Download CV</button>
+                <div id="footer">
+                    Email: pmcslarrow@icloud.com
+                </div>
+
             </div>
         </div>
 
-        <br/>
-
-        <!-- Section 2 -->
-        <div>
-            <h1>Projects</h1>
-            <div id="about"></div>
-            <!-- Grid of Projects -->
-            <div class="grid-wrapper">
-                <article class="grid-item">
-                    <a href="https://github.com/Pmcslarrow/DeltaZetaRepo" target="_blank">
-                        <img src="./images/deltaZeta.png" alt="Delta Zeta Chapter Website" id="dz" width="500px" height="300px"/>
-                    </a>
-                </article>
-
-                <article class="grid-item">
-                    <a href="https://pmcslarrow.github.io" target="_blank">
-                        <img src="./images/weatherApp.png" alt="Weather App Image" id="weather" width="500px" height="300px"/>
-                    </a>
-                </article>
-
-                <article class="grid-item">
-                    <a href="https://github.com/Pmcslarrow/PathfindingVisualization" target="_blank">
-                        <img src="./images/pathfinding.png" alt="A* Pathfinding Visualization" id="pathfinding" width="500px" height="300px"/>
-                    </a>
-                </article>
-
-                <article class="grid-item">
-                    <a href="https://github.com/Pmcslarrow/ChatroomApp" target="_blank">
-                        <img src="./images/chatroomApp.png" alt="Chatroom App" width="500px" id="chatroom" height="300px"/>
-                    </a>
-                </article>
-
-                <article class="grid-item" id="valueInput"></article>
-
-                <article class="grid-item">
-                    <a href="https://github.com/Pmcslarrow/User-Authentication" target="_blank">
-                        <img src="./images/userManagement.png" alt="User Management System" id="userManagement" width="500px" height="300px"/>
-                    </a>
-                </article>
-            </div>
-        </div>
-
+        
+        
     </body>
+
+
+
+
 </html>
-
-<script>
-    function adjustValue(id)
-    {
-        let value = document.getElementById("valueInput")
-        switch (id)
-        {
-            case "dz":
-                value.innerHTML = 
-                `
-                    A MERN Stack application created to allow Delta Zeta Chapter members the ability to
-                    edit calendar events on the frontend and the users allowed in the backend system.
-                `;
-                break;
-            case "weather":
-                value.innerHTML = 
-                `
-                    My first web development application that made me interested in the field. I 
-                    interacted with the openweathermap API through user input to learn about the weather.
-                `;
-                break;
-            case "pathfinding":
-                value.innerText = 
-                `
-                    My final project for CS-351 Algorithms that used Python (pygame) to create a visualization
-                    of A* and Dijkstra's Algorithm
-                `;
-                break;
-            case "chatroom":
-                value.innerText = 
-                `
-                    My first project using React that used socket programming to allow users in seperate rooms
-                    to speak to one another in a design similar to Internet Relay Chat (IRC)
-                `;
-                break;
-            case "userManagement":
-                value.innerText = 
-                `
-                    A simple CRUD system that used the PERN Stack to manage users (later used in the Delta Zeta Project)
-                `
-            default:
-                break;
-        }
-    }
-
-    document.getElementById("dz").addEventListener("mouseover", (event) => {
-        adjustValue(event.target.id)
-    })
-
-    document.getElementById("weather").addEventListener("mouseover", (event) => {
-        adjustValue(event.target.id)
-    })
-
-    document.getElementById("pathfinding").addEventListener("mouseover", (event) => {
-        adjustValue(event.target.id)
-    })
-
-    document.getElementById("chatroom").addEventListener("mouseover", (event) => {
-        adjustValue(event.target.id)
-    })
-
-    document.getElementById("userManagement").addEventListener("mouseover", (event) => {
-        adjustValue(event.target.id)
-    })
-
-    
-</script>
