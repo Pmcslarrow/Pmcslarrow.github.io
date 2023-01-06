@@ -15,6 +15,9 @@ div {
     max-width: 99%;
 }
 
+@media (min-width: 950px)
+{
+
 /* Title Section */
 .title {
     position: relative;
@@ -228,4 +231,128 @@ button {
     padding: 20px;
     margin: 50px 0 50px 0;
     text-align: center;
+}
+}
+
+@media (max-width: 950px) {
+    .title {
+        text-align: center;
+    }
+
+    main .paragraph {
+        text-align: center;
+    }
+
+    main img {
+        width: 350px;
+        height: 400px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    main .jobTitle {
+        font-size: 2rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Grid and Flex */
+
+    .box {
+        border: 2px solid #A7A7A7;
+        width: 75vw;
+        height: 200px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .pad {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .icon {
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+
+    .flex-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        gap: 1em;
+    }
+
+    .flex-container div {
+        padding-top: 1em;
+    }
+
+    .box:last-child {
+        grid-column: 3 / 4;
+    }
+
+
+    table {
+        border-collapse: collapse;
+    }
+    
+    td, th {
+        border: 1px solid #5c5c5c;
+        text-align: left;
+        padding: 15px;
+    }
+
+    td {
+        background-color: #a4a4a4;
+    }
+
+    td:nth-child(1)
+    {
+        background-color: #151515;
+    }
+
+    #about {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .vert-flex-cont img {
+        width: 100%;
+    }
+
+    .button {
+        width: 115px;
+        height: 25px;
+        background: rgb(83, 83, 83);
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        line-height: 25px;
+        padding: 10px;
+        position: relative;
+        left: 30px;
+    }
+    
+    #footer {
+        border: 1px solid white;
+        padding: 20px;
+        margin: 50px 0 50px 0;
+        text-align: center;
+    }
+
+    button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 150px;
+        height: 35px;
+    }
+
+
+
 }
