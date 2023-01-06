@@ -268,7 +268,7 @@ button {
     }
 
     .pad {
-        font-size: 2.5vw;
+        font-size: 3vw;
         padding: 10px;
     }
 
@@ -331,6 +331,7 @@ button {
 
     .vert-flex-cont img {
         width: 100%;
+        filter: grayscale(100%);
     }
 
     .vert-flex-cont p {
