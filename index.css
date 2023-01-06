@@ -15,7 +15,7 @@ div {
     max-width: 99%;
 }
 
-@media (min-width: 950px)
+@media only screen and (min-width: 950px)
 {
 
 /* Title Section */
@@ -52,7 +52,7 @@ p {
 
 .self_image {
     position: absolute;
-    left: 50rem;
+    left: 50vw;
     top: 5rem;
     z-index: 10;
     filter: brightness(85%);
@@ -234,13 +234,15 @@ button {
 }
 }
 
-@media (max-width: 950px) {
+/* Phone Screens (small screens) */
+@media only screen and (max-width: 950px) {
     .title {
         text-align: center;
     }
 
     main .paragraph {
         text-align: center;
+        font-size: 0.75rem;
     }
 
     main img {
@@ -252,9 +254,7 @@ button {
     }
 
     main .jobTitle {
-        font-size: 2rem;
-        padding: 10px;
-        text-align: center;
+        display: none;
     }
 
     /* Grid and Flex */
@@ -263,12 +263,12 @@ button {
         border: 2px solid #A7A7A7;
         width: 75vw;
         height: 200px;
-        font-size: 25px;
+        font-size:5vw;
         text-align: center;
     }
 
     .pad {
-        font-size: 16px;
+        font-size: 2.5vw;
         padding: 10px;
     }
 
@@ -276,6 +276,10 @@ button {
         padding-right: 10px;
         padding-top: 5px;
         padding-left: 5px;
+    }
+
+    #languageHeader {
+        text-align: center;
     }
 
 
@@ -296,7 +300,6 @@ button {
         grid-column: 3 / 4;
     }
 
-
     table {
         border-collapse: collapse;
     }
@@ -304,7 +307,7 @@ button {
     td, th {
         border: 1px solid #5c5c5c;
         text-align: left;
-        padding: 15px;
+        font-size: 2.8vw;
     }
 
     td {
@@ -319,21 +322,29 @@ button {
     #about {
         padding: 10px;
         text-align: center;
+        font-size: 3.2vw;
+    }
+
+    #projects {
+        text-align: center;
     }
 
     .vert-flex-cont img {
         width: 100%;
     }
 
-    .button {
-        width: 115px;
+    .vert-flex-cont p {
+        font-size: 3.2vw;
+    }
+
+    a.button {
         height: 25px;
         background: rgb(83, 83, 83);
         text-align: center;
         border-radius: 5px;
         color: white;
         line-height: 25px;
-        padding: 10px;
+        padding: 5px;
         position: relative;
         left: 30px;
     }
@@ -345,7 +356,7 @@ button {
         text-align: center;
     }
 
-    button {
+    .cvButton {
         position: relative;
         left: 50%;
         transform: translate(-50%);
