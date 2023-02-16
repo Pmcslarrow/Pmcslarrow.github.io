@@ -1,0 +1,27 @@
+body {
+	width: 9in ;
+	height: 11.5in;
+	margin: auto ;
+}
+
+.page_outer {
+	width: 8.5in;
+	height: 11in;
+	box-shadow: -.1in -.1in .5in darkgray, .1in .1in .5in gray;
+	position: absolute ;	
+}
+
+.page_inner{
+	margin: 1in;  
+}
+
+th {
+	text-align: left ;
+}
+
+span {
+	float: right;
+	font-style:	italic;
+}
+
+ul  { margin-top: -1em; }  
