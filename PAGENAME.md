@@ -1,5 +1,5 @@
 ---
 title: omelas.html
 layout: template
-filename: omelas.md
+filename: omelas.html
 --- 
