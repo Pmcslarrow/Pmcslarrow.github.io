@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ai Access</title>
+    </head>
+
+    <body>
+        <button>Dark / Light</button>
+
+        <div>
+            <p>
+                Test test test test
+            </p>
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("body").toggleClass("dark");
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            animation: dark_to_light 1s linear;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            border-radius: 100px;
+            animation: light_to_dark_button 0.5s forwards ease-in-out;
+        }
+
+        .dark {
+            animation: light_to_dark 1s forwards linear;
+            color: white;
+        }
+
+        .dark div {
+            border: 1px solid white;
+        }
+
+        .dark button {
+            animation: dark_to_light_button 0.5s forwards ease-in-out;
+        }
+
+        div {
+            position: absolute;
+            border: 1px solid black;
+            box-shadow: 3px 3px 1px 1px;
+            width: 75%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+        }
+
+        @keyframes light_to_dark{
+            0% {
+                background-color: white;
+            }
+            100% {
+                background-color: black;
+            }
+        }
+
+        @keyframes dark_to_light {
+            0% {
+                background-color: black;
+            }
+            100% {
+                background-color: white;
+            }
+        }
+
+        @keyframes light_to_dark_button {
+            0% {
+                background-color: white;
+                color: black;
+            }
+            100% {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        @keyframes dark_to_light_button {
+            0% {
+                background-color: black;
+                color: white;
+            }
+            100% {
+                background-color: white;
+                color:black;
+            }
+        }
+    </style>
+</html>
+
