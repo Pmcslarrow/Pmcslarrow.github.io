@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <html>
     <head>
         <title>Ai Access</title>
@@ -8,9 +9,20 @@
         <button>Dark / Light</button>
 
         <div>
-            <p>
-                Test test test test
-            </p>
+            
+        <p style="--animation-order: 1;">
+            The article <i>'How AI Is Improving Accessibility'</i> by Malini Boorgu explains to the reader how recent
+            discoveries with AI and natural language processing are helping benefit the neurodivergent community. Neurodivergence
+            is defined as "differing in mental or neurological function from what is considered typical or normal". More often than not,
+            people who are considered neurodivergent are put at a disadvantage when entering the workforce. Until recently, neurodivergent people
+            were expected to perform the same tasks in the same amount of time as neurotypical people -- which is clearly disadvantageous towards
+            them. Boorgu argues that the upbringing of apps with AI accessibility, like InnerVoice, are the answer for how to help
+            neurodivergent people. Boorgu creates a fine argument that the future should be moving towards these AI accessiblity apps
+            for the benefit of neurodivergent people, although, the problem occurs when you realize that apps exist, like ChatGPT,
+            for neurotypical people to use at their own benefit as well. <b>While AI accessibility can be greatly beneficial for those that
+            are in need of it, we need to be cautious that we aren't in heavy reliance on their abilities, because at the end of the day,
+            as far as things like automatic summarization have come, they cannot be purely reliable for the workforce.</b>
+        </p>
         </div>
     </body>
 
@@ -24,8 +36,20 @@
     </script>
 
     <style>
+
+        * {
+            font-family: 'Poppins';
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
         body {
             animation: dark_to_light 1s linear;
+            font-size: 22px;
         }
 
         button {
@@ -57,6 +81,11 @@
             top: 50%;
             transform: translate(-50%, -50%);
             padding: 10px;
+        }
+
+        body p {
+            animation: fade_animation 0.5s forwards linear;
+            animation-delay: calc(var(--animation-order) * 100ms);
         }
 
         @keyframes light_to_dark{
@@ -96,6 +125,17 @@
             100% {
                 background-color: white;
                 color:black;
+            }
+        }
+
+        @keyframes fade_animation {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
