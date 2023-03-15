@@ -34,13 +34,7 @@
 <script>
   let var = document.getElementById("test-canvas");
   var context = canvas.getContext('2d');
-  
-  canvas.addEventListener("mousemove", function(e) { 
-    var cRect = canvas.getBoundingClientRect();
-    var canvasX = Math.round(e.clientX - cRect.left);
-    var canvasY = Math.round(e.clientY - cRect.top);
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.fillText("X: "+canvasX+", Y: "+canvasY, 10, 20);
-  });
+  context.rect(20, 20, 200, 150);
+  context.stroke();
   
 </script>
