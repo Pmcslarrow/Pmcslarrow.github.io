@@ -24,7 +24,23 @@
     and are more "technically [deep]" than her and that they are in any way being inclusive with those who they review daily. As mentioned previously, I am unable
     to speak to how she must actually feel as a black woman in the field of CS, although, I can say that she is completely valid in being upset with the unseriousness
     within the organization. 
+    
+    <canvas id="test-canvas" width="300" height="200"></canvas>
    
   </body>
 
 </html>
+
+<script>
+  let var = document.getElementById("test-canvas");
+  var context = canvas.getContext('2d');
+  
+  canvas.addEventListener("mousemove", function(e) { 
+    var cRect = canvas.getBoundingClientRect();
+    var canvasX = Math.round(e.clientX - cRect.left);
+    var canvasY = Math.round(e.clientY - cRect.top);
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillText("X: "+canvasX+", Y: "+canvasY, 10, 20);
+  });
+  
+</script>
