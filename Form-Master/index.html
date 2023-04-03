@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+
+  <!-- CSS -->
+  <style>
+    :root {
+      --red: hsl(0, 100%, 74%);
+      --green: hsl(154, 59%, 51%);
+      --accent-blue: hsl(248, 32%, 49%);
+      --neutral-dark-blue: hsl(249, 10%, 26%);
+      --neutral-gray-blue: hsl(246, 25%, 77%);
+      --font-body-size: 16px;
+      --weight-400: 400;
+      --weight-500: 500;
+      --weight-600: 600;
+      --weight-700: 700;
+      --font-400: font-400;
+      --font-500: font-500;
+      --font-600: font-600;
+      --font-700: font-700;
+    }
+
+    @font-face {
+      font-family: font-400;
+      src: url('./Poppins/Poppins-Light.ttf')  format('truetype');
+    }
+
+    @font-face {
+      font-family: font-500;
+      src: url('./Poppins/Poppins-Regular.ttf')  format('truetype');
+    }
+
+    @font-face {
+      font-family: font-600;
+      src: url('./Poppins/Poppins-SemiBold.ttf')  format('truetype');
+    }
+
+    @font-face {
+      font-family: font-700;
+      src: url('./Poppins/Poppins-Bold.ttf')  format('truetype');
+    }
+
+
+    div {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--red);
+      font-family: var(--font-500);
+      font-size: var(--font-body-size);
+    }
+
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .flex-column .free-trial {
+      background-color: var(--accent-blue);
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      font-size: 11px;
+      box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .flex-column .free-trial span {
+      font-family: var(--font-600);
+    }
+
+    form {
+      font-family: var(--font-400);
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-family: var(--font-700);
+    }
+
+    form div {
+      border: 0.1px solid var(--accent-blue);
+      outline: 1px solid var(--accent-blue);
+      border-radius: 5px;
+      display: flex;
+    }
+
+    form input {
+      padding: 15px;
+      caret-color: var(--accent-blue);
+      font-size: 14px;
+      font-family: var(--font-600);
+      color: var(--neutral-dark-blue);
+      outline: 0;
+      border: 0;
+    }
+
+    form button {
+      border: 0;
+      background-color: var(--green);
+      color: white;
+      font-family: var(--font-600);
+      text-transform: uppercase;
+      letter-spacing: 0.85px;
+      font-size: 12px;
+      padding: 15px;
+      box-shadow: inset 0 -3px  rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    form button:hover {
+      opacity: 75%;
+      cursor: pointer;
+    }
+
+    form svg {
+      position: relative;
+      margin-left: auto;
+      top: 15px;
+      right: 10px;
+
+      visibility: hidden;
+    }
+
+    .error-message {
+      color: var(--red);
+      font-size: 11px;
+      font-style: italic;
+      font-family: var(--font-500);
+      margin-left: auto;
+      padding: 0;
+
+      visibility: hidden;
+    }
+
+    sub {
+      font-size: 10px;
+      color: var(--neutral-gray-blue);
+      font-family: var(--font-600);
+    }
+
+    sub b {
+      color: var(--red);
+      opacity: 100%;
+      font-family: var(--font-700);
+    }
+
+    sub b:hover {
+      cursor: pointer;
+    }
+    
+    /* Mobile */
+    @media screen and (max-width: 375px) {
+      body {
+        background-image: url("./images/bg-intro-mobile.png");
+      }
+
+      .flex-column {
+        margin: 20px;
+      }
+
+      .grid .left {
+        color: white;
+      }
+
+      .grid .left span h1 {
+        position: relative;
+        color: white;
+        font-family: var(--font-600);
+        font-size: 7vw;
+        padding: 25px 10px 0px 10px;
+        text-align: center;
+      }
+
+      .grid .left span p {
+        font-family: var(--font-500);
+        opacity: 80%;
+        text-align: center;
+        padding: 15px
+      }
+
+
+    }
+
+
+
+
+    /* Desktop */
+    @media screen and (min-width: 375px) {
+
+      body {
+        background-image: url("./images/bg-intro-desktop.png");
+      }
+      
+
+      main {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      padding: 10%;
+      }
+
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        gap: 8vw;
+      }
+
+      .grid .left {
+        color: white;
+      }
+
+      .grid .left span h1 {
+        color: white;
+        font-family: var(--font-600);
+      }
+
+      .grid .left span p {
+        font-family: var(--font-500);
+        opacity: 80%;
+      }
+    }
+    
+
+  </style>
+</head>
+
+<!-- Body HTML -->
+
+<body>
+
+  <main class="grid">
+    <div class="left">
+      <span>
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </span>
+    </div>
+
+    <div class="right">
+      <div class="flex-column">
+        <div class="free-trial flex-item"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
+        <i src="./images/icon-error.svg"></i>
+
+        <form onsubmit="handle_submit()">
+          <div class="form-input">
+            <input type="text" id="first-name" class="input-object" placeholder="First Name">
+            <svg class="svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          </div>
+          <span class="error-message" id="error-first-name">First Name cannot be empty</span>
+
+          <div class="form-input">
+            <input type="text" id="last-name" class="input-object" placeholder="Last Name">
+            <svg class="svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          </div>
+          <span class="error-message" id="error-last-name">Last Name cannot be empty</span>
+
+          <div class="form-input">
+            <input type="text" id="email" class="input-object" placeholder="Email">
+            <svg class="svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          </div>
+          <span class="error-message" id="error-email">Looks like this is not an email</span>
+
+          <div class="form-input">
+            <input type="text" id="Password" class="input-object" placeholder="Password">
+            <svg class="svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          </div>
+          <span class="error-message" id="error-password">Password cannot be empty</span>
+          <button>Claim your free trial </button>
+
+          <sub>By clicking the button, you are agreeing to our <b>Terms and Services</b></sub>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
+
+
+<!-- Javascript -->
+<script>
+
+/*
+
+- The email address is not formatted correctly (i.e. a correct email 
+address should have this structure: `name@host.tld`). The message for 
+this error should say *"Looks like this is not an email"*
+*/
+
+const exampleEmail = "email@example/com";
+const user_input_dom_objects = document.getElementsByClassName("input-object")
+const error_messages = document.getElementsByClassName("error-message");
+const error_svgs = document.getElementsByClassName("svg");
+const form_input_containers = document.getElementsByClassName("form-input")
+const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function handle_submit(e) {
+  event.preventDefault()
+
+  // Iterates through each object linearly... Checks the validity of each
+  let valid_input_counter = 0;
+  for (let i = 0; i < form_input_containers.length; i++) {
+    if ( user_input_dom_objects[i].value === "" ) {
+      form_input_containers[i].style.border = "0.1px solid var(--red)";
+      form_input_containers[i].style.outline = "1px solid var(--red)";
+      error_messages[i].style.visibility = "visible";
+      error_svgs[i].style.visibility = "visible"
+
+      if (i === 2) {
+        user_input_dom_objects[i].value = exampleEmail
+        user_input_dom_objects[i].style.color = "var(--red)"
+      }
+    } else {
+      if (i == 2 && !regex.test(user_input_dom_objects[i].value)) {
+        form_input_containers[i].style.border = "0.1px solid var(--red)";
+        form_input_containers[i].style.outline = "1px solid var(--red)";
+        error_messages[i].style.visibility = "visible";
+        error_svgs[i].style.visibility = "visible"
+        user_input_dom_objects[i].value = exampleEmail
+        user_input_dom_objects[i].style.color = "var(--red)"
+      } else {
+        form_input_containers[i].style.border = "0.1px solid var(--accent-blue)";
+        form_input_containers[i].style.outline = "1px solid var(--accent-blue)";
+        error_messages[i].style.visibility = "hidden";
+        error_svgs[i].style.visibility = "hidden"
+        user_input_dom_objects[i].style.color = "var(--neutral-dark-blue)"
+      }
+      valid_input_counter++;
+    }
+  }  
+}
+
+form_input_containers[2].addEventListener("input", update);
+
+function update(e) {
+  e.target.style.color = "var(--neutral-dark-blue)";
+}
+</script>
