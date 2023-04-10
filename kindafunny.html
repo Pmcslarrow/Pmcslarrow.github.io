@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-  <h1 style="visibility: hidden" id="myName" value="0">Paul McSlarrow</h1>
+  <h1 style="visibility: hidden" id="myName">Paul McSlarrow</h1>
   
   <br />
   <div>
@@ -30,13 +30,11 @@
 <script>
   function showName() {
     let name = document.getElementById("myName");
-    let value = name.value;
+    let value = name.style.visibility;
     
-    if (value === "0") {
-      name.value = "1";
+    if (value === "hidden") {
       name.style.visibility = "visible";
     }
-      name.value = "0"
       name.style.visibility = "hidden";
   }
 </script>
