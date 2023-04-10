@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-  <h1 style="visibility: hidden" id="myName">Paul McSlarrow</h1>
+  <h1 style="display: none" id="myName">Paul McSlarrow</h1>
   
   <br />
   <div>
@@ -20,7 +20,7 @@
   <br />
   <br />
   
-  <button onClick="showName">Toggle my name visibility</button>
+  <button id="myButton">Toggle my name visibility</button>
 </html>
 
 
@@ -28,14 +28,17 @@
 </style>
 
 <script>
+  const button = document.getElementById("myButton");
+  button.addEventListener("click", showName) ;
+
   function showName() {
-    console.log("hi")
-    let name = document.getElementById("myName");
-    let value = name.style.visibility;
+    let x = document.getElementById("myName");
     
-    if (value === "hidden") {
-      name.style.visibility = "visible";
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
     }
-      name.style.visibility = "hidden";
   }
+
 </script>
