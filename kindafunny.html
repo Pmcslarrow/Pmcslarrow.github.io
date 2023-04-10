@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <html>
+  <h1 style="visibility: hidden" id="myName" value="0">Paul McSlarrow</h1>
+  
+  <br />
   The Youtube video, We Need To Fix Black Hair in Video Games, talks about a huge issue that should be addressed more often in the Game Development community.
   Suggested from the title of the video, details for black hair in video games tend to be minute compared to those of other cultures. While it is mentioned that
   a huge portion of the game development market is based in Asian cultures, a lack knowledge exists on how to properly design games that are more inclusive. While
@@ -12,6 +15,10 @@
   but also raised the point that next-gen character design has no limits, and that limits are only created through the lack of knowledge about a certain culture
   and/ or effort into the detail. For those that are interested in this sort of issue can be glad to know that by the end of the video, game developers
   talked about how the customization side of games is pushing for a more diverse and inclusive environment for all players. 
+  <br />
+  <br />
+  
+  <button onClick="showName">Toggle my name visibility</button>
 </html>
 
 
@@ -19,4 +26,15 @@
 </style>
 
 <script>
+  function showName() {
+    let name = document.getElementById("myName");
+    let value = name.value;
+    
+    if (value === "0") {
+      name.value = "1";
+      name.style.visibility = "visible";
+    }
+      name.value = "0"
+      name.style.visibility = "hidden";
+  }
 </script>
