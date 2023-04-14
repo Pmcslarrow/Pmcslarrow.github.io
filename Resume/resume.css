@@ -25,3 +25,17 @@ span {
 }
 
 ul  { margin-top: -1em; }  
+
+section p {
+	display: inline;
+	margin: auto;
+}
+
+section p:nth-child(2) {
+	position: relative;
+	left: 120px;
+}
+
+h4 {
+	margin: 0;
+}
