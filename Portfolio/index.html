@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Paul McSlarrow Portfolio</title>
+        <link rel="stylesheet" href="./index.css">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    </head>
+
+    <body>
+        <div id="grid-container" class="hidden grid">
+            <h3>Welcome</h3>
+            <h3>About Me</h3>
+            <h3>Projects</h3>
+            <h3>Languages</h3>
+            <h3>Contact</h3>
+        </div>
+
+        <div id="nav-bar" class="fixed navbar-off">
+            <div id="closeButton" class="navbar-off"></div>
+            <div>Paul McSlarrow</div>
+        </div>
+
+
+        <div id="outer"class="container">
+
+            <section id="welcome" class="section1">
+
+                <!-- sumber belajar : https://www.youtube.com/watch?v=m0o0QNpY9-0&t=7s -->
+                <div class="wrapper">
+                    <div class="typing-demo">
+                      Welcome.
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-me" class="section2">
+                <div class="extra-large">2024</div>
+                <div class="flex-row">
+                    <div></div>
+                    <div class="tiny">Graduation Year</div>
+                </div>
+            </section>
+
+            <section  id="projects" class="section3 flex-vertical">
+                <div >My passion is creating webpages</div>
+                <div >test</div>
+            </section>
+
+            <section  id="languages" class="section4">
+                Page Four
+            </section>
+
+            <section  id="contact" class="section5">
+                Page Five
+            </section>
+        </div>
+        
+    </body>
+</html>
+
+<script>
+    document.getElementById("closeButton").addEventListener("click", toggleMenu)
+
+    function toggleMenu() {
+        var container = document.getElementById("outer");
+        var grid_container = document.getElementById("grid-container")
+        var navbar = document.getElementById("nav-bar")
+        var closeButton = document.getElementById("closeButton")
+
+        container.classList.toggle("down");
+        grid_container.classList.toggle("hidden")
+        grid_container.classList.toggle("visible")
+        navbar.classList.toggle("navbar-on")
+        navbar.classList.toggle("navbar-off")
+        closeButton.classList.toggle("navbar-on")
+        closeButton.classList.toggle("navbar-off")
+    }
+
+    const sections = document.querySelectorAll('div.hidden.grid > h3');
+    sections.forEach(section => {
+        section.addEventListener('click', () => {
+            const id = section.textContent.toLowerCase().replace(' ', '-');
+            console.log("scrolling to ", id)
+            const target = document.getElementById(id);
+            target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>

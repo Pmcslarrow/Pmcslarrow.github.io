@@ -1,0 +1,103 @@
+<head>
+  <!-- include Plotly.js library -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  <div class="flex-vertical">
+    <div id="paragraph">
+      The Statistical Transparency of Policing Report
+      Per House Bill 2355, requires law enforcement agencies in Oregon to collect and report data on police stops, searches, and arrests.
+      The law is an extremely important one to be passed because it promotes transparency about the policing habits (atleast in the state of OR).
+      Interestingly enough, the data shows a lot of information based on demographics such as Race/Gender/Ethnicity/Age and how the certain situations
+      played out. The charts and data that exist about the policing that has been happening in Oregon revolve around geolocal data as well
+      information about what the stops may have been about. In one chart, it even shows data about whether, when stopping an indivdual, they
+      had alcohol, drugs, weapons, etc... While the article is far too long to discuss here, and I do suggest one reads it, and interesting graph
+      that is created below, mimicking that inside the report, one is able to interactively analyze the data based on the number of stops, by county,
+      and by race. 
+
+    </div>
+
+    <div id="plot"></div>
+  </div>
+
+
+  <script>
+    var agencyNames = ['Beaverton PD', 'Clackamas CO SO', 'Eugene PD', 'Gresham PD', 'Hillsboro PD', 'Marion CO SO', 
+                        'Medford PD', 'Multnomah CO SO', 'Oregon State Police', 'Portland PB', 'Salem PD', 'Washington CO SO'];
+
+    var asianPI = [724, 721, 278, 94, 365, 421, 55, 236, 3316, 674, 123, 1304];
+    var black = [1156, 958, 758, 312, 366, 401, 154, 762, 4129, 2324, 191, 1163];
+    var latinx = [2466, 2354, 919, 450, 1748, 2616, 696, 1016, 18006, 1564, 1272, 5000];
+    var middleEastern = [341, 252, 0, 30, 160, 146, 17, 94, 1669, 186, 29, 618];
+    var nativeAmerican = [54, 178, 0, 7, 25, 12, 5, 27, 746, 74, 22, 136];
+    var white = [8265, 13552, 9609, 1358, 3698, 10142, 3284, 4464, 100782, 8611, 3123, 12578];
+    var total = [13006, 18015, 11564, 2251, 6362, 13738, 4211, 6599, 128648, 13433, 4760, 20799];
+
+    var trace1 = {
+      x: agencyNames,
+      y: asianPI,
+      mode: 'lines+markers',
+      name: 'Asian/PI'
+    };
+
+    var trace2 = {
+      x: agencyNames,
+      y: black,
+      mode: 'lines+markers',
+      name: 'Black'
+    };
+
+    var trace3 = {
+      x: agencyNames,
+      y: latinx,
+      mode: 'lines+markers',
+      name: 'Latinx'
+    };
+
+    var trace4 = {
+      x: agencyNames,
+      y: middleEastern,
+      mode: 'lines+markers',
+      name: 'Middle Eastern'
+    };
+
+    var trace5 = {
+      x: agencyNames,
+      y: nativeAmerican,
+      mode: 'lines+markers',
+      name: 'Native American'
+    };
+
+    var trace6 = {
+      x: agencyNames,
+      y: white,
+      name: "White"
+    }
+
+
+    var data = [trace1, trace2, trace3, trace4, trace5, trace6];
+
+    var layout = {
+      title: 'Number of stops by agency for White ethnicity',
+      xaxis: {
+        title: 'Agency'
+      },
+      yaxis: {
+        title: 'Number of stops'
+      }
+    };
+
+    Plotly.newPlot('plot', data, layout);
+  </script>
+
+  <style>
+    .flex-vertical {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
+    }
+  </style>
+</body>
