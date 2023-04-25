@@ -36,23 +36,29 @@
 
             <section id="about-me" class="section2">
                 <div class="extra-large">2024</div>
-                <div class="flex-row">
+                <div class="flex-row hiddenScroll">
                     <div></div>
                     <div class="tiny">Graduation Year</div>
                 </div>
             </section>
 
-            <section  id="projects" class="section3 flex-vertical">
-                <div >My passion is creating webpages</div>
-                <div >test</div>
+            <section class="section3 flex-vertical">
+                <div>Driven by Technology and Innovation</div>
+                <div>As a developer, I prioritize creating clean, efficient code that delivers the best possible user experience. I believe in open communication and collaboration with my clients to ensure that their needs are met and their vision is realized. Whether working on a front-end or back-end project, I am always conscious of the importance of UI/UX design, and strive to deliver a product that is intuitive, visually appealing, and easy to use.</div>
             </section>
 
-            <section  id="languages" class="section4">
-                Page Four
-            </section>
+            <section class="section4">
+                <div class="outer-flex-container">
+                    <div id="project-description">
+                        <h2>Project Name</h2>
+                        <h4>List of Languages</h4>
+                        <p>My most recent project that helped me learn about the frontend and backend well. The website allows non-members to see the home page and the calendar events. The dashboard is a simple backend CRUD system that allows the members of the Sigma Chi Chapter with the ability to edit frontend calendar events and users allowed in the system through MongoDB.</p>
+                    </div>
 
-            <section  id="contact" class="section5">
-                Page Five
+                    <div id="project-image">
+                        <img alt="Project image" src="./images/deltaZeta.png" width="100%" height="100%"/>
+                    </div>
+                </div>
             </section>
         </div>
         
@@ -76,6 +82,23 @@
         closeButton.classList.toggle("navbar-on")
         closeButton.classList.toggle("navbar-off")
     }
+
+    /* Scroll animation */
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show")
+            }
+        })
+    })
+
+    const hiddenElements = document.querySelectorAll(".hiddenScroll")
+    hiddenElements.forEach((el) => observer.observe(el))
+
+
+
+
 
     const sections = document.querySelectorAll('div.hidden.grid > h3');
     sections.forEach(section => {

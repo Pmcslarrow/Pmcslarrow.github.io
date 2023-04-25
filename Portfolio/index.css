@@ -11,6 +11,10 @@ html {
     overflow: hidden;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +37,9 @@ body {
     scroll-behavior: smooth;
 }
 
+
+
+/* Page 1 */
 section {
     display: flex;
     justify-content: center;
@@ -75,11 +82,149 @@ button {
     font-size: 96px;
     font-family: var(--h-font-style);
     font-weight: 100;
+    overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-    display: none;
+/* Page 2 */
+
+.extra-large {
+    font-size: 42vw;
+    font-family: var(--b-font-style);
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    bottom: 75px;
 }
+
+.section2 {    
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 35px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    position: relative;
+    bottom: 135px;
+}
+
+
+
+/* Page 3 */
+.section3 {
+    font-family: var(--b-font-style);
+}
+
+.section3 div:first-child {
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+.section3 div:last-child {
+    font-size: 1.65vw;
+    font-weight: 100;
+    line-height: 165%;
+}
+
+.section3.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.section3 div {
+    padding: 150px;
+}
+
+.hiddenScroll {
+    opacity: 0;
+    left: -90vw;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    left: 0;
+}
+
+/* Page 4 */
+
+/*
+.section4 {
+    display: flex;
+    justify-content: space-between;
+    scroll-snap-align: end;
+    scroll-padding-top: 100px;
+    font-family: var(--b-font-style);
+}
+  
+.section4 div {
+    width:100vw;
+    height: 100vh;
+    position: relative;
+    transform: translateY(50px);
+}
+
+.section4 div:first-child {
+    border-right: 1px solid black;
+}
+
+
+*/
+
+.section4 {
+    scroll-snap-align: end;
+}
+
+.outer-flex-container {
+    display: flex;
+    justify-content: space-between;
+    scroll-padding-top: 100px;
+    font-family: var(--b-font-style);
+    margin: 100px;
+}
+
+.outer-flex-container div {
+    width:50%;
+    height: 70vh;
+    position: relative;
+    background-color: red;
+    padding: 30px;
+}
+
+#project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+  
+#project-description h2 {
+    font-size: xx-large;
+    font-weight: 900
+}
+
+#project-description h4 {
+    font-weight: 600;
+}
+
+#project-description p {
+    font-weight: 100;
+}
+
+img {
+    object-fit: fill;
+}
+
+
 
 
 /* Menu Animation */
@@ -250,42 +395,3 @@ button {
   }
 
 
-
-
-/* Page 2 */
-
-.extra-large {
-    font-size: 42vw;
-    font-family: var(--b-font-style);
-    font-weight: 800;
-    text-align: center;
-    position: relative;
-    bottom: 75px;
-}
-
-.section2 {    
-    display: flex;
-    flex-direction: column;
-
-    font-size: 35px;
-    font-weight: 100;
-    text-align: center;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90vw;
-    position: relative;
-    bottom: 135px;
-}
-
-
-
-/* Page 3 */
-
-.flex-vertical {
-    display: flex;
-    flex-direction: column;
-}
