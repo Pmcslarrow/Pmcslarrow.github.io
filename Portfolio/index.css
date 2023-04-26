@@ -189,15 +189,14 @@ button {
     justify-content: space-between;
     scroll-padding-top: 100px;
     font-family: var(--b-font-style);
-    margin: 100px;
+    margin: 10px;
+    border: 2px solid black
 }
 
 .outer-flex-container div {
     width:50%;
     height: 70vh;
     position: relative;
-    background-color: red;
-    padding: 30px;
 }
 
 #project-description {
@@ -209,19 +208,71 @@ button {
   
 #project-description h2 {
     font-size: xx-large;
-    font-weight: 900
+    font-weight: 900;
+    padding: 30px
 }
 
 #project-description h4 {
     font-weight: 600;
+    padding: 0 50px 0 30px;
 }
 
 #project-description p {
     font-weight: 100;
+    padding: 0 50px 0 30px;
+
 }
 
 img {
-    object-fit: fill;
+    max-width: 100%;
+    height:100%;
+    object-fit: none;
+    object-position: left;
+}
+
+#project-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.box-left {
+    background-color: black;
+    color: #EEEEEE;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.box-right {
+    background-color: #EEEEEE;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.box-left:hover, .box-right:hover {
+    cursor: pointer;
+    transform: scaleX(1.25)
+
+}
+
+.box-left,
+.box-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 
