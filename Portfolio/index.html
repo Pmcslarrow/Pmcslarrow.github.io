@@ -7,7 +7,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     </head>
 
-    <body>
+    <body onload="setSlide(0)">
         <div id="grid-container" class="hidden grid">
             <h3>Welcome</h3>
             <h3>About Me</h3>
@@ -53,15 +53,15 @@
                         <h2>Project Name</h2>
                         <h4>List of Languages</h4>
                         <p>My most recent project that helped me learn about the frontend and backend well. The website allows non-members to see the home page and the calendar events. The dashboard is a simple backend CRUD system that allows the members of the Sigma Chi Chapter with the ability to edit frontend calendar events and users allowed in the system through MongoDB.</p>
-                        <span class="box-left">
-                            <img src="./images/arrow-white.png" alt="Arrow" width="50px" height="20px" style="transform: rotate(180deg) translate(10px);">
+                        <span class="box box-left">
+                            <img src="./images/arrow-white.png" alt="Arrow" width="50px" height="20px" style="transform: rotate(180deg) translate(10px);" class="arrow" >
                         </span>                        
                     </div>
 
                     <div id="project-image">
-                        <img alt="Project image" src="./images/deltaZeta.png" width="100%" height="100%"/>
-                        <span class="box-right">
-                            <img src="./images/arrow-black.png" alt="Arrow" width="50px" height="20px" style="transform: translate(10px)">
+                        <img id="project-img" alt="Project image" src="./images/deltaZeta.png" width="100%" height="100%"/>
+                        <span class="box box-right">
+                            <img src="./images/arrow-black.png" alt="Arrow" width="50px" height="20px" style="transform: translate(10px)" class="arrow">
                         </span>
                     </div>
                     
@@ -106,14 +106,99 @@
 
 
 
+    /* Project horizontal scroll handling */
+    const box_elements = document.querySelectorAll(".box")
+    box_elements.forEach((el) => el.addEventListener("click", function() {
+        handleNavigation(el.classList[1]) // handleNavigation(box-left or box-right)
+    }))
 
-    const sections = document.querySelectorAll('div.hidden.grid > h3');
-    sections.forEach(section => {
-        section.addEventListener('click', () => {
-            const id = section.textContent.toLowerCase().replace(' ', '-');
-            console.log("scrolling to ", id)
-            const target = document.getElementById(id);
-            target.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
+    var projectDescriptions = [
+        {
+            name: "Delta Zeta Chapter Website", 
+            languages: "MERN Stack", 
+            description: "My most recent project that helped me learn \
+                        about the frontend and backend well. The website allows non-members \
+                        to see the home page and the calendar events. The dashboard is a \
+                        simple backend CRUD system that allows the members of the Sigma Chi \
+                        Chapter with the ability to edit frontend calendar events and users \
+                        allowed in the system through MongoDB.",
+            image: "./images/deltaZeta.png"
+        },
+
+        {
+            name: "Chatroom App", 
+            languages: "React / Socket.io / JS / HTML / CSS", 
+            description: "The Chatroom App was my first ever React project. \
+                        The main design of the website is derived from Internet \
+                        Relay Chat (IRC) design. First though, the user must enter \
+                        their name and room they want to join, which then triggers \
+                        Socket.io to move the user to a room where they can \
+                        communicate with their friends! I chose not to deploy \
+                        this, simply because I didn't want to deal with the network \
+                        layer security issues in a language that I was new to.", 
+            image: "./images/chatroom.png"
+        },
+
+        {
+            name: "Pathfinding", 
+            languages: "Python", 
+            description: "My final project for CS-351 Algorithms course where I implemented a visualization of A* and Dijkstra's algorithm. The visualization part was learned through TechWithTim, although, the purpose of the project was not purely about the visualization whereas it was more focused on learning how the algorithm thinks.",
+            image: "./images/pathfinding.png"
+        },
+
+        {
+            name: "Weather App", 
+            languages: "HTML / CSS / JS / OpenWeatherMapAPI", 
+            description: "My final project for CS-270 Web Development. This project is one of my favorites that I have ever developed because it felt like the first time that I was able to step out of simple syntax learning within a language and actually apply it to something fun. I used the openweathermap API to gather information about a given city that is entered by the user. The user is then able to learn about the previous and next four days of weather (in F or C).",
+            image: "./images/weather.png"
+        },
+
+        {
+            name: "User Management CRUD", 
+            languages: "PostgreSQL / Express / React / NodeJS (PERN)", 
+            description: "This was a short yet necessary projects that taught me how to interact between the frontend and backend. I used PostgreSQL as the database system (locally) to create the project, although, when I later implemented the same User Management system into my Delta Zeta Project, I adjusted everything that was postgreSQL onto MongoDB Atlas.",
+            image: "./images/userManagement.png"
+        },
+
+    ]
+
+
+    var slideIndex = 0; 
+    function handleNavigation( className ) {
+
+        if ( className === "box-left" ) {
+            slideIndex -= 1
+        } else {
+            slideIndex += 1
+        }
+        let index = (Math.abs(slideIndex) % projectDescriptions.length)
+        setSlide(index)
+    }
+
+
+    function setSlide(index) {
+        let project_dom = document.getElementById("project-description");
+        let image_dom = document.getElementById("project-img");
+        project_dom.children[0].innerHTML = projectDescriptions[index].name;
+        project_dom.children[1].innerHTML = projectDescriptions[index].languages;
+        project_dom.children[2].innerHTML = projectDescriptions[index].description;
+        image_dom.src = projectDescriptions[index].image;
+
+        // Remove the "active" class if it exists
+        if (project_dom.classList.contains("active")) {
+            project_dom.classList.remove("active");
+            image_dom.classList.remove("active")
+            
+            // Use setTimeout to ensure the class is removed before it's added again
+            setTimeout(() => {
+                project_dom.classList.add("active");
+                image_dom.classList.add("active")
+            }, 0);
+        } else {
+            project_dom.classList.add("active");
+            image_dom.classList.add("active")
+        }
+    }
+
+
 </script>

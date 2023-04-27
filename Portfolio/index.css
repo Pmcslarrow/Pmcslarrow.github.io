@@ -223,12 +223,20 @@ button {
 
 }
 
-img {
+.arrow {
     max-width: 100%;
     height:100%;
     object-fit: none;
     object-position: left;
 }
+
+#project-img {
+    max-width: 100%;
+    height:100%;
+    object-fit: contain;
+    object-position: center;
+}
+
 
 #project-image {
     display: flex;
@@ -240,30 +248,31 @@ img {
 .box-left {
     background-color: black;
     color: #EEEEEE;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     bottom: 0;
     right: 0;
-    border-left: 2px solid black;
-    border-top: 2px solid black;
 }
 
 .box-right {
     background-color: #EEEEEE;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     bottom: 0;
     left: 0;
-    border-right: 2px solid black;
     border-top: 2px solid black;
 }
 
-.box-left:hover, .box-right:hover {
+.box-left:hover {
     cursor: pointer;
-    transform: scaleX(1.25)
+    transform:translateX(-5px)
+}
 
+.box-right:hover {
+    cursor: pointer;
+    transform:translateX(5px)
 }
 
 .box-left,
@@ -272,7 +281,9 @@ img {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease-in-out;
-
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
 }
 
 
@@ -289,6 +300,9 @@ img {
     animation-name: slideDown;
 }
 
+.active {
+    animation: fade-in 0.5s ease-in-out forwards;
+}
 
 @keyframes slideDown {
     from {
