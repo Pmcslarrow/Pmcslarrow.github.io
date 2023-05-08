@@ -51,6 +51,11 @@ section {
     background-color: #EEEEEE;
 }
 
+#grid-container a{
+    text-decoration: none;
+    color: #EEEEEE
+}
+
 
 .fixed {
     position: fixed;
@@ -72,6 +77,66 @@ section {
     top: 0;
 }
 
+.toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-header {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: background-color 0.2s ease;
+    border-radius: 34px;
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #EEEEEE;
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+  }
+  
+  input:checked + .toggle-slider {
+    background-color: green;
+  }
+  
+  input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+  }
+  
+  .toggle-slider:active:before {
+    width: 40px;
+  }
+  
+  
 
 button {
     width: 50px;
@@ -94,6 +159,7 @@ button {
     text-align: center;
     position: relative;
     bottom: 75px;
+    overflow: hidden;
 }
 
 .section2 {    
@@ -128,21 +194,25 @@ button {
 }
 
 .section3 div:last-child {
-    font-size: 1.65vw;
-    font-weight: 100;
+    font-size: 2vw;
+    font-weight: 1000;
     line-height: 165%;
+    letter-spacing: 1.25px;
 }
 
 .section3.flex-vertical {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+    gap: 15vh;
 }
 
 .section3 div {
-    padding: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+
 
 .hiddenScroll {
     opacity: 0;
@@ -218,9 +288,10 @@ button {
 }
 
 #project-description p {
-    font-weight: 100;
+    font-weight: 500;
     padding: 0 50px 0 30px;
-
+    letter-spacing: 1.5px;
+    font-size:large;
 }
 
 .arrow {
@@ -285,6 +356,62 @@ button {
     border-right: 2px solid black;
     border-top: 2px solid black;
 }
+
+
+.section5 .outer {
+    border: 2px solid black;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+}
+
+.section5 a {
+    color: black;
+}
+
+.section5 button {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.section5 button:hover {
+    background-color: #EEEEEE;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -379,6 +506,7 @@ button {
     font-family: var(--b-font-style);
     font-weight: 100;
 }
+
 
 .grid h3 {
     transition: opacity 0.3s;

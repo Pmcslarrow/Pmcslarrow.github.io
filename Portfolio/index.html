@@ -9,16 +9,25 @@
 
     <body onload="setSlide(0)">
         <div id="grid-container" class="hidden grid">
-            <h3>Welcome</h3>
-            <h3>About Me</h3>
-            <h3>Projects</h3>
-            <h3>Languages</h3>
-            <h3>Contact</h3>
-        </div>
+            <a href="#welcome"><h3>Welcome</h3></a>
+            <a href="#graduation"><h3>Graduation</h3></a>
+            <a href="#about-me"><h3>About Me</h3></a>
+            <a href="#languages"><h3>Languages</h3></a>
+            <a href="#contact"><h3>Contact</h3></a>
+          </div>
+          
 
         <div id="nav-bar" class="fixed navbar-off">
             <div id="closeButton" class="navbar-off"></div>
-            <div>Paul McSlarrow</div>
+            <div class="toggle-container">
+                <div class="toggle-header bionic">Bionic Reading</div>
+                <label class="toggle-switch">
+                  <input id="bionic" type="checkbox" onclick="toggleSwitch()">
+                  <span class="toggle-slider"></span>
+                </label>
+            </div>
+              
+              
         </div>
 
 
@@ -28,31 +37,33 @@
 
                 <!-- sumber belajar : https://www.youtube.com/watch?v=m0o0QNpY9-0&t=7s -->
                 <div class="wrapper">
-                    <div class="typing-demo">
+                    <div class="typing-demo bionic">
                       Welcome.
                     </div>
                 </div>
             </section>
 
-            <section id="about-me" class="section2">
+            <section id="graduation" class="section2">
                 <div class="extra-large">2024</div>
                 <div class="flex-row hiddenScroll">
                     <div></div>
-                    <div class="tiny">Graduation Year</div>
+                    <div class="tiny bionic">Graduation Year</div>
                 </div>
             </section>
 
-            <section class="section3 flex-vertical">
-                <div>Driven by Technology and Innovation</div>
-                <div>As a developer, I prioritize creating clean, efficient code that delivers the best possible user experience. I believe in open communication and collaboration with my clients to ensure that their needs are met and their vision is realized. Whether working on a front-end or back-end project, I am always conscious of the importance of UI/UX design, and strive to deliver a product that is intuitive, visually appealing, and easy to use.</div>
+            <section id="about-me" class="section3 flex-vertical">
+                <div class="bionic">
+                    Driven by Technology and Innovation
+                </div>
+                <div class="bionic">As a developer, I prioritize creating clean, efficient code that delivers the best possible user experience. I believe in open communication and collaboration with my clients to ensure that their needs are met and their vision is realized. Whether working on a front-end or back-end project, I strive to deliver a product that is intuitive, visually appealing, and easy to use.</div>
             </section>
 
-            <section class="section4">
+            <section id="projects" class="section4">
                 <div class="outer-flex-container">
                     <div id="project-description">
-                        <h2>Project Name</h2>
-                        <h4>List of Languages</h4>
-                        <p>My most recent project that helped me learn about the frontend and backend well. The website allows non-members to see the home page and the calendar events. The dashboard is a simple backend CRUD system that allows the members of the Sigma Chi Chapter with the ability to edit frontend calendar events and users allowed in the system through MongoDB.</p>
+                        <h2 class="bionic">Project Name</h2>
+                        <h4 class="bionic">List of Languages</h4>
+                        <p class="bionic">My most recent project that helped me learn about the frontend and backend well. The website allows non-members to see the home page and the calendar events. The dashboard is a simple backend CRUD system that allows the members of the Sigma Chi Chapter with the ability to edit frontend calendar events and users allowed in the system through MongoDB.</p>
                         <span class="box box-left">
                             <img src="./images/arrow-white.png" alt="Arrow" width="50px" height="20px" style="transform: rotate(180deg) translate(10px);" class="arrow" >
                         </span>                        
@@ -67,12 +78,27 @@
                     
                 </div>
             </section>
+
+            <section class="section5">
+
+                <div class="outer">
+                    <h2 class="bionic">Paul McSlarrow</h2>
+                    <h4 class="bionic">pmcslarrow@icloud.com</h4>
+                    <a href = "mailto: abc@example.com">Send Email</a>
+                    <a href="./Paul_McSlarrow_Resume (Spring 2023 CompSci) copy.pdf" download="Paul McSlarrow Resume">CV</a>
+                </div>
+                
+            </section>
+              
+
         </div>
         
     </body>
 </html>
 
 <script>
+
+    // Handles the opening and closing of the menu
     document.getElementById("closeButton").addEventListener("click", toggleMenu)
 
     function toggleMenu() {
@@ -90,7 +116,7 @@
         closeButton.classList.toggle("navbar-off")
     }
 
-    /* Scroll animation */
+    // Scroll animation 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             console.log(entry)
@@ -162,7 +188,7 @@
 
     ]
 
-
+    // When the user clicks the left button or the right button it updates the index
     var slideIndex = 0; 
     function handleNavigation( className ) {
 
@@ -175,7 +201,7 @@
         setSlide(index)
     }
 
-
+    // A function that is given the index in project_descriptions and updates the innerHTML to match the new descriptions
     function setSlide(index) {
         let project_dom = document.getElementById("project-description");
         let image_dom = document.getElementById("project-img");
@@ -184,12 +210,10 @@
         project_dom.children[2].innerHTML = projectDescriptions[index].description;
         image_dom.src = projectDescriptions[index].image;
 
-        // Remove the "active" class if it exists
         if (project_dom.classList.contains("active")) {
             project_dom.classList.remove("active");
             image_dom.classList.remove("active")
             
-            // Use setTimeout to ensure the class is removed before it's added again
             setTimeout(() => {
                 project_dom.classList.add("active");
                 image_dom.classList.add("active")
@@ -198,7 +222,63 @@
             project_dom.classList.add("active");
             image_dom.classList.add("active")
         }
+
+        // If bionic is set, then we must change each element to bionic even though we switch slides
+        if (project_dom.children[0].classList.contains("bionic_active") ) {
+
+            convertToBionic(project_dom.children[0])
+            convertToBionic(project_dom.children[1])
+            convertToBionic(project_dom.children[2])
+
+        }
     }
 
+    /* Bionic Reading */
+    function toggleSwitch() {
+        const bionic_elements = document.querySelectorAll(".bionic")
+
+        bionic_elements.forEach((element) => {
+            element.classList.toggle("bionic_active")
+
+            if ( element.classList.contains("bionic_active") ) {
+                convertToBionic(element)
+            } else {
+                bionicToPlain(element)
+            }
+
+        })
+    }
+
+    function convertToBionic(element) {
+        const words = element.innerHTML.split(' ');
+        for (let i = 0; i < words.length; i++) {
+            const word = words[i];
+            const wordLength = word.length;
+            let firstHalfEnd = Math.ceil(wordLength / 2);
+
+            if (wordLength <= 1) {
+            words[i] = '<span style="opacity: 1.0">' + word + '</span>';
+            } else {
+            words[i] =
+                '<span style="opacity: 1.0">' +
+                word.slice(0, firstHalfEnd) +
+                '</span>' +
+                '<span style="opacity: 0.45">' +
+                word.slice(firstHalfEnd) +
+                '</span>';
+            }
+        }
+        element.innerHTML = words.join(' ');
+    }
+
+
+
+    function bionicToPlain(element) {
+
+        const content = element.innerHTML;
+        const plainContent = content.replace(/(<([^>]+)>)/gi, ""); // remove any HTML tags
+        element.innerHTML = plainContent;
+        
+    }
 
 </script>
