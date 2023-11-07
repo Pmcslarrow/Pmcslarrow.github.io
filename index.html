@@ -1,1134 +1,293 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Paul McSlarrow Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    </head>
+        <head>
+                <title>Paul McSlarrow Portfolio</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+                <link rel="stylesheet" href="portfolio.css">
+        </head>
 
-    <body onload="setSlide(0)">
-        <div id="grid-container" class="hidden grid">
-            <a href="#welcome"><h3>Welcome</h3></a>
-            <a href="#graduation"><h3>Graduation</h3></a>
-            <a href="#about-me"><h3>About Me</h3></a>
-            <a href="#contact"><h3>Contact</h3></a>
-          </div>
-          
+        <body>
 
-        <div id="nav-bar" class="fixed navbar-off">
-            <div id="closeButton" class="navbar-off"></div>
-            <div class="toggle-container">
-                <div class="toggle-header bionic">Bionic Reading</div>
-                <label class="toggle-switch">
-                  <input id="bionic" type="checkbox" onclick="toggleSwitch()">
-                  <span class="toggle-slider"></span>
-                </label>
-            </div>
-        </div>
-
-
-        <div id="outer"class="container">
-
-            <section id="welcome" class="section1">
-
-                <!-- sumber belajar : https://www.youtube.com/watch?v=m0o0QNpY9-0&t=7s -->
-                <div class="wrapper">
-                    <div class="typing-demo bionic">
-                      Welcome.
-                    </div>
-                </div>
-            </section>
-
-            <section id="graduation" class="section2">
-                <div class="extra-large">2024</div>
-                <div class="flex-row hiddenScroll">
-                    <div></div>
-                    <div class="tiny bionic">Graduation Year</div>
-                </div>
-            </section>
-
-            <section id="about-me" class="section3 flex-vertical">
-                <div class="bionic">
-                    Driven by Technology and Innovation
-                </div>
-                <div class="bionic">As a developer, I prioritize creating clean, efficient code that delivers the best possible user experience. I believe in open communication and collaboration with my clients to ensure that their needs are met and their vision is realized. Whether working on a front-end or back-end project, I strive to deliver a product that is intuitive, visually appealing, and easy to use.</div>
-            </section>
-
-            <section id="projects" class="section4">
-                <div class="outer-flex-container">
-                    <div id="project-description">
-                        <h2 class="bionic">Project Name</h2>
-                        <h4 class="bionic">List of Languages</h4>
-                        <p class="bionic">My most recent project that helped me learn about the frontend and backend well. The website allows non-members to see the home page and the calendar events. The dashboard is a simple backend CRUD system that allows the members of the Sigma Chi Chapter with the ability to edit frontend calendar events and users allowed in the system through MongoDB.</p>
-                        <span class="box box-left comp-box">
-                            <img src="./images/arrow-white.png" alt="Arrow" width="50px" height="20px" style="transform: rotate(180deg) translate(10px);" class="arrow" >
-                        </span>                        
-                    </div>
-
-                    <div id="project-image">
-                        <img id="project-img" alt="Project image" src="./images/deltaZeta.png" width="100%" height="100%"/>
-                        <span class="box box-right comp-box">
-                            <img src="./images/arrow-black.png" alt="Arrow" width="50px" height="20px" style="transform: translate(10px)" class="arrow">
-                        </span>
-                    </div>
-
-                    <div class="phone-box-container">
-                        <span class="box box-left">
-                            <img src="./images/arrow-white.png" alt="Arrow" width="50px" height="20px" style="transform: rotate(180deg)" class="arrow" >
-                        </span> 
+<!-- Navigation Bar -->
+                
+                  
+        
+<!-- Main Sections -->
+                <div id="outer" class="container">
                         
-                        <span class="box box-right">
-                            <img src="./images/arrow-black.png" alt="Arrow" width="50px" height="20px" class="arrow">
-                        </span>
+                    <nav>
+                        <div>
+                        <a href="#work">Work Experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#about">About Me</a>
+                        </div>
+                        <div></div>
+                    </nav>
+        
+                    <section id="" class="section1"> 
+                        
+                        <div class="flex-row">
+                                <span>
+                                        <h1>Full Stack Developer</h1>
+                                        <h3>Majored in Computer Science at Willamette University with minors in Data Science and Business</h3>
+                                        <button><a href="mailto:pmcslarrow@icloud.com">Get in touch</a></button>
+                                        <div class="icon-row">
+                                                <a href="https://www.linkedin.com/in/paul-mcslarrow-58b8971b7/" target="_blank"><img src="./icons/icons8-linked-in.svg" alt="LinkedIn logo" width="25px" height="25px"/></a>
+                                                <a href="https://github.com/Pmcslarrow" target="_blank"><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/></a>
+                                        </div>                                </span>
+                                <span>
+                                        <div class="background-image">
+                                                <img src="./images/NL8_0976.png"/>
+                                        </div>
+                                </span>
+                        </div>
+                    </section>
+
+<!-- Languages-->
+                    <div class="list-languages">
+                        <img src="./icons/python.png" alt="Python logo"/>
+                        <img src="./icons/firebase.png" alt="Firebase logo"/>
+                        <img src="./icons/react.png" alt="React logo"/>
+                        <img src="./icons/postgres.png" alt="Postgres logo"/>
+                        <img src="./icons/c.png" alt="C logo"/>
+                    </div>
+<!-- Work Experience -->
+                    
+                    <section id="work" class="section2">
+                        <div class="flex-row">
+                                <span id="left-span" class="flex-col">
+                                        <h1>Work Experience</h1>
+                                        <div class="resume">
+                                                <div class="row">
+                                                        <span id="company-l">InMoment</span>
+                                                        <span id="date-l">May 2022 - Aug 2022</span>
+                                                </div>
+
+                                                <div class="col">
+                                                        <h2>Customer Success Intern</h2>
+                                                        <p>
+                                                                <ul>
+                                                                    <li>Interviewed Customer Success leaders and used interview data to determine what resources were needed to become more successful as an organization.</li>
+                                                                    <li>Inspected the quality of client data to ensure the software was working properly and the data was pooling properly.</li>
+                                                                    <li>Organized a dataset containing old and new translations to confirm with clients that the software would show the correct translation in their language.</li>
+                                                                </ul>
+                                                            </p>
+                                                            
+                                                </div>
+                                                
+                                        </div>
+                                </span>
+                                <span class="right">
+                                        <div class="resume">
+                                                <div class="row">
+                                                        <span id="company-r">Complete Recovery</span>
+                                                        <span id="date-r">May 2023 - Aug 2023</span>
+                                                </div>
+
+                                                <div class="col">
+                                                        <h2>Data Analyst Intern</h2>
+                                                        <p>
+                                                                <ul>
+                                                                    <li>Automated daily reporting tasks using R, Python, SQL, and OfficeJS.</li>
+                                                                    <li>Conducted ad-hoc analyses based on internal and client requests.</li>
+                                                                    <li>Successfully migrated client reports from LookerStudio to Power BI.</li>
+                                                                    <li>Developed an Excel dashboard for leveraging historical letter volume data to optimize recipient selection for communication methods (letters, SMS, emails). Analysis factors included credit scores, days since placement, cost, revenues, yield, and volume.</li>
+                                                                </ul>
+                                                        </p>
+                                                            
+                                                </div>
+                                                
+                                        </div>
+                                </span>
+                        </div>
+                    </section>
+
+                    <div style="color: black; font-size: 2rem; background-color: white; margin-top: 50px; padding-left: 50px;">
+                        <h1 style="font-weight: 500;">Projects</h1>
                     </div>
                     
-                </div>
-            </section>
+<!-- Projects -->
+                    <section id="projects" class="section3 IMAGE-RIGHT">
+                        <div class="outer-container">
+                                <div></div>
+                                <div class="image-right sportZen"></div>
+                                <div class="desc-right">
+                                    <div>
+                                        <h1>SportZen</h1>
+                                        <p class="bionic">
+                                            SportZen, a React and Firebase application, 
+                                            facilitates improved communication between 
+                                            the coaching staff and players of Willamette
+                                            Men's Basketball. It enables players to submit
+                                            daily survey data, providing insights into 
+                                            their mental, physical, and sleep well-being,
+                                            as well as self-assessments of their 
+                                            performance during practice or games. 
+                                            Additionally, it empowers the coaching 
+                                            staff to update player wins and share daily 
+                                            team updates, seamlessly connecting the 
+                                            frontend and backend components of the application.
+                                        </p>
+                                    </div>
+                                    <span class="github-right">
+                                        <span><a href="https://github.com/Pmcslarrow/SportZen" target="_blank"> Github </a></span>
+                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
+                                        </span>
+                                    </span>
+                                    <p class="bionic"><i>Deployed</i></p>
+                                </div>
+                            </div>
+                    </section>
 
-            <section class="section5" id="contact">
+                    <section class="IMAGE-LEFT">
+                        <div class="outer-container">
+                                <div></div>
+                                <div class="project-image">
+                                </div>
+                                <div class="project-description">
+                                    <div>
+                                        <h1>Chatroom</h1>
+                                        <p class="bionic">
+                                            A project that I used early on to learn about React. 
+                                            The project gave me a chance to challenge myself using 
+                                            socket programming in a new language to send and receive
+                                            messages in a chatroom.
+                                        </p>
+                                    </div>
+                                    <span class="github-right">
+                                        <span><a href="https://github.com/Pmcslarrow/ChatroomApp" target="_blank"> Github </a></span>
+                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
+                                        </span>
+                                    </span>
+                                    <p class="bionic"><i>Chose not to deploy for security reasons</i></p>
+                                </div>
+                            </div>
+                    </section>
 
-                <div class="outer">
-                    <h2 class="bionic">Paul McSlarrow</h2>
-                    <h4 class="bionic">pmcslarrow@icloud.com</h4>
-                    <a href = "mailto: pmcslarrow@icloud.com">Send Email</a>
-                    <a href="./Paul_McSlarrow_Resume__Spring_2023.pdf" download="Paul McSlarrow Resume" target="_blank">CV</a>
-                </div>
-                
-            </section>
-              
 
-        </div>
+                    <section id="projects" class="section3 IMAGE-RIGHT">
+                        <div class="outer-container">
+                                <div></div>
+                                <div class="image-right deltaZeta"></div>
+                                <div class="desc-right">
+                                    <div>
+                                        <h1>Delta Zeta Chapter Website</h1>
+                                        <p class="bionic">
+                                                This was one of my first full-stack applications, where I employed CRUD operations using the MERN stack (MongoDB, Express.js, React, and Node.js). It was designed for the Delta Zeta Chapter of the Sigma Chi Fraternity to manage calendar events and user data.
+                                        </p>
+                                    </div>
+                                    <span class="github-right">
+                                        <span><a href="https://github.com/Pmcslarrow/DeltaZetaRepo" target="_blank"> Github </a></span>
+                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
+                                        </span>
+                                    </span>
+                                    <p class="bionic"><i>Need approval to deploy</i></p>
+                                </div>
+                            </div>
+                    </section>
+
+
+                    <section class="IMAGE-LEFT">
+                        <div class="outer-container">
+                                <div></div>
+                                <div class="weatherImage project-image">
+                                </div>
+                                <div class="project-description">
+                                    <div>
+                                        <h1>Weather App</h1>
+                                        <p class="bionic">
+                                                For my CS-270 Web Development final project, I utilized the openweathermap API to create a weather app that allows users to input a city and view the weather for the current day, as well as the next four days, with the option to choose between Fahrenheit or Celsius. It was an enjoyable experience as I moved beyond basic language syntax and applied my skills to build something fun and practical.
+                                        </p>
+                                    </div>
+                                    <span class="github-right">
+                                        <span><a href="https://github.com/Pmcslarrow/Weather-Project" target="_blank"> Github </a></span>
+                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
+                                        </span>
+                                    </span>
+                                    <p class="bionic"><i></i></p>
+                                </div>
+                            </div>
+                    </section>
+
+
+                    <section id="projects" class="section3 IMAGE-RIGHT">
+                        <div class="outer-container">
+                                <div></div>
+                                <div class="image-right clearML"></div>
+                                <div class="desc-right">
+                                    <div>
+                                        <h1>Hackathon</h1>
+                                        <p class="bionic">
+                                                Helped create a VS Code Extension that makes it easier for MLEngineers to connect to a virtual cloud session directly from VS Code to make their development process more efficient.
+                                        </p>
+                                    </div>
+                                    <span class="github-right">
+                                        <span><a href="https://github.com/mlops-club/vscode-clearml-session-manager" target="_blank"> Github </a></span>
+                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
+                                        </span>
+                                    </span>
+                                    <p class="bionic"><i></i></p>
+
+                                </div>
+                            </div>
+                    </section>
+
+                    <section class="IMAGE-LEFT">
+                        <div class="outer-container">
+                                <div></div>
+                                <div class="hoopEasy project-image">
+                                </div>
+                                <div class="project-description" id="marketing">
+                                    <div>
+                                        <h1>Hoop Easy</h1>
+                                        <p class="bionic">
+                                                I'm currently working on a project with my friends in the Willamette MBA program. The goal of this app is to provide a convenient platform for discovering nearby pickup basketball games while allowing users to enhance their player attributes. To achieve this, we'll employ geocoding to handle coordinates, enabling users to create and join games in close proximity. Additionally, we're collaborating with math professors to implement the most effective ELO system for ranking players.
+                                        </p>
+                                    </div>
+                                    <span class="github-right">
+                                        <span><a href="https://github.com/Pmcslarrow/hoop-easy"  target="_blank"> Github </a></span>
+                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
+                                        </span>
+                                    </span>
+                                    <p class="bionic"><i>In-progress</i></p>
+                                </div>
+                            </div>
+                    </section>
+
+<!-- About Me -->
+                        <p id="about"></p>
+                        <section id="grid-section" >
+                                <div class="grid-div" id="div1">
+                                        <h3>Motivation</h3>
+
+                                        Before my college journey, basketball 
+                                        was my driving force. Today, my motivation 
+                                        comes from an intense curiosity to 
+                                        learn something new every day. My goal is 
+                                        to join a dynamic team where I can make a 
+                                        meaningful impact and learn something new. 
+                                </div>
+                                <div class="grid-div" id="div2">
+                                        <h3>Hobbies</h3>
+
+                                        My hobbies encompass a love for sports, a passion for coding, and a deep appreciation for reading.
+                                </div>
+                                <div class="grid-div" id="div3">
+                                        <h3>Awards and Extra-Curricular Activities</h3>
+                                        NCAA DIII Men’s Basketball Player; 
+                                        Sigma Chi Fraternity; 
+                                        National Association of Basketball Coaches Honors Court; 
+                                        College Sports Communicators Academic All-District; 
+                                        Chi Alpha Sigma Inductee
+                                </div>
+                                <div class="grid-div" id="div4">
+                        
+                                </div>
+                        </section>
         
-    </body>
+                </div>
+            </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- CSS  -->
-
-
-<style>
-    @import url("https://fonts.googleapis.com/css?family=Libre Baskerville");
-
-
-:root {
-    --h-font-style: "Libre Baskerville";
-    --b-font-style: "Helvetica"
-}
-
-html {
-    scroll-behavior: smooth;
-    overflow: hidden;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: black;
-    font-family: var(--b-font-style);
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    scroll-padding-top: 100px;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    scroll-snap-align: center;
-    background-color: #EEEEEE;
-}
-
-#grid-container a{
-    text-decoration: none;
-    color: #EEEEEE
-}
-
-
-.toggle-container {
-    display: flex;
-    align-items: center;
-}
-
-
-.toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.toggle-slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: background-color 0.2s ease;
-    border-radius: 34px;
-}
-
-
-button {
-    width: 50px;
-    height: 20px;
-}
-
-.fixed {
-    position: fixed;
-    border-bottom: 1px solid black;
-    width: 100%;
-    height: 50px;
-    font-size: 25px;
-    color: black;
-    font-family: var(--h-font-style);
-    font-weight: 100;
-
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-around;
-    align-items: center;
-
-    z-index: 1000;
-    top: 0;
-}
-
- /* Menu Animation */
-
-.container {
-    position: relative;
-    animation: slideUp 0.5s ease-in-out forwards;
-}
-
-.container.down {
-    animation-name: slideDown;
-}
-
-.active {
-    animation: fade-in 0.5s ease-in-out forwards;
-}
-
-
-.visible {
-    animation: fade-in 500ms forwards;
-}
-
-.hidden {
-    animation: fade-out 500ms forwards;
-}
-
-.navbar-on {
-    animation: black-to-white 500ms forwards
-}
-
-.navbar-off {
-    animation: black-to-white 500ms reverse
-}
-
-#closeButton {
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#closeButton.navbar-off {
-    background-image: url('./images/icons8-menu.svg');
-}
-
-#closeButton.navbar-on {
-    background-image: url('./images/icons8-close.svg');
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-    margin: 0;
-    position: relative;
-    top: 100px;
-    color: white;
-    font-size: 25px;
-    font-family: var(--b-font-style);
-    font-weight: 100;
-}
-
-
-.grid h3 {
-    transition: opacity 0.3s;
-    opacity: 50%;
-}
-
-.grid h3:hover, #closeButton:hover {
-    cursor: pointer;
-    opacity: 100%;
-}
-
-.grid h3:last-child {
-    grid-column-start: 3;
-}
-
-.extra-large {
-    font-family: var(--b-font-style);
-    font-weight: 800;
-    text-align: center;
-    position: relative;
-    bottom: 75px;
-    overflow: hidden;
-}
-
-.section3 {
-    font-family: var(--b-font-style);
-}
-
-.section3 div:first-child {
-    font-size: 3.5vw;
-    font-weight: 700;
-}
-
-.section3 div:last-child {
-    font-size: 2vw;
-    font-weight: 1000;
-    line-height: 165%;
-    letter-spacing: 1.25px;
-}
-
-.section3.flex-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 15vh;
-}
-
-.section3 div {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-
-.hiddenScroll {
-    opacity: 0;
-    left: -90vw;
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-    left: 0;
-}
-
-.section5 .outer {
-    border: 2px solid black;
-    width: 50%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 15px;
-    gap: 10px;
-    align-items: center;
-}
-
-.section5 a {
-    color: black;
-}
-
-.section5 button {
-    width: 100px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    transition: background-color 0.2s ease;
-    transition: color 0.2s ease;
-}
-
-.section5 button:hover {
-    background-color: #EEEEEE;
-    color: black;
-    cursor: pointer;
-}
-
-
-@keyframes slideDown {
-    from {
-        top: -190px;
-    }
-    to {
-        top: 200px;
-        transform: scale(80%);
-        border-radius: 50px;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        top: 200px;
-        transform: scale(80%);
-        border-radius: 50px;
-    }
-    to {
-        top: -190px;
-        transform: scale(100%);
-        border-radius: 0px;
-
-    }
-}
-
-@keyframes fade-in {
-    0% {
-    opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    }
-}
-
-@keyframes fade-out {
-0% {
-    opacity: 1;
-}
-100% {
-    opacity: 0;
-}
-}
-
-@keyframes black-to-white {
-    0% {
-        color: black;
-        border-bottom: 1px solid black;
-    }
-    100% {
-        color: white;
-        filter: invert(48%) sepia(100%) saturate(0) hue-rotate(86deg) brightness(118%) contrast(119%);
-        border-bottom: 1px solid white;
-
-    }
-}
-
-
-
-
-/* Typing Animation */
-
-/* Help from: https://codepen.io/Pmcslarrow/pen/ZEqOoOz*/
-.wrapper {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-.typing-demo {
-    width: 7.5ch;
-    animation: typing 1.5s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: var(--h-font-style);
-    font-size: 96px;
-}
-
-@keyframes typing {
-    from {
-    width: 0
-    }
-}
-    
-@keyframes blink {
-    50% {
-    border-color: transparent
-    }
-}
-
-
-
-
-@media screen and (min-width: 500px) {
-
-    /* Menu and Section 1*/
-    .toggle-header {
-        font-size: 24px;
-        margin-right: 20px;
-    }
-
-    .toggle-switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-    }
-
-    .toggle-slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: #EEEEEE;
-        transition: transform 0.2s ease;
-        border-radius: 50%;
-    }
-
-    input:checked + .toggle-slider {
-        background-color: green;
-    }
-
-    input:checked + .toggle-slider:before {
-        transform: translateX(26px);
-    }
-
-    .toggle-slider:active:before {
-        width: 40px;
-    }
-    
-    
-    /* Page 2 */
-
-    .extra-large {
-        font-size: 42vw;
-    }
-
-    .section2 {    
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-
-        font-size: 35px;
-        font-weight: 100;
-        text-align: center;
-    }
-
-    .flex-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90vw;
-        position: relative;
-        bottom: 135px;
-    }
-
-    .section4 {
-    scroll-snap-align: end;
-    }
-
-    .outer-flex-container {
-        display: flex;
-        justify-content: space-between;
-        scroll-padding-top: 100px;
-        font-family: var(--b-font-style);
-        margin: 10px;
-        border: 2px solid black
-    }
-
-    .outer-flex-container div {
-        width:50%;
-        height: 70vh;
-        position: relative;
-    }
-
-    #project-description {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        position: relative;
-    }
-
-    #project-description h2 {
-        font-size: xx-large;
-        font-weight: 900;
-        padding: 30px
-    }
-
-    #project-description h4 {
-        font-weight: 600;
-        padding: 0 50px 0 30px;
-    }
-
-    #project-description p {
-        font-weight: 500;
-        padding: 0 50px 0 30px;
-        letter-spacing: 1.5px;
-        font-size:large;
-    }
-
-    .arrow {
-        max-width: 100%;
-        height:100%;
-        object-fit: none;
-        object-position: left;
-    }
-
-    #project-img {
-        max-width: 100%;
-        height:100%;
-        object-fit: contain;
-        object-position: center;
-    }
-
-
-    #project-image {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        position: relative;
-    }
-
-    .box-left {
-        background-color: black;
-        color: #EEEEEE;
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
-    .box-right {
-        background-color: #EEEEEE;
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        border-top: 2px solid black;
-    }
-
-    .box-left:hover {
-        cursor: pointer;
-        transform:translateX(-5px)
-    }
-
-    .box-right:hover {
-        cursor: pointer;
-        transform:translateX(5px)
-    }
-
-    .box-left,
-    .box-right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: transform 0.3s ease-in-out;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        border-top: 2px solid black;
-    }
-
-
-    .phone-box-container {
-        display: none;
-    }
-
-}
-
-
-
-
-
-
-/* Phone adjustments */
-@media screen and (max-width: 500px) {
-
-    /* Menu and Section 1*/
-    body {
-        background-color: black;
-        font-family: var(--b-font-style);
-        width: 100vw;
-        height: 120vh;
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    .section1 {
-        font-size: 45px;
-        font-family: var(--h-font-style);
-        font-weight: 100;
-        overflow-x: hidden;
-    }
-
-    .toggle-header {
-        font-size: 15px;
-        margin-right: 10px;
-    }
-
-    .toggle-switch {
-        position: relative;
-        display: inline-block;
-        width: 40px;
-        height: 25px;
-    }
-
-    .toggle-slider:before {
-        position: absolute;
-        content: "";
-        height: 20px;
-        width: 20px;
-        left: 2.5px;
-        bottom: 2.5px;
-        background-color: #EEEEEE;
-        transition: transform 0.2s ease;
-        border-radius: 50%;
-    }
-
-    .toggle-container {
-        position: relative;
-        right: 10px;
-    }
-
-    input:checked + .toggle-slider {
-        background-color: green;
-    }
-
-    input:checked + .toggle-slider:before {
-        transform: translateX(15px);
-    }
-
-    .toggle-slider:active:before {
-        width: 30px;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(3, minmax(0, 1fr));
-        gap: 10px; 
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-        padding: 25px; 
-        margin: 0;
-        position: sticky;
-        top: 50px; 
-        color: white;
-        font-size: 25px;
-        font-family: var(--b-font-style);
-        font-weight: 100;
-    }
-
-    .grid h3 {
-        transition: opacity 0.3s;
-        opacity: 50%;
-    }
-
-    .grid h3:hover, #closeButton:hover {
-        cursor: pointer;
-        opacity: 100%;
-    }
-
-    .grid h3:last-child {
-        grid-column-start: 1; /* Adjust the column position of the last child */
-    }
-        
-
-    /* Section 2 */
-
-    .extra-large {
-        font-size: 42vw;
-    }
-
-    .section2 {    
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-
-        font-size: 35px;
-        font-weight: 100;
-        text-align: center;
-    }
-
-    .flex-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 90vw;
-        position: relative;
-    }
-
-    .typing-demo {
-        width: 7.5ch;
-        animation: typing 1.5s steps(22), blink .5s step-end infinite alternate;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-        font-family: var(--h-font-style);
-        font-size: 45px;
-    }
-
-    /* Section 3 */
-    .section3 div:first-child {
-        font-size: 7.5vw;
-        font-weight: 700;
-    }
-
-    .section3 div:last-child {
-        font-size: 4vw;
-        font-weight: 1000;
-        line-height: 165%;
-        letter-spacing: 1.25px;
-    }
-
-    /* Section 4 */
-    .section4 {
-        scroll-snap-align: end;
-    }
-
-
-    #project-description {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        position: relative;
-    }
-
-    #project-description h2 {
-        font-size: large;
-        font-weight: 900;
-        padding: 10px
-    }
-
-    #project-description h4 {
-        font-weight: 600;
-        padding: 0 50px 0 30px;
-    }
-
-    #project-description p {
-        font-weight: 500;
-        padding: 0 50px 20px 30px;
-        letter-spacing: 1.25px;
-        font-size: small;
-    }
-
-    .comp-box {
-        display: none;
-        background-color: red;
-    }
-
-    .phone-box-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .phone-box-container .box img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .phone-box-container .box-left,
-    .phone-box-container .box-right {
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .phone-box-container .box-left {
-        background-color: black;
-    }
-
-    .phone-box-container .box-right {
-        background-color: white;
-    }
-
-
-    .section5 .outer {
-        border: 2px solid black;
-        width: 85%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 15px;
-        gap: 10px;
-        align-items: center;
-    }
-
-} /* phone media query end*/ 
-
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- JAVASCRIPT -->
-
-<script>
-
-    // Handles the opening and closing of the menu
-    document.getElementById("closeButton").addEventListener("click", toggleMenu)
-
-    function toggleMenu() {
-        var container = document.getElementById("outer");
-        var grid_container = document.getElementById("grid-container")
-        var navbar = document.getElementById("nav-bar")
-        var closeButton = document.getElementById("closeButton")
-
-        container.classList.toggle("down");
-        grid_container.classList.toggle("hidden")
-        grid_container.classList.toggle("visible")
-        navbar.classList.toggle("navbar-on")
-        navbar.classList.toggle("navbar-off")
-        closeButton.classList.toggle("navbar-on")
-        closeButton.classList.toggle("navbar-off")
-    }
-
-    // Scroll animation 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry)
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show")
-            }
-        })
-    })
-
-    const hiddenElements = document.querySelectorAll(".hiddenScroll")
-    hiddenElements.forEach((el) => observer.observe(el))
-
-
-
-
-    /* Project horizontal scroll handling */
-    const box_elements = document.querySelectorAll(".box")
-    box_elements.forEach((el) => el.addEventListener("click", function() {
-        handleNavigation(el.classList[1]) // handleNavigation(box-left or box-right)
-    }))
-
-    var projectDescriptions = [
-        {
-            name: "Delta Zeta Chapter Website", 
-            languages: "MERN Stack", 
-            description: "My most recent project that helped me learn \
-                        about the frontend and backend well. The website allows non-members \
-                        to see the home page and the calendar events. The dashboard is a \
-                        simple backend CRUD system that allows the members of the Sigma Chi \
-                        Chapter with the ability to edit frontend calendar events and users \
-                        allowed in the system through MongoDB.",
-            image: "./images/deltaZeta.png"
-        },
-
-        {
-            name: "Chatroom App", 
-            languages: "React / Socket.io / JS / HTML / CSS", 
-            description: "The Chatroom App was my first ever React project. \
-                        The main design of the website is derived from Internet \
-                        Relay Chat (IRC) design. First though, the user must enter \
-                        their name and room they want to join, which then triggers \
-                        Socket.io to move the user to a room where they can \
-                        communicate with their friends! I chose not to deploy \
-                        this, simply because I didn't want to deal with the network \
-                        layer security issues in a language that I was new to.", 
-            image: "./images/chatroom.png"
-        },
-
-        {
-            name: "Pathfinding", 
-            languages: "Python", 
-            description: "My final project for CS-351 Algorithms course where I implemented a visualization of A* and Dijkstra's algorithm. The visualization part was learned through TechWithTim, although, the purpose of the project was not purely about the visualization whereas it was more focused on learning how the algorithm thinks.",
-            image: "./images/pathfinding.png"
-        },
-
-        {
-            name: "Weather App", 
-            languages: "HTML / CSS / JS / OpenWeatherMapAPI", 
-            description: "My final project for CS-270 Web Development. This project is one of my favorites that I have ever developed because it felt like the first time that I was able to step out of simple syntax learning within a language and actually apply it to something fun. I used the openweathermap API to gather information about a given city that is entered by the user. The user is then able to learn about the previous and next four days of weather (in F or C).",
-            image: "./images/weather.png"
-        },
-
-        {
-            name: "User Management CRUD", 
-            languages: "PostgreSQL / Express / React / NodeJS (PERN)", 
-            description: "This was a short yet necessary projects that taught me how to interact between the frontend and backend. I used PostgreSQL as the database system (locally) to create the project, although, when I later implemented the same User Management system into my Delta Zeta Project, I adjusted everything that was postgreSQL onto MongoDB Atlas.",
-            image: "./images/userManagement.png"
-        },
-
-    ]
-
-    // When the user clicks the left button or the right button it updates the index
-    var slideIndex = 0; 
-    function handleNavigation( className ) {
-
-        if ( className === "box-left" ) {
-            slideIndex -= 1
-        } else {
-            slideIndex += 1
-        }
-        let index = (Math.abs(slideIndex) % projectDescriptions.length)
-        setSlide(index)
-    }
-
-    // A function that is given the index in project_descriptions and updates the innerHTML to match the new descriptions
-    function setSlide(index) {
-        let project_dom = document.getElementById("project-description");
-        let image_dom = document.getElementById("project-img");
-        project_dom.children[0].innerHTML = projectDescriptions[index].name;
-        project_dom.children[1].innerHTML = projectDescriptions[index].languages;
-        project_dom.children[2].innerHTML = projectDescriptions[index].description;
-        image_dom.src = projectDescriptions[index].image;
-
-        if (project_dom.classList.contains("active")) {
-            project_dom.classList.remove("active");
-            image_dom.classList.remove("active")
-            
-            setTimeout(() => {
-                project_dom.classList.add("active");
-                image_dom.classList.add("active")
-            }, 0);
-        } else {
-            project_dom.classList.add("active");
-            image_dom.classList.add("active")
-        }
-
-        // If bionic is set, then we must change each element to bionic even though we switch slides
-        if (project_dom.children[0].classList.contains("bionic_active") ) {
-
-            convertToBionic(project_dom.children[0])
-            convertToBionic(project_dom.children[1])
-            convertToBionic(project_dom.children[2])
-
-        }
-    }
-
-    /* Bionic Reading */
-    function toggleSwitch() {
-        const bionic_elements = document.querySelectorAll(".bionic")
-
-        bionic_elements.forEach((element) => {
-            element.classList.toggle("bionic_active")
-
-            if ( element.classList.contains("bionic_active") ) {
-                convertToBionic(element)
-            } else {
-                bionicToPlain(element)
-            }
-
-        })
-    }
-
-    function convertToBionic(element) {
-        const words = element.innerHTML.split(' ');
-        for (let i = 0; i < words.length; i++) {
-            const word = words[i];
-            const wordLength = word.length;
-            let firstHalfEnd = Math.ceil(wordLength / 2);
-
-            if (wordLength <= 1) {
-            words[i] = '<span style="opacity: 1.0">' + word + '</span>';
-            } else {
-            words[i] =
-                '<span style="opacity: 1.0">' +
-                word.slice(0, firstHalfEnd) +
-                '</span>' +
-                '<span style="opacity: 0.45">' +
-                word.slice(firstHalfEnd) +
-                '</span>';
-            }
-        }
-        element.innerHTML = words.join(' ');
-    }
-
-
-
-    function bionicToPlain(element) {
-
-        const content = element.innerHTML;
-        const plainContent = content.replace(/(<([^>]+)>)/gi, ""); // remove any HTML tags
-        element.innerHTML = plainContent;
-    
-    }
-
-
-    /* Adjusts Viewport Size */
-    function setBodyHeightToViewportHeight() {
-        const vh = window.innerHeight * 1.05; // Convert viewport height to a percentage
-        document.body.style.height = `${vh}px`; // Set the body height to the calculated percentage
-    }
-
-    function setBodyHeightToViewportWidth() {
-        const vw = window.innerWidth; // Convert viewport height to a percentage
-        document.body.style.width = `${vw}px`; // Set the body height to the calculated percentage
-    }
-
-    document.addEventListener('DOMContentLoaded', setBodyHeightToViewportHeight);
-    window.addEventListener('resize', setBodyHeightToViewportHeight);
-    document.addEventListener('DOMContentLoaded', setBodyHeightToViewportWidth);
-    window.addEventListener('resize', setBodyHeightToViewportWidth);
-
-
-</script>
