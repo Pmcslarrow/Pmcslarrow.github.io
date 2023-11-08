@@ -164,6 +164,77 @@ button a {
         background-color: var(--blue);
 }
 
+.list-languages img {
+        animation: left-to-right linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 110%;
+}
+
+#work div span * {
+        animation: fade-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+}
+
+.header {
+        animation: right-to-left linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 70%;
+}
+
+.desc-right, .project-description  {
+        animation: down-up linear both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 50%;
+}
+
+.image-right, .project-image {
+        animation: up-down linear both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 50%;
+}
+
+@keyframes left-to-right {
+        from {
+            transform: translateX(-75px);  /* Correct the property name and function */
+        } 
+        to {
+            transform: translateX(75px);  /* Correct the property name and function */
+        }
+}
+
+@keyframes right-to-left {
+        from {
+            transform: translateX(75px);  /* Correct the property name and function */
+        } 
+        to {
+            transform: translateX(0);  /* Correct the property name and function */
+        }
+}
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+
+@keyframes down-up {
+        from {
+          transform: translateY(200px);
+        }
+        to {
+          transform: translateY(0);
+        }
+}
+
+@keyframes up-down {
+        from {
+          transform: translateY(-200px);
+        }
+        to {
+          transform: translateY(0);
+        }
+}
+      
+    
+
 .section2 { background-color: var(--blue); }
 
 .section2 .flex-row { width: 100%; }
@@ -402,6 +473,7 @@ button a {
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
         padding: 50px;
+        margin-bottom: 25px;
     }
 
     .grid-div {
@@ -411,6 +483,10 @@ button a {
         justify-content: center;
         height: 100%;
         padding: 25px;
+
+        animation: fade-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 25%;
     }
 
     #div1, #div2, #div3, #div4 {

@@ -6,6 +6,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
                 <link rel="stylesheet" href="portfolio.css">
+                <script src="./anime.min.js"></script>
         </head>
 
         <body>
@@ -18,10 +19,10 @@
                 <div id="outer" class="container">
                         
                     <nav>
-                        <div>
-                        <a href="#work">Work Experience</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#about">About Me</a>
+                        <div class="outer-nav">
+                                <a href="#work">Work Experience</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#about">About Me</a>
                         </div>
                         <div></div>
                     </nav>
@@ -29,25 +30,25 @@
                     <section id="" class="section1"> 
                         
                         <div class="flex-row">
-                                <span>
-                                        <h1>Full Stack Developer</h1>
-                                        <h3>Majored in Computer Science at Willamette University with minors in Data Science and Business</h3>
-                                        <button><a href="mailto:pmcslarrow@icloud.com">Get in touch</a></button>
-                                        <div class="icon-row">
+                                <span class="stutter">
+                                        <h1 class="element">Full Stack Developer</h1>
+                                        <h3 class="element">Majored in Computer Science at Willamette University with minors in Data Science and Business</h3>
+                                        <button class="element"><a href="mailto:pmcslarrow@icloud.com">Get in touch</a></button>
+                                        <div class="icon-row element">
                                                 <a href="https://www.linkedin.com/in/paul-mcslarrow-58b8971b7/" target="_blank"><img src="./icons/icons8-linked-in.svg" alt="LinkedIn logo" width="25px" height="25px"/></a>
                                                 <a href="https://github.com/Pmcslarrow" target="_blank"><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/></a>
                                         </div>                                </span>
                                 <span>
                                         <div class="background-image">
-                                                <img src="./images/NL8_0976.png"/>
+                                                <img src="./images/NL8_0976.png" class="photo"/>
                                         </div>
                                 </span>
                         </div>
                     </section>
 
 <!-- Languages-->
-                    <div class="list-languages">
-                        <img src="./icons/python.png" alt="Python logo"/>
+                    <div class="list-languages" id="waypoint">
+                        <img id='python' src="./icons/python.png" alt="Python logo"/>
                         <img src="./icons/firebase.png" alt="Firebase logo"/>
                         <img src="./icons/react.png" alt="React logo"/>
                         <img src="./icons/postgres.png" alt="Postgres logo"/>
@@ -105,7 +106,7 @@
                     </section>
 
                     <div style="color: black; font-size: 2rem; background-color: white; margin-top: 50px; padding-left: 50px;">
-                        <h1 style="font-weight: 500;">Projects</h1>
+                        <h1 class="header" style="font-weight: 500;">Projects</h1>
                     </div>
                     
 <!-- Projects -->
@@ -258,36 +259,65 @@
 
 <!-- About Me -->
                         <p id="about"></p>
-                        <section id="grid-section" >
-                                <div class="grid-div" id="div1">
-                                        <h3>Motivation</h3>
-
-                                        Before my college journey, basketball 
-                                        was my driving force. Today, my motivation 
-                                        comes from an intense curiosity to 
-                                        learn something new every day. My goal is 
-                                        to join a dynamic team where I can make a 
-                                        meaningful impact and learn something new. 
+                        <section id="grid-section">
+                                <div class="grid-div el" id="div1">
+                                  <h3>Motivation</h3>
+                                  Before my college journey, basketball was my driving force. Today, my motivation comes from an intense curiosity to learn something new every day. My goal is to join a dynamic team where I can make a meaningful impact and learn something new.
                                 </div>
-                                <div class="grid-div" id="div2">
-                                        <h3>Hobbies</h3>
-
-                                        My hobbies encompass a love for sports, a passion for coding, and a deep appreciation for reading.
+                                <div class="grid-div el" id="div2">
+                                  <h3>Hobbies</h3>
+                                  My hobbies encompass a love for sports, a passion for coding, and a deep appreciation for reading.
                                 </div>
-                                <div class="grid-div" id="div3">
-                                        <h3>Awards and Extra-Curricular Activities</h3>
-                                        NCAA DIII Men’s Basketball Player; 
-                                        Sigma Chi Fraternity; 
-                                        National Association of Basketball Coaches Honors Court; 
-                                        College Sports Communicators Academic All-District; 
-                                        Chi Alpha Sigma Inductee
+                                <div class="grid-div el" id="div3">
+                                  <h3>Awards and Extra-Curricular Activities</h3>
+                                  NCAA DIII Men’s Basketball Player;
+                                  Sigma Chi Fraternity;
+                                  National Association of Basketball Coaches Honors Court;
+                                  College Sports Communicators Academic All-District;
+                                  Chi Alpha Sigma Inductee
                                 </div>
-                                <div class="grid-div" id="div4">
-                        
+                                <div class="grid-div el" id="div4">
+                                  <!-- Your content for div4 -->
                                 </div>
-                        </section>
+                              </section>
+                              
         
                 </div>
             </body>
 </html>
 
+
+<script>
+
+//Background behind the photo of me
+anime({
+        targets: '.background-image',
+        translateY: ['-300', '0'],
+        delay: '10'
+});
+
+// Photo of me
+anime({
+        targets: '.photo',
+        translateX: ['100vw', '0'],
+        easing: 'easeInOutExpo',
+})
+
+// Homepage text on the left
+anime({
+  targets: '.stutter .element',
+  translateX: ['-300', '0'],
+  delay: anime.stagger(50) 
+});
+
+// Navigation Bar
+anime({
+  targets: '.outer-nav a',
+  rotate: [90, 0],
+  translateX: ['-300', '0'],
+  delay: '290',
+  duration: '2000'
+});
+
+
+</script>
