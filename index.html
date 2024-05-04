@@ -29,17 +29,17 @@
         
                     <section id="" class="section1"> 
                         
-                        <div class="flex-row">
+                        <div id="intro" class="flex-row">
                                 <span class="stutter">
-                                        <h1 class="element">Full Stack Developer</h1>
-                                        <h3 class="element">Majored in Computer Science at Willamette University with minors in Data Science and Business</h3>
+                                        <h1 class="element">Paul McSlarrow</h1>
+                                        <p class="element">Majored in Computer Science at Willamette University with minors in Data Science and Business</p>
                                         <button class="element"><a href="mailto:pmcslarrow@icloud.com">Get in touch</a></button>
                                         <div class="icon-row element">
                                                 <a href="https://www.linkedin.com/in/paul-mcslarrow-58b8971b7/" target="_blank"><img src="./icons/icons8-linked-in.svg" alt="LinkedIn logo" width="25px" height="25px"/></a>
                                                 <a href="https://github.com/Pmcslarrow" target="_blank"><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/></a>
                                         </div>                                </span>
                                 <span>
-                                        <div class="background-image">
+                                        <div id="image-wrapper" class="background-image">
                                                 <img src="./images/NL8_0976.png" class="photo"/>
                                         </div>
                                 </span>
@@ -57,16 +57,16 @@
 <!-- Work Experience -->
                     
                     <section id="work" class="section2">
-                        <div class="flex-row">
+                        <div id="work-exp" class="flex-row">
                                 <span id="left-span" class="flex-col">
-                                        <h1>Work Experience</h1>
+                                        <h2>Work Experience</h1>
                                         <div class="resume">
                                                 <div class="row">
                                                         <span id="company-l">InMoment</span>
                                                         <span id="date-l">May 2022 - Aug 2022</span>
                                                 </div>
 
-                                                <div class="col">
+                                                <div class="col job-desc">
                                                         <h2>Customer Success Intern</h2>
                                                         <p>
                                                                 <ul>
@@ -87,7 +87,7 @@
                                                         <span id="date-r">May 2023 - Aug 2023</span>
                                                 </div>
 
-                                                <div class="col">
+                                                <div class="col job-desc">
                                                         <h2>Data Analyst Intern</h2>
                                                         <p>
                                                                 <ul>
@@ -110,10 +110,31 @@
                     </div>
                     
 <!-- Projects -->
+                    <section class="IMAGE-LEFT">
+                        <div class="outer-container">
+                                <div></div>
+                                <div class="project-image" style="background-image: url('./images/hoopEasy.png');">
+                                </div>
+                                <div class="project-description" id="marketing">
+                                    <div>
+                                        <h1>Hoop Easy</h1>
+                                        <p class="bionic">
+                                            A full-stack application that is used to make finding a pickup basketball game easy and fun. The app uses geocoding to find and create games in your area, all while attempting to improve your player’s ELO rating. I am working with two students in the Willamette MBA program to complete the venture. (React / Node / MySQL / Firebase / Docker / Railway / Cloudflare)                                        </p>
+                                    </div>
+                                    <span class="github-right">
+                                        <span><a href="https://github.com/Pmcslarrow/hoop-easy-material-ui"  target="_blank"> Github </a></span>
+                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
+                                        </span>
+                                    </span>
+                                    <a href="https://hoopeasy.org" target="_blank">hoopeasy.org</a>
+                                </div>
+                            </div>
+                    </section>
+
                     <section id="projects" class="section3 IMAGE-RIGHT">
                         <div class="outer-container">
                                 <div></div>
-                                <div class="image-right sportZen"></div>
+                                <div class="image-right" style="background-image: url('./images/SportZen.png');"></div>
                                 <div class="desc-right">
                                     <div>
                                         <h1>SportZen</h1>
@@ -145,8 +166,7 @@
                     <section class="IMAGE-LEFT">
                         <div class="outer-container">
                                 <div></div>
-                                <div class="project-image">
-                                </div>
+                                <div class="project-image" style="background-image: url('./images/chatroom.png');"></div>
                                 <div class="project-description">
                                     <div>
                                         <h1>Chatroom</h1>
@@ -171,7 +191,7 @@
                     <section id="projects" class="section3 IMAGE-RIGHT">
                         <div class="outer-container">
                                 <div></div>
-                                <div class="image-right deltaZeta"></div>
+                                <div class="image-right" style="background-image: url('./images/deltaZeta.png');"></div>
                                 <div class="desc-right">
                                     <div>
                                         <h1>Delta Zeta Chapter Website</h1>
@@ -193,7 +213,7 @@
                     <section class="IMAGE-LEFT">
                         <div class="outer-container">
                                 <div></div>
-                                <div class="weatherImage project-image">
+                                <div class="project-image" style="background-image: url('./images/weather.png');">
                                 </div>
                                 <div class="project-description">
                                     <div>
@@ -216,7 +236,7 @@
                     <section id="projects" class="section3 IMAGE-RIGHT">
                         <div class="outer-container">
                                 <div></div>
-                                <div class="image-right clearML"></div>
+                                <div class="image-right" style="background-image: url('./images/clearML.png');"></div>
                                 <div class="desc-right">
                                     <div>
                                         <h1>Hackathon</h1>
@@ -231,28 +251,6 @@
                                     </span>
                                     <p class="bionic"><i></i></p>
 
-                                </div>
-                            </div>
-                    </section>
-
-                    <section class="IMAGE-LEFT">
-                        <div class="outer-container">
-                                <div></div>
-                                <div class="hoopEasy project-image">
-                                </div>
-                                <div class="project-description" id="marketing">
-                                    <div>
-                                        <h1>Hoop Easy</h1>
-                                        <p class="bionic">
-                                                I'm currently working on a project with my friends in the Willamette MBA program. The goal of this app is to provide a convenient platform for discovering nearby pickup basketball games while allowing users to enhance their player attributes. To achieve this, we'll employ geocoding to handle coordinates, enabling users to create and join games in close proximity. Additionally, we're collaborating with math professors to implement the most effective ELO system for ranking players.
-                                        </p>
-                                    </div>
-                                    <span class="github-right">
-                                        <span><a href="https://github.com/Pmcslarrow/hoop-easy"  target="_blank"> Github </a></span>
-                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
-                                        </span>
-                                    </span>
-                                    <p class="bionic"><i>In-progress</i></p>
                                 </div>
                             </div>
                     </section>
@@ -276,10 +274,8 @@
                                   College Sports Communicators Academic All-District;
                                   Chi Alpha Sigma Inductee
                                 </div>
-                                <div class="grid-div el" id="div4">
-                                  <!-- Your content for div4 -->
-                                </div>
-                              </section>
+                                <div class="grid-div el" id="div4"></div>
+                        </section>
                               
         
                 </div>
