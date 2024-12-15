@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul McSlarrow Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../portfolio.css">
+    <script src="./anime.min.js"></script>
+</head>
+<body>
+    <div class="bound-text">
+      <h1>Movie Recommendation System</h1>
+      <br />
+      <div id="movierecommend" style="width: 500px; height: 300px;"></div>
+      <br />
+      <br />
+      <h1>Part I</h1>
+      <h2>K-Nearest-Neighbors</h2>
+
+      <h5>
+        Please describe all of your design choices and hyper-parameter selections in a paragraph. Run your classifier on the test set and summarize results in a 10x10 confusion matrix for each distance metric. Analyze your results in another paragraph.
+      </h5>
+      <br />
+      <p>
+        K-nearest neighbors (KNN) is a machine learning technique that uses the proximity of data points within the training set to make predictions for a test example. In implementing the KNN classifier, we iterated through each example in the candidate set and calculated the k shortest distances between the candidate example and all training examples, using a heap to store these distances. We then selected the most common label among the k closest neighbors and assigned this label to the candidate example. For design choices, we employed a brute-force approach to identify the optimal distance metric and k values for our model. By using the 10x10 confusion matrices to analyze the performance of our different distance metrics, we found that cosine similarity typically did the best with regards to consistency in precision and recall (but not by a drastic amount). After experimenting with various options, we also found that KNN performed best with an average pooling (stride of two) dimensionality reduction technique and the use of cosine similarity k between three and six. We found that there were slightly more accurate cross-validation searches for the hyperparameter k, however, the trade off between test and validation accuracy was not large enough to want to increase k past six (see Figure 1 below). On another note, because cosine similarity is a way to measure how similar vectors are by calculating the angle between them, and that the dataset has high dimensionality (784 dimensions), it is well understood why cosine similarity performs well. Our results are summarized in visualizations and tables below. 
+      </p>
+      <br />
+      <p>
+        Analysis of the KNN model’s performance on the final test set shows that using the Cosine distance metric with  K=4  and applying dimensionality reduction achieved the best results, with an accuracy of 0.94 and both precision and recall at 0.939. Overall, the Cosine metric consistently outperformed the Euclidean metric in terms of accuracy and confusion matrix scores. As expected, the confusion matrix confirms that the Cosine metric provided a better fit to the data with dimensionality reduction and  K=4 . Notably, the accuracy of KNN with the Euclidean metric improved across all tested values of  K  following dimensionality reduction. This trend is expected, as the Euclidean distance metric is sensitive to the curse of dimensionality; reducing the number of input features can therefore enhance its performance.
+      </p>
+      <br />
+      <h3>KNN Results without dimensionality reduction</h3>
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 4 44 52 PM" src="https://github.com/user-attachments/assets/e4287b5c-87a4-4dd9-8f88-3ff0578c43ec">
+      </p>
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 4 51 42 PM" src="https://github.com/user-attachments/assets/5e2dcfb0-cd0b-43bb-9b7b-5f7f009810f9">
+      </p>
+      
+      <!-- Table test accuracy (without reduction) -->
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 4 47 56 PM" src="https://github.com/user-attachments/assets/3864083f-ba14-4e90-9485-9510d7f87fe0">
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <h3>KNN Results with dimensionality reduction</h3>
+      <!-- Downsampling -->
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 4 48 59 PM" src="https://github.com/user-attachments/assets/f06d4d1d-1fb6-4470-8f8b-01a726c0cfe7">
+      </p>
+
+      <!-- Confusion Matrix (with reduction) -->
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 4 55 42 PM" src="https://github.com/user-attachments/assets/834f45ac-6add-402f-96ac-ed360c25e67e">
+      </p>
+
+      <!-- Table (with reduction) -->
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 4 56 23 PM" src="https://github.com/user-attachments/assets/b464b75c-999d-4fc4-a9f0-de8373e37664">
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <h3>Final test set accuracies of KNN</h3>
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 4 59 23 PM" src="https://github.com/user-attachments/assets/56bc173c-e194-4090-89a0-a1a5892ad2a2">
+      </p>
+
+      <br />
+      <br />
+      <br />
+
+      <h2>K-Means</h2>
+      <h5>Present a quantitative metric to measure how well your clusters align with the labels in mnist_test.csv. Describe your design choices and analyze your results in about one paragraph each.</h5>
+      <br />
+      <p>
+        To measure how well the clusters align with the labels in mnist_test.csv, we used Adjusted Mutual Information (AMI) as the quantitative metric. AMI assesses the amount of information shared between the true labels and the cluster memberships. Since k-means is an unsupervised algorithm that produces clusters without explicit labels, we can treat the true labels as groups of data points. This allows us to evaluate the clustering agreement between the two sets: a perfect agreement yields an AMI value of 1, while a value of 0 indicates no agreement, and negative values suggest less agreement than would be expected by chance.
+      </p>
+      <br />
+      In designing the k-means clustering algorithm, we start by selecting k random centroids from the dataset. We set k equal to 10 as there were ten possible labels for the dataset; if we did not know the amount of labels in the dataset, we would have performed hyperparameter tuning on k. A copy of the data is then randomly shuffled and divided into k equally sized chunks, from which the average value for each feature (pixel intensity) is computed. Next, we calculate the distance of each data point to each centroid and assign each point to the cluster of its closest centroid. The centroids are updated by calculating the average value for each feature across all data points within each cluster. This iterative process continues until the centroids stabilize and no longer change, resulting in a final list indicating the cluster membership for each data point. A critical design choice was to maintain the original order of the data while tracking the centroid membership for each data point. This approach allows for the computation of AMI without the need for additional data manipulation post-clustering, ensuring that the evaluation process is straightforward and efficient.
+
+      <br />
+      <br />
+
+      <p>
+        Without dimensionality reduction, our KMeans clustering algorithm achieved Adjusted Mutual Information (AMI) scores of 0.49 for Euclidean distance and 0.51 for cosine distance. After applying dimensionality reduction using an average pooling technique with a stride of two, the AMI scores remained 0.49 for Euclidean distance and 0.51 for cosine distance. While cosine distance performance was unaffected, clustering with Euclidean distance showed a slight improvement after dimensionality reduction. This is expected, as Euclidean distance is sensitive to the curse of dimensionality; reducing the number of input features by half can improve its performance. Overall, the scores of 0.49-0.51 indicate that our clustering approach successfully grouped approximately 50% of the data, significantly outperforming the 10% accuracy expected by chance. The results are summarized in the following table:
+      </p>
+      <br />
+      
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 5 01 00 PM" src="https://github.com/user-attachments/assets/bda206da-d719-47c0-8b4a-b486e0feb75e">
+      </p>
+      
+      <br />
+      <br />
+      <br />
+
+      <h1>Part II</h1>
+      <h2>Collaborative Filtering Movie Recommendation System</h2>
+      <h5>
+        Please describe how your collaborative filter works, list the hyper-parameters and describe their role. Report precision, recall, and the F1-score on the validation and test sets for users a, b, and c. Discuss how M impacts your results.
+      </h5>
+      <br />
+
+      <p>
+        There are two most commonly used methods for collaborative filtering systems – user-based and item-based collaborative filtering. For the purpose of the task at hand in recommending movies to users, we chose to conduct a user-based collaborative filtering method to learn what to recommend to each user. A user-based method recommends items by identifying users similar to the target user, while an item-based method recommends items based on similarities to those the user has previously interacted with. To begin this process of user-based collaborative filtering, we first combined all of the training data together, then created a pivot table where the columns represent each movie (id), and the rows represent each user (id), and the values represent the rating given to that movie by each user (Figure 5). Please note that NaN values indicate that the user did not rate the corresponding movie. 
+      </p>
+      <br />
+
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 5 10 37 PM" src="https://github.com/user-attachments/assets/2b93bf05-17e4-42aa-a05f-341aac5a4ca9">
+      </p>
+      <p align="center">
+        (Figure 5)
+      </p>
+      <br />
+
+      <p>
+        Given this information, we were able to use cosine similarity as our metric to find the similarity between each user based on the ratings they both gave to movies. Please note that we only calculated the cosine similarity between users based on the movies that both users have reviewed, which tells us how similar their tastes are. After getting the similarity between every user, we needed a way to numerically represent the likelihood of each user watching a movie they haven’t seen. Figure 6 illustrates this calculation as the estimated rating for a user i to enjoy a movie m is calculated considering all other users j who have rated the movie m. For each of the users j who have rated the movie, we take the cosine similarity between a user i and user j and multiply it by the rating given to the movie m by user j. By summing up these weighted contributions, we then divide by the sum of similarity scores. In simpler terms, we calculate an estimated rating for each user to watch a certain movie, weighted more heavily towards what similar users rated, and then keep only the top M of these ratings for the user’s recommendations.
+      </p>
+      <br/>
+
+      <p align="center">
+        <img width="250" alt="Screenshot 2024-11-04 at 5 11 04 PM" src="https://github.com/user-attachments/assets/ec7fedf1-ab13-4605-9daf-4ebf32a00c3e">
+      </p>
+      <p align="center">
+        (Figure 6)
+      </p>
+      <br />
+
+      <p>
+        Figure 7 illustrates how precision, recall, and F1 scores vary as the number of recommended movies (M) increases. As expected, we observe a decrease in precision with increasing M. This is because as more recommendations are made, the model includes items with lower confidence levels, increasing the likelihood of irrelevant recommendations. Based on these findings, we suggest keeping recommendations under 10 to enhance user experience, though the optimal number may vary depending on design goals. We also observe consistently low recall and F1 scores due to the assumption that all movies a user rated in the validation and test sets are relevant. Since recall is defined as the number of relevant movies in the top M recommendations divided by the total number of relevant movies, it remains low as the total relevant count often exceeds M. Consequently, F1 is also low, given it is the harmonic mean of precision and recall, which explains why the recall and F1 curves nearly overlap in Figure 7.
+      </p>
+      <br />
+
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 5 14 37 PM" src="https://github.com/user-attachments/assets/5d499bf1-b628-4a24-a81f-bf9bd2f19254">
+      </p>
+
+      <br />
+      <br />
+
+
+      <h5>
+        Try to improve your collaborative filter built in Question #5 by using movie genre or user demographic data(e.g., age, gender and occupation). Report precision, recall, and the F1-score on the validation and test sets for users a, b, and c. Discuss your approach and whether or not considering additional features improved the performance of your collaborative filter.
+      </h5>
+      <br />
+
+      We incorporated demographic data (i.e., age, gender, occupation) into the user-based collaborative filtering system by computing the cosine similarity of users based on these attributes. We then added this demographic similarity score to the existing rating similarity score. Specifically, Sij was calculated as the sum of the movie rating similarity and the demographic similarity for each user pair, assigning equal weight to each component. Integrating these demographic features improved the system’s performance, particularly increasing precision up to M=35 for users b and c (Figure 8). Interestingly, the results for user a were unaffected. Recall and F1 continued to behave as described earlier, so they were not particularly informative in this context.
+
+      <br />
+      <br />
+
+      <p align="center">
+        <img width="600" alt="Screenshot 2024-11-04 at 5 15 16 PM" src="https://github.com/user-attachments/assets/9228b677-6818-4294-95b0-0acbc688f81b">
+      </p>
+
+
+    </div>
+</body>
