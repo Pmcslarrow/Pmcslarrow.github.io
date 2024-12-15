@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul McSlarrow Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../portfolio.css">
+    <script src="./anime.min.js"></script>
+</head>
+<body>
+    <div class="bound-text">
+      <h1>TeamsOfMen App</h1>
+
+      <img src="../images/teamsofmen.jpg" width="100%"/>
+
+      <br />
+
+      <h3>Summary</h3>
+      <p>
+        Our group focused on designing a serverless AWS architecture leveraging Lambda and API Gateway to create a clean, scalable, and modular design for the project. The primary goal is to develop a mobile application for Kip Ioane's TeamsOfMen healthy masculinity curriculum. Kip initially introduced this curriculum at Willamette University, where he taught players and staff about healthy masculinity and character development as tools for navigating everyday experiences, particularly in college. Over the past decade, Kip has expanded his vision beyond basketball, aiming to make this curriculum his full-time endeavor, helping other programs nationwide benefit from understanding and practicing healthy masculinity through daily self-reflection.
+      </p>
+
+      <br />
+
+      <h3>Note to Reader:</h3>
+      <p>The backend portion of the application is primarily complete. The frontend is a work-in-progress, 
+          but the important details/infrastructure that the app is built around is complete, and described below in some detail. 
+      </p>
+
+      <br />
+      <br />
+
+
+      <h2>AWS Lambda + API Gateway</h2>
+      <p>We designed the backend using AWS Lambda in combination with API Gateway to achieve a cost-effective and scalable architecture. API Gateway handles the routing of requests, allowing Lambda functions to serve as our compute engine for more intensive and complex tasks. This modular setup minimizes costs while maximizing performance and scalability.</p>
+      <br />
+
+      <p>One of our key Lambda functions includes the capability to process and insert new coursework PDFs. We leverage the OpenAI API along with a strict JSON formatting scheme to extract and structure information from these PDFs efficiently. This data is then stored appropriately in our database or S3, based on retrieval needs.</p>
+      
+      <br /><br />
+
+      <h2>Data Storage: RDS and S3</h2>
+      <p>Our application utilizes Amazon RDS for structured data that requires quick retrieval and transactional consistency. RDS ensures reliable, scalable, and secure database operations.</p>
+      <br />
+
+      <p>For long-term storage and less frequently accessed files, we use Amazon S3. Within S3, we employ compression and decompression techniques to optimize storage space. This is particularly beneficial for large files, such as PDFs containing coursework information, to minimize overall storage costs.</p>
+      
+
+      <br />
+      <br />
+
+      <h2>Authentication</h2>
+      <p>We have implemented a robust authentication system using JSON Web Tokens (JWT). JWT allows for secure and stateless communication by encrypting information within the token itself, reducing the need for repeated database queries. This design choice significantly minimizes cost and increases efficiency by limiting database interactions during authentication processes and API calls.</p>
+      
+      <br />
+      <br />
+
+
+    
+      <h2>Complex Tasks and PDF Processing</h2>
+      <p>To support complex backend tasks, such as inserting and managing new coursework PDFs, we use a combination of AWS services. Lambda functions are integrated with the OpenAI API to extract structured data from these PDFs using a JSON scheme. This ensures consistency and accuracy in how data is processed and stored across the system.</p>
+      
+      <br />
+      <br />
+
+      <h2>Summary of Key Features</h2>
+      <ul>
+          <li><strong>AWS Lambda + API Gateway</strong>: Efficient request routing and scalable compute functions.</li>
+          <li><strong>RDS</strong>: Quick retrieval of structured, transactional data.</li>
+          <li><strong>S3</strong>: Long-term storage with compression to optimize space.</li>
+          <li><strong>Authentication</strong>: JWT-based stateless security to minimize database trips.</li>
+          <li><strong>PDF Processing</strong>: Automated extraction and storage using OpenAI API and structured JSON formatting.</li>
+      </ul>
+      
+      <p>This structured backend approach ensures seamless integration with the frontend as it is developed, providing a secure, scalable, and cost-effective solution.</p>
+
+
+    </div>
+</body>

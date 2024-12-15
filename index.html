@@ -1,286 +1,120 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul McSlarrow Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="./anime.min.js"></script>
+</head>
+<body>
+    <section id="intro" class="section1"> 
 
-<html>
-        <head>
-                <title>Paul McSlarrow Portfolio</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
-                <link rel="stylesheet" href="portfolio.css">
-                <script src="./anime.min.js"></script>
-        </head>
-
-        <body>
-
-<!-- Navigation Bar -->
-                
-                  
-        
-<!-- Main Sections -->
-                <div id="outer" class="container">
-                        
-                    <nav>
-                        <div class="outer-nav">
-                                <a href="#work">Work Experience</a>
-                                <a href="#projects">Projects</a>
-                                <a href="#about">About Me</a>
-                        </div>
-                        <div></div>
-                    </nav>
-        
-                    <section id="" class="section1"> 
-                        
-                        <div id="intro" class="flex-row">
-                                <span class="stutter">
-                                        <h1 class="element">Paul McSlarrow</h1>
-                                        <p class="element">Majored in Computer Science at Willamette University with minors in Data Science and Business</p>
-                                        <button class="element"><a href="mailto:pmcslarrow@icloud.com">Get in touch</a></button>
-                                        <div class="icon-row element">
-                                                <a href="https://www.linkedin.com/in/paul-mcslarrow-58b8971b7/" target="_blank"><img src="./icons/icons8-linked-in.svg" alt="LinkedIn logo" width="25px" height="25px"/></a>
-                                                <a href="https://github.com/Pmcslarrow" target="_blank"><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/></a>
-                                        </div>                                </span>
-                                <span>
-                                        <div id="image-wrapper" class="background-image">
-                                                <img src="./images/NL8_0976.png" class="photo"/>
-                                        </div>
-                                </span>
-                        </div>
-                    </section>
-
-<!-- Languages-->
-                    <div class="list-languages" id="waypoint">
-                        <img id='python' src="./icons/python.png" alt="Python logo"/>
-                        <img src="./icons/firebase.png" alt="Firebase logo"/>
-                        <img src="./icons/react.png" alt="React logo"/>
-                        <img src="./icons/postgres.png" alt="Postgres logo"/>
-                        <img src="./icons/c.png" alt="C logo"/>
-                    </div>
-<!-- Work Experience -->
-                    
-                    <section id="work" class="section2">
-                        <div id="work-exp" class="flex-row">
-                                <span id="left-span" class="flex-col">
-                                        <h2>Work Experience</h1>
-                                        <div class="resume">
-                                                <div class="row">
-                                                        <span id="company-l">InMoment</span>
-                                                        <span id="date-l">May 2022 - Aug 2022</span>
-                                                </div>
-
-                                                <div class="col job-desc">
-                                                        <h2>Customer Success Intern</h2>
-                                                        <p>
-                                                                <ul>
-                                                                    <li>Interviewed Customer Success leaders and used interview data to determine what resources were needed to become more successful as an organization.</li>
-                                                                    <li>Inspected the quality of client data to ensure the software was working properly and the data was pooling properly.</li>
-                                                                    <li>Organized a dataset containing old and new translations to confirm with clients that the software would show the correct translation in their language.</li>
-                                                                </ul>
-                                                            </p>
-                                                            
-                                                </div>
-                                                
-                                        </div>
-                                </span>
-                                <span class="right">
-                                        <div class="resume">
-                                                <div class="row">
-                                                        <span id="company-r">Complete Recovery</span>
-                                                        <span id="date-r">May 2023 - Aug 2023</span>
-                                                </div>
-
-                                                <div class="col job-desc">
-                                                        <h2>Data Analyst Intern</h2>
-                                                        <p>
-                                                                <ul>
-                                                                    <li>Automated daily reporting tasks using R, Python, SQL, and OfficeJS.</li>
-                                                                    <li>Conducted ad-hoc analyses based on internal and client requests.</li>
-                                                                    <li>Successfully migrated client reports from LookerStudio to Power BI.</li>
-                                                                    <li>Developed an Excel dashboard for leveraging historical letter volume data to optimize recipient selection for communication methods (letters, SMS, emails). Analysis factors included credit scores, days since placement, cost, revenues, yield, and volume.</li>
-                                                                </ul>
-                                                        </p>
-                                                            
-                                                </div>
-                                                
-                                        </div>
-                                </span>
-                        </div>
-                    </section>
-
-                    <div style="color: black; font-size: 2rem; background-color: white; margin-top: 50px; padding-left: 50px;">
-                        <h1 class="header" style="font-weight: 500;">Projects</h1>
-                    </div>
-                    
-<!-- Projects -->
-                    <section class="IMAGE-LEFT">
-                        <div class="outer-container">
-                                <div></div>
-                                <div class="project-image" style="background-image: url('./images/hoopEasy.png');">
-                                </div>
-                                <div class="project-description" id="marketing">
-                                    <div>
-                                        <h1>Hoop Easy</h1>
-                                        <p class="bionic">
-                                            A full-stack application that is used to make finding a pickup basketball game easy and fun. The app uses geocoding to find and create games in your area, all while attempting to improve your player’s ELO rating. I am working with two students in the Willamette MBA program to complete the venture. (React / Node / MySQL / Firebase / Docker / Railway / Cloudflare)                                        </p>
-                                    </div>
-                                    <span class="github-right">
-                                        <span><a href="https://github.com/Pmcslarrow/hoop-easy-material-ui"  target="_blank"> Github </a></span>
-                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
-                                        </span>
-                                    </span>
-                                    <a href="https://hoopeasy.org" target="_blank">hoopeasy.org</a>
-                                </div>
-                            </div>
-                    </section>
-
-                    <section id="projects" class="section3 IMAGE-RIGHT">
-                        <div class="outer-container">
-                                <div></div>
-                                <div class="image-right" style="background-image: url('./images/SportZen.png');"></div>
-                                <div class="desc-right">
-                                    <div>
-                                        <h1>SportZen</h1>
-                                        <p class="bionic">
-                                            SportZen, a React and Firebase application, 
-                                            facilitates improved communication between 
-                                            the coaching staff and players of Willamette
-                                            Men's Basketball. It enables players to submit
-                                            daily survey data, providing insights into 
-                                            their mental, physical, and sleep well-being,
-                                            as well as self-assessments of their 
-                                            performance during practice or games. 
-                                            Additionally, it empowers the coaching 
-                                            staff to update player wins and share daily 
-                                            team updates, seamlessly connecting the 
-                                            frontend and backend components of the application.
-                                        </p>
-                                    </div>
-                                    <span class="github-right">
-                                        <span><a href="https://github.com/Pmcslarrow/SportZen" target="_blank"> Github </a></span>
-                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
-                                        </span>
-                                    </span>
-                                    <p class="bionic"><i>Deployed</i></p>
-                                </div>
-                            </div>
-                    </section>
-
-                    <section class="IMAGE-LEFT">
-                        <div class="outer-container">
-                                <div></div>
-                                <div class="project-image" style="background-image: url('./images/chatroom.png');"></div>
-                                <div class="project-description">
-                                    <div>
-                                        <h1>Chatroom</h1>
-                                        <p class="bionic">
-                                            A project that I used early on to learn about React. 
-                                            The project gave me a chance to challenge myself using 
-                                            socket programming in a new language to send and receive
-                                            messages in a chatroom.
-                                        </p>
-                                    </div>
-                                    <span class="github-right">
-                                        <span><a href="https://github.com/Pmcslarrow/ChatroomApp" target="_blank"> Github </a></span>
-                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
-                                        </span>
-                                    </span>
-                                    <p class="bionic"><i>Chose not to deploy for security reasons</i></p>
-                                </div>
-                            </div>
-                    </section>
-
-
-                    <section id="projects" class="section3 IMAGE-RIGHT">
-                        <div class="outer-container">
-                                <div></div>
-                                <div class="image-right" style="background-image: url('./images/deltaZeta.png');"></div>
-                                <div class="desc-right">
-                                    <div>
-                                        <h1>Delta Zeta Chapter Website</h1>
-                                        <p class="bionic">
-                                                This was one of my first full-stack applications, where I employed CRUD operations using the MERN stack (MongoDB, Express.js, React, and Node.js). It was designed for the Delta Zeta Chapter of the Sigma Chi Fraternity to manage calendar events and user data.
-                                        </p>
-                                    </div>
-                                    <span class="github-right">
-                                        <span><a href="https://github.com/Pmcslarrow/DeltaZetaRepo" target="_blank"> Github </a></span>
-                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
-                                        </span>
-                                    </span>
-                                    <p class="bionic"><i>Need approval to deploy</i></p>
-                                </div>
-                            </div>
-                    </section>
-
-
-                    <section class="IMAGE-LEFT">
-                        <div class="outer-container">
-                                <div></div>
-                                <div class="project-image" style="background-image: url('./images/weather.png');">
-                                </div>
-                                <div class="project-description">
-                                    <div>
-                                        <h1>Weather App</h1>
-                                        <p class="bionic">
-                                                For my CS-270 Web Development final project, I utilized the openweathermap API to create a weather app that allows users to input a city and view the weather for the current day, as well as the next four days, with the option to choose between Fahrenheit or Celsius. It was an enjoyable experience as I moved beyond basic language syntax and applied my skills to build something fun and practical.
-                                        </p>
-                                    </div>
-                                    <span class="github-right">
-                                        <span><a href="https://github.com/Pmcslarrow/Weather-Project" target="_blank"> Github </a></span>
-                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
-                                        </span>
-                                    </span>
-                                    <p class="bionic"><i></i></p>
-                                </div>
-                            </div>
-                    </section>
-
-
-                    <section id="projects" class="section3 IMAGE-RIGHT">
-                        <div class="outer-container">
-                                <div></div>
-                                <div class="image-right" style="background-image: url('./images/clearML.png');"></div>
-                                <div class="desc-right">
-                                    <div>
-                                        <h1>Hackathon</h1>
-                                        <p class="bionic">
-                                                Helped create a VS Code Extension that makes it easier for MLEngineers to connect to a virtual cloud session directly from VS Code to make their development process more efficient.
-                                        </p>
-                                    </div>
-                                    <span class="github-right">
-                                        <span><a href="https://github.com/mlops-club/vscode-clearml-session-manager" target="_blank"> Github </a></span>
-                                        <span><img src="./images/github2.png" alt="Github logo" width="25px" height="25px"/>
-                                        </span>
-                                    </span>
-                                    <p class="bionic"><i></i></p>
-
-                                </div>
-                            </div>
-                    </section>
-
-<!-- About Me -->
-                        <p id="about"></p>
-                        <section id="grid-section">
-                                <div class="grid-div el" id="div1">
-                                  <h3>Motivation</h3>
-                                  Before my college journey, basketball was my driving force. Today, my motivation comes from an intense curiosity to learn something new every day. My goal is to join a dynamic team where I can make a meaningful impact and learn something new.
-                                </div>
-                                <div class="grid-div el" id="div2">
-                                  <h3>Hobbies</h3>
-                                  My hobbies encompass a love for sports, a passion for coding, and a deep appreciation for reading.
-                                </div>
-                                <div class="grid-div el" id="div3">
-                                  <h3>Awards and Extra-Curricular Activities</h3>
-                                  NCAA DIII Men’s Basketball Player;
-                                  Sigma Chi Fraternity;
-                                  National Association of Basketball Coaches Honors Court;
-                                  College Sports Communicators Academic All-District;
-                                  Chi Alpha Sigma Inductee
-                                </div>
-                                <div class="grid-div el" id="div4"></div>
-                        </section>
-                              
-        
+        <!-- Main Section -->
+        <div class="flex-row">
+            <span class="stutter">
+                <h1 class="element">Paul McSlarrow</h1>
+                <p class="element">
+                    Currently in the M.S. Computer Science program at Northwestern University. <br />
+                    B.S. Computer Science from Willamette University with minors in Data Science and Business
+                </p>
+                <button class="element">
+                    <a href="mailto:pmcslarrow@icloud.com">Get in touch</a>
+                </button>
+                <div class="icon-row element">
+                    <a href="https://www.linkedin.com/in/paul-mcslarrow-58b8971b7/" target="_blank">
+                        <img src="./icons/icons8-linked-in.svg" alt="LinkedIn logo" width="25" height="25"/>
+                    </a>
+                    <a href="https://github.com/Pmcslarrow" target="_blank">
+                        <img src="./images/github2.png" alt="GitHub logo" width="25" height="25"/>
+                    </a>
                 </div>
-            </body>
+            </span>
+            <span>
+                <div id="image-wrapper" class="background-image">
+                    <img src="./images/NL8_0976.png" class="photo" alt="Paul McSlarrow photo" width="100%"/>
+                </div>
+            </span>
+        </div>
+    </section>
+
+<!-- Projects -->
+    <section id="proj" class="section2"> 
+        <br />
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-tile" id="histology">
+                    <div>
+                        <h3>Morphological Classification of Cells in Histology Images</h3>
+                        <span class="flex-row space-between">
+                            <button onclick="location.href='./pages/histology.html'" style="cursor: pointer; color: black">Learn More</button>
+                            <p class="ml">ML</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-tile" id="teamsofmen">
+                    <div>
+                        <h3>TeamsOfMen Mobile App</h3>
+                        <span class="flex-row space-between">
+                            <button onclick="location.href='./pages/teamsofmen.html'" style="cursor: pointer; color: black">Learn More</button>
+                            <p class="fullstack">Fullstack w/ AWS</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-tile" id="ffnn">
+                    <div>
+                        <h3>Feed Forward Neural Network from Scratch</h3>
+                        <span class="flex-row space-between">
+                            <button onclick="location.href='./pages/ffnn.html'" style="cursor: pointer; color: black">Learn More</button>
+                            <p class="ml">ML</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-tile" id="movierecommend">
+                    <div>
+                        <h3>Movie Recommendation</h3>
+                        <span class="flex-row space-between">
+                            <button onclick="location.href='./pages/recommendation.html'" style="cursor: pointer; color: black">Learn More</button>
+                            <p class="ml">ML</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-tile" id="hoopeasy">
+                    <div>
+                        <h3>HoopEasy</h3>
+                        <span class="flex-row space-between">
+                            <button onclick="location.href='./pages/hoopeasy.html'" style="cursor: pointer; color: black">Learn More</button>
+                            <p class="fullstack">Fullstack w/ Railway</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-tile" id="sportzen">
+                    <div>
+                        <h3>SportZen</h3>
+                        <span class="flex-row space-between">
+                            <button onclick="location.href='./pages/sportszen.html'" style="cursor: pointer; color: black">Learn More</button>
+                            <p class="webdev">Webdev</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-tile" id="weather">
+                    <div>
+                        <h3>Weather App</h3>
+                        <span class="flex-row space-between">
+                            <button onclick="location.href='./pages/weather.html'" style="cursor: pointer; color: black">Learn More</button>
+                            <p class="webdev">Webdev</p>
+                        </span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
 </html>
+
 
 
 <script>
