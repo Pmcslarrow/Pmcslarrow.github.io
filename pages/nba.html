@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul McSlarrow Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../portfolio.css">
+    <script src="./anime.min.js"></script>
+</head>
+<body>
+    <div class="bound-text">
+      <h1>Automated NBA Updates</h1>
+
+      <img src="../images/email_nba.png" width="100%"/>
+
+      <br />
+
+      <h3>Summary</h3>
+      <p>
+        I’m a huge Utah Jazz fan, but as a student, I don’t always have time to stay updated 
+        on everything happening in the NBA. While I try to catch Jazz games when I can, it’s 
+        impossible to watch every game or track all the news.
+
+        To solve this, I created an automated email solution that scrapes data from the night 
+        before, including scores, standings, news articles, and more. Each morning, I receive 
+        a concise one-page rundown of the latest NBA happenings delivered straight to my inbox. 
+        Instead of searching multiple websites for updates, I can now quickly stay informed with 
+        a single glance at my email.
+      </p>
+
+      <br />
+
+      <h3>What I did</h3>
+      <p>
+        My initial motivation for this project was to use a Retrieval-Augmented-Generation (RAG) 
+        system to pull in relevant data with respect to what query I am interested in, and then using
+        an LLM to answer and summarize the query. While I was successful in doing so, I decided it was overkill
+        for what I was trying to accomplish. I decided to simplify and use web-scraping to gather data each morning 
+        from my <b>AWS Lambda</b> function, and then store this data in its respective folder in <b>S3</b>. 
+        <br />
+        I didn't have to use S3 to make this work, but decided that if I ever wanted to do any other projects 
+        using NBA data, I could now just reference back to my S3 bucket and use it for other analyses. 
+        <br />
+        After successfully storing data into S3, I call separate lambda function that handles gathering the 
+        data from the bucket and organizing it. Once the data is collected, I pass it in as the "context" 
+        for the <b>LLM</b> to process for me.     
+      </p>
+      <br />
+      <h3>Template</h3>
+      To try and limit hallucinations by the LLM, I made sure to use a template that 
+      specifies what I expect it to complete:
+        <p>
+        <pre>
+
+          You are an NBA writer. 
+          Write a three-paragraph NBA update based only on the 
+          information provided. Use things from the "context" I 
+          give you, like news articles to summarize key stories, 
+          and incorporate scores to highlight recent games.
+          Keep in mind that I am a Jazz fan, so I care more about 
+          Jazz info when they do play. Ensure your summary is concise 
+          and accurate. 
+        </pre>
+        </p>
+    
+      It should be noted that LLMs are not a full-proof solve-all 
+      solution, and come with many issues on its own. But for the sake of this simple project, I just wanted 
+      a quick solution that would work for now. 
+
+      <br /><br />
+      <h3>Outcome</h3>
+      I was less interested in the email looking pretty, and more interested in the info being accurate. 
+      The end result is at the top, but the actual summary that I am interested in is here: <br />
+      <img src="../images/summary.png" alt="GitHub logo" width="100%" height="100%"/>
+      <br />
+      <br />
+    </div>
+</body>
