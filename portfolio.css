@@ -183,17 +183,36 @@ background-repeat: no-repeat;
 background-position: center; 
 }
 
+#nbaemail {
+  background-image: url('./images/email_nba.png');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
 #histology {
 background-image: url('./images/histology.png');
 background-size: contain; 
 background-repeat: no-repeat; 
 }
 
-#nbaemail {
-  background-image: url('./images/email_nba.png');
-  background-size: cover; 
+#dl_hw2 {
+  background-image: url('./images/dl_hw2.png');
+  background-size: contain; 
   background-repeat: no-repeat; 
 }
+
+#dl_hw3 {
+  background-image: url('./images/dl_hw3.png');
+  background-size: contain; 
+  background-repeat: no-repeat; 
+}
+
+#dl_hw4 {
+  background-image: url('./images/dl_hw4.png');
+  background-size: contain; 
+  background-repeat: no-repeat; 
+}
+
 
 
 
