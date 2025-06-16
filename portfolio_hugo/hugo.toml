@@ -1,0 +1,4 @@
+baseURL = "https://pmcslarrow.github.io/"
+languageCode = "en-us"
+title = "My Portfolio"
+theme = "hugo-paper"
