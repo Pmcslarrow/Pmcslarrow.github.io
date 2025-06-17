@@ -14,11 +14,18 @@
     <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>High-Performance Image Processing via Parallel Contrast Stretching</title>
-      <link>http://localhost:1313/projects/test_project/</link>
+      <title>Twitter Clone</title>
+      <link>http://localhost:1313/projects/2_twitter_clone/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/test_project/</guid>
-      <description>Built with MPI in C&#43;&#43;</description>
+      <guid>http://localhost:1313/projects/2_twitter_clone/</guid>
+      <description>Full-stack application with twitter-like functionality</description>
+    </item>
+    <item>
+      <title>HoopEasy</title>
+      <link>http://localhost:1313/projects/11_hoopeasy/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/11_hoopeasy/</guid>
+      <description>Insert</description>
     </item>
   </channel>
 </rss>

@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/tags/mpi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>High-Performance Image Processing via Parallel Contrast Stretching</title>
-      <link>http://localhost:1313/projects/test_project/</link>
+      <link>http://localhost:1313/projects/1_contrast_stretching/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/test_project/</guid>
+      <guid>http://localhost:1313/projects/1_contrast_stretching/</guid>
       <description>Built with MPI in C&#43;&#43;</description>
     </item>
   </channel>

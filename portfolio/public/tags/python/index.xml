@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on ExampleSite</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on ExampleSite</description>
+    <image>
+      <title>ExampleSite</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Twitter Clone</title>
+      <link>http://localhost:1313/projects/2_twitter_clone/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/2_twitter_clone/</guid>
+      <description>Full-stack application with twitter-like functionality</description>
+    </item>
+    <item>
+      <title>DL HW4 (RNN/LSTMs)</title>
+      <link>http://localhost:1313/projects/4_dl_hw4/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/4_dl_hw4/</guid>
+      <description>insert</description>
+    </item>
+    <item>
+      <title>DL HW3 (GANs)</title>
+      <link>http://localhost:1313/projects/5_dl_hw3/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/5_dl_hw3/</guid>
+      <description>Insert</description>
+    </item>
+    <item>
+      <title>DL HW2 (CNNs)</title>
+      <link>http://localhost:1313/projects/6_dl_hw2/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/6_dl_hw2/</guid>
+      <description>Insert</description>
+    </item>
+    <item>
+      <title>Morphological Classification of Cells in Histology Images</title>
+      <link>http://localhost:1313/projects/7_histology_classification/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/7_histology_classification/</guid>
+      <description>Insert</description>
+    </item>
+    <item>
+      <title>Automated NBA Updates</title>
+      <link>http://localhost:1313/projects/8_automated_nba/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/8_automated_nba/</guid>
+      <description>Insert</description>
+    </item>
+    <item>
+      <title>Feed-forward Neural Network from Scratch</title>
+      <link>http://localhost:1313/projects/9_ffnn_scratch/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/9_ffnn_scratch/</guid>
+      <description>Insert</description>
+    </item>
+    <item>
+      <title>Movie Recommendation with Collaborative Filtering</title>
+      <link>http://localhost:1313/projects/10_movie_recommend/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/10_movie_recommend/</guid>
+      <description>Insert</description>
+    </item>
+  </channel>
+</rss>
