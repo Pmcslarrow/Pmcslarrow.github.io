@@ -85,7 +85,7 @@
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/4_dl_hw4/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;I do not include code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This assignment challenged us to learn more about sequence modeling, and better understand the conceptual pros/cons between RNNs and LSTMs. We implemented RNNs, LSTMs, and a deep reinforcement learning model to play pong. I find that the sequence modeling and autoencoder information is more interesting in this project, so I didn&amp;rsquo;t include it here.&lt;/p&gt;</description>
     </item>
