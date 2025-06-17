@@ -18,7 +18,48 @@
       <link>http://localhost:1313/projects/2_twitter_clone/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/2_twitter_clone/</guid>
-      <description>Full-stack application with twitter-like functionality</description>
+      <description>&lt;p&gt;A full-stack application replicating core Twitter functionality with modern web technologies and AWS services.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-tech-stack&#34;&gt;🔧 Tech Stack&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; React, JavaScript&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend:&lt;/strong&gt; Python (Lambda functions)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database:&lt;/strong&gt; SQL (MySQL on AWS RDS)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cloud Infrastructure:&lt;/strong&gt; AWS Lambda, RDS, API Gateway&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-features&#34;&gt;💡 Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;User authentication with Google API (signup/login)&lt;/li&gt;
+&lt;li&gt;Posting tweets (text/image)&lt;/li&gt;
+&lt;li&gt;Like, retweet, and comment functionality&lt;/li&gt;
+&lt;li&gt;Blocking/unblocking&lt;/li&gt;
+&lt;li&gt;Follower/following system&lt;/li&gt;
+&lt;li&gt;Infinite scrolling&lt;/li&gt;
+&lt;li&gt;Updating profile info&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-architecture&#34;&gt;📦 Architecture&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Serverless backend using AWS Lambda&lt;/li&gt;
+&lt;li&gt;API Gateway for request routing&lt;/li&gt;
+&lt;li&gt;RDS for persistent SQL storage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-testing--deployment&#34;&gt;🧪 Testing &amp;amp; Deployment&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Unit and integration tests&lt;/li&gt;
+&lt;li&gt;Deployed via CI/CD pipeline (GitHub Actions)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-challenges--learnings&#34;&gt;📈 Challenges &amp;amp; Learnings&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Managing real-time updates with serverless&lt;/li&gt;
+&lt;li&gt;Optimizing database queries for feed generation&lt;/li&gt;
+&lt;li&gt;Implementing secure auth flows in a distributed system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-github-repo--live-demo&#34;&gt;🔗 &lt;a href=&#34;#&#34;&gt;GitHub Repo&lt;/a&gt; | &lt;a href=&#34;#&#34;&gt;Live Demo&lt;/a&gt;&lt;/h3&gt;</description>
     </item>
     <item>
       <title>DL HW4 (RNN/LSTMs)</title>
