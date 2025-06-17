@@ -16,7 +16,16 @@ Contrast stretching is an image enhancement technique that improves the clarity 
 
 To achieve this, you can think of it as a nearest neighbors problem, where the newly updated pixel value is dependant on the pixels surrounding it.
 
-![Contrast stretching image](/images/contrast_stretching/contrast.png)
+{{< rawhtml >}}
+<div>
+    <img 
+        src="/images/contrast_stretching/contrast.png" 
+        alt="Scattering an image across workers"
+        width="500px"
+        style="display: block; margin: 0 auto;"
+    />
+</div>
+{{< /rawhtml >}}
 
 Pretty simple... The sequential solution to this is as simple as 
 iterating over all the pixels in the matrix (not including the boundaries) and adjusting the pixels.
@@ -25,7 +34,16 @@ The complexity comes when parallelizing this solution. To achieve this with MPI,
 
 This, however, is extremely inefficient when it comes to memory efficiency. Therefore, the best solution to this problem is to send chunks of rows to each worker, and have each worker process the appropriate rows and send back the processed rows for the main process to gather. 
 
-![Contrast stretching image](/images/contrast_stretching/scattering.png)
+{{< rawhtml >}}
+<div>
+    <img 
+        src="/images/contrast_stretching/scattering.png" 
+        alt="Scattering an image across workers"
+        width="500px"
+        style="display: block; margin: 0 auto;"
+    />
+</div>
+{{< /rawhtml >}}
 
 This is what this project successfully accomplishes at a high level, but there are three other problems that we must understand in more detail before discussing the implementation. 
 
@@ -36,7 +54,18 @@ Recall that this is a nearest neighbor algorithm that relies on the pixels aroun
 
 For example, if we look at worker 1 in the image above (second from the left), to be able to calculate the correct values for the top and bottom rows in the chunk, we actually need the up-to-date rows from the workers around it. This means, for worker 1, it needs the top row from worker 2, and needs the bottom row from worker 0. 
 
-![Contrast stretching image](/images/contrast_stretching/ghost_rows.png) 
+{{< rawhtml >}}
+<div>
+    <img 
+        src="/images/contrast_stretching/ghost_rows.png" 
+        alt="Ghost rows image"
+        width="250px"
+        style="display: block; margin: 0 auto;"
+    />
+</div>
+{{< /rawhtml >}}
+
+<!-- ![Contrast stretching image](/images/contrast_stretching/ghost_rows.png)  -->
 
 
 ### Problem 2: Alignment / Convergence
