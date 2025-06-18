@@ -58,42 +58,42 @@
 &lt;li&gt;Unit and integration tests&lt;/li&gt;
 &lt;li&gt;Deployed via CI/CD pipeline (GitHub Actions)&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div&gt;
+    &lt;img 
+        src=&#34;http://localhost:1313/images/twitter/backend.jpg&#34;
+        alt=&#34;Ghost rows image&#34;
+        width=&#34;700px&#34;
+        style=&#34;display: block; margin: 0 auto;&#34;
+    /&gt;
+&lt;/div&gt;
+
 &lt;hr&gt;
-&lt;h3 id=&#34;-challenges--learnings&#34;&gt;📈 Challenges &amp;amp; Learnings&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Managing real-time updates with serverless&lt;/li&gt;
-&lt;li&gt;Optimizing database queries for feed generation&lt;/li&gt;
-&lt;li&gt;Implementing secure auth flows in a distributed system&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-github-repo--live-demo&#34;&gt;🔗 &lt;a href=&#34;#&#34;&gt;GitHub Repo&lt;/a&gt; | &lt;a href=&#34;#&#34;&gt;Live Demo&lt;/a&gt;&lt;/h3&gt;</description>
+&lt;h3 id=&#34;-github-repo--live-demo&#34;&gt;🔗 &lt;a href=&#34;https://github.com/Pmcslarrow/TwitterClone&#34;&gt;GitHub Repo&lt;/a&gt; | &lt;a href=&#34;https://youtu.be/gHFCrAQywpM&#34;&gt;Live Demo&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Distributed Deep Learning</title>
       <link>http://localhost:1313/projects/3_parallel_deep_networks/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/3_parallel_deep_networks/</guid>
-      <description>Final conceptual presentation on a subject that interested me.</description>
+      <description>Final presentation on distributed deep learning for my Parallel Computing course at Northwestern (CS358)</description>
     </item>
     <item>
       <title>DL HW4 (RNN/LSTMs)</title>
       <link>http://localhost:1313/projects/4_dl_hw4/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/4_dl_hw4/</guid>
-      <description>insert</description>
+      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This assignment challenged us to learn more about sequence modeling, and better understand the conceptual pros/cons between RNNs and LSTMs. We implemented RNNs, LSTMs, and a deep reinforcement learning model to play pong. I find that the sequence modeling and autoencoder information is more interesting in this project, so I didn&amp;rsquo;t include it here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DL HW3 (GANs)</title>
       <link>http://localhost:1313/projects/5_dl_hw3/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/5_dl_hw3/</guid>
-      <description>Insert</description>
-    </item>
-    <item>
-      <title>DL HW2 (CNNs)</title>
-      <link>http://localhost:1313/projects/6_dl_hw2/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/6_dl_hw2/</guid>
       <description>Insert</description>
     </item>
     <item>
