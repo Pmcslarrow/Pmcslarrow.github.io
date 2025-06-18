@@ -12,7 +12,7 @@ weight: 5
 
 ## Overview
 
-This assignment focused on Generative Adversarial Networks (GANs), adversarial examples, model collapse, and latent interpolation. 
+This assignment focused on Generative Adversarial Networks (GANs), adversarial examples, model collapse, and latent interpolation. We will touch on Adversarial examples and GANs
 
 ## Adversarial Examples
 
@@ -94,3 +94,36 @@ for i in range(1, 25):
 # ...
 ```
 
+
+
+## Generative Adversarial Networks (GANs)
+
+#### What is a GAN?
+Generative Adversarial Networks (GANs) consist of two neural networks—a generator and a discriminator—trained in opposition: the generator tries to *produce realistic data to fool the discriminator*, while the discriminator learns to distinguish between real and fake data. The generator never sees real data directly and learns only through feedback from the discriminator. Key challenges include maintaining a learning balance between both networks and avoiding *mode collapse*, where the generator produces limited or repetitive outputs instead of diverse samples.
+
+#### The beauty in the architecture
+The beauty of a GAN's architecture lies in its adversarial nature. It can be thought of as a minimax game between two competing neural networks: the generator and the discriminator. The generator aims to create data that is indistinguishable from real data, while the discriminator tries to correctly distinguish real data from generated data. As training progresses, both networks improve — the generator becomes better at fooling the discriminator, and the discriminator becomes better at detecting fakes. Ideally, this adversarial process reaches an equilibrium where the generator's outputs are so realistic that the discriminator can no longer confidently tell them apart from real data.
+
+#### Training and generated examples from a CNN-based GAN
+
+{{< rawhtml >}}
+<div>
+    <img 
+        src="/images/dl_hw3/discriminator_scores.png" 
+        alt="Adversarial example"
+        width="500px"
+        style="display: block; margin: 0 auto;"
+    />
+</div>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<div>
+    <img 
+        src="/images/dl_hw3/generated_images.png" 
+        alt="Adversarial example"
+        width="500px"
+        style="display: block; margin: 0 auto;"
+    />
+</div>
+{{< /rawhtml >}}
