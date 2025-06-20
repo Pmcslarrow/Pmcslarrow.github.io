@@ -22,7 +22,7 @@ If you’d like to get to know me better—or just want to chat about **sports**
 
 *Email:* pmcslarrow@icloud.com
 
-<!-- ### Photos of me and (some) of the amazing people in my life!
+### Photos of me and (some) of the amazing people in my life!
 
 {{< rawhtml >}}
 <style>
@@ -49,4 +49,4 @@ If you’d like to get to know me better—or just want to chat about **sports**
   <img src="/images/about/p4.jpeg" alt="Photo of friends and/or family" />
   <img src="/images/about/p5.jpeg" alt="Photo of friends and/or family" />
 </div>
-{{< /rawhtml >}} -->
+{{< /rawhtml >}}
