@@ -6,6 +6,13 @@ tags: ["c++", "mpi", "hpc", "parallel"]
 weight: 1
 ---
 
+## Note to reader
+
+*I do not include large code snippets as this was an assignment for my parallel computing course at Northwestern and I don't want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples*
+
+## Github Link
+- Private url
+
 ## Overview
 
 This project parallelizes a contrast stretching algorithm using MPI to enable high-performance image processing on distributed systems. The final implementation achieved approximately a **10× speedup** over the sequential baseline.

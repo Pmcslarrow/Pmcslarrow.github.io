@@ -67,16 +67,17 @@
     </item>
     <item>
       <title>HoopEasy</title>
-      <link>http://localhost:1313/projects/11_hoopeasy/</link>
+      <link>http://localhost:1313/projects/10_hoopeasy/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/11_hoopeasy/</guid>
-      <description>Insert</description>
+      <guid>http://localhost:1313/projects/10_hoopeasy/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The document below is my README file within my &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy-material-ui/&#34;&gt;GitHub repo&lt;/a&gt; for the refactoring of HoopEasy. The project is an application designed to help people easily find pickup basketball games near them, while also using an ELO system to track global rankings. Although it was never fully marketed or widely adopted, this was my first large-scale full-stack project completed during undergrad. It was a rewarding experience that brought together many of the skills I had learned.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weather App</title>
-      <link>http://localhost:1313/projects/12_weather_app/</link>
+      <link>http://localhost:1313/projects/11_weather_app/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/12_weather_app/</guid>
+      <guid>http://localhost:1313/projects/11_weather_app/</guid>
       <description>Insert</description>
     </item>
   </channel>

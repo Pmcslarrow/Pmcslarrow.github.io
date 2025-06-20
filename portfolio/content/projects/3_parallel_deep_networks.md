@@ -6,10 +6,13 @@ tags: ["parallel", "hpc"]
 weight: 3
 ---
 
+## View Presentation
+[https://youtu.be/7fSQUjhvmt0](https://youtu.be/7fSQUjhvmt0)
+
 ## Overview
 
 This is a non-technical, passion-driven presentation that explores the foundations of distributed deep learning. I explain key concepts such as **data parallelism** and **model parallelism**, and then dive into a research paper that caught my attention: **ZeRO (Zero Redundancy Optimizer)**. 
 
 The presentation is conceptual in nature—no code was used—focusing instead on the ideas and motivations behind distributed approaches to training deep learning models.
 
-[View Presentation](https://youtu.be/7fSQUjhvmt0)
+

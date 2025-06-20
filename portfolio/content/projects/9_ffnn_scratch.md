@@ -10,6 +10,9 @@ weight: 9
 
 *This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group's work and should not be used for any future assignments.*
 
+## Github Link
+- Private url
+
 ## Overview
 
 This assignment was a stepping stone in my interest in machine learning. We were given multiple datasets to work with based on a few different distributions that I would have to learn from using a neural network. We first had to implement a PyTorch simple neural network to solve the problem(s), and once we understood what the expected solutions should look similar to, we had to implement our solutions completely from scratch. 

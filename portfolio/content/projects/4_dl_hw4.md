@@ -10,6 +10,9 @@ weight: 4
 
 *I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don't want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples*
 
+## Github Link
+- Private url
+
 ## Overview
 
 This assignment challenged us to learn more about sequence modeling, and better understand the conceptual pros/cons between RNNs and LSTMs. We implemented RNNs, LSTMs, and a deep reinforcement learning model to play pong. I find that the sequence modeling and autoencoder information is more interesting in this project, so I didn't include it here. 

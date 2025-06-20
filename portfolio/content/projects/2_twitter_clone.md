@@ -10,6 +10,14 @@ A full-stack application replicating core Twitter functionality with modern web 
 
 ---
 
+## Github Link
+- [https://github.com/Pmcslarrow/TwitterClone](https://github.com/Pmcslarrow/TwitterClone)
+
+## Live Demo
+- [https://youtu.be/gHFCrAQywpM](https://youtu.be/gHFCrAQywpM)
+
+---
+
 ### 🔧 Tech Stack
 - **Frontend:** React, JavaScript
 - **Backend:** Python (Lambda functions)
@@ -53,8 +61,6 @@ A full-stack application replicating core Twitter functionality with modern web 
 {{< /rawhtml >}}
 
 ---
-
-### 🔗 [GitHub Repo](https://github.com/Pmcslarrow/TwitterClone) | [Live Demo](https://youtu.be/gHFCrAQywpM)
 
 *This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment*
 
