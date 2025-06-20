@@ -22,7 +22,7 @@ If you’d like to get to know me better—or just want to chat about **sports**
 
 *Email:* pmcslarrow@icloud.com
 
-<!-- ### Photos of me and (some) of the amazing people in my life!
+### Photos of me and (some) of the amazing people in my life!
 
 {{< rawhtml >}}
 <style>
@@ -42,11 +42,11 @@ If you’d like to get to know me better—or just want to chat about **sports**
 </style>
 
 <div class="photo-grid">
-  <img src="/images/about/dunk.jpg" alt="Me playing basketball at Willamette University" />
+  <img src="/images/about/dunk.JPG" alt="Me playing basketball at Willamette University" />
   <img src="/images/about/p1.jpeg" alt="Photo of friends and/or family" />
   <img src="/images/about/p2.jpeg" alt="Photo of friends and/or family" />
   <img src="/images/about/p3.jpeg" alt="Photo of friends and/or family" />
   <img src="/images/about/p4.jpeg" alt="Photo of friends and/or family" />
   <img src="/images/about/p5.jpeg" alt="Photo of friends and/or family" />
 </div>
-{{< /rawhtml >}} -->
+{{< /rawhtml >}}
