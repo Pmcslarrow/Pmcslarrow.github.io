@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>PyTorch on ExampleSite</title>
+    <title>PyTorch on McSlarrowPortfolio</title>
     <link>http://localhost:1313/tags/pytorch/</link>
-    <description>Recent content in PyTorch on ExampleSite</description>
+    <description>Recent content in PyTorch on McSlarrowPortfolio</description>
     <image>
-      <title>ExampleSite</title>
+      <title>McSlarrowPortfolio</title>
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
@@ -20,6 +20,10 @@
       <guid>http://localhost:1313/projects/4_dl_hw4/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Private url&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This assignment challenged us to learn more about sequence modeling, and better understand the conceptual pros/cons between RNNs and LSTMs. We implemented RNNs, LSTMs, and a deep reinforcement learning model to play pong. I find that the sequence modeling and autoencoder information is more interesting in this project, so I didn&amp;rsquo;t include it here.&lt;/p&gt;</description>
     </item>
@@ -28,14 +32,29 @@
       <link>http://localhost:1313/projects/5_dl_hw3/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/5_dl_hw3/</guid>
-      <description>Insert</description>
+      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Private url&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This assignment focused on Generative Adversarial Networks (GANs), adversarial examples, model collapse, and latent interpolation. We will touch on Adversarial examples and GANs&lt;/p&gt;</description>
     </item>
     <item>
       <title>Morphological Classification of Cells in Histology Images</title>
       <link>http://localhost:1313/projects/7_histology_classification/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/7_histology_classification/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Private url&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;presentation-link&#34;&gt;Presentation Link&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/gkKt3p52Kz8&#34;&gt;https://youtu.be/gkKt3p52Kz8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This was Michael Bertagna and my final project for our introduction to machine learning class. We designed a convolutional neural network (CNN) that takes in images of cell types, and attempts to classify them. We were able to achieve significant improvements compared to the KNN baseline used.&lt;/p&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 &lt;h4 id=&#34;knn-baseline-results&#34;&gt;KNN Baseline Results&lt;/h4&gt;
@@ -58,6 +77,10 @@ weighted avg       0.71      0.71      0.70      5143
       <guid>http://localhost:1313/projects/9_ffnn_scratch/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group&amp;rsquo;s work and should not be used for any future assignments.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Private url&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This assignment was a stepping stone in my interest in machine learning. We were given multiple datasets to work with based on a few different distributions that I would have to learn from using a neural network. We first had to implement a PyTorch simple neural network to solve the problem(s), and once we understood what the expected solutions should look similar to, we had to implement our solutions completely from scratch.&lt;/p&gt;</description>
     </item>

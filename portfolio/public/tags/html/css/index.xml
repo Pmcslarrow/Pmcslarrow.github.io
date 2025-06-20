@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>HTML/CSS on ExampleSite</title>
+    <title>HTML/CSS on McSlarrowPortfolio</title>
     <link>http://localhost:1313/tags/html/css/</link>
-    <description>Recent content in HTML/CSS on ExampleSite</description>
+    <description>Recent content in HTML/CSS on McSlarrowPortfolio</description>
     <image>
-      <title>ExampleSite</title>
+      <title>McSlarrowPortfolio</title>
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
@@ -18,7 +18,12 @@
       <link>http://localhost:1313/projects/11_weather_app/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/11_weather_app/</guid>
-      <description>Insert</description>
+      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Pmcslarrow/WeatherApp&#34;&gt;https://github.com/Pmcslarrow/WeatherApp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This was my very first personal project I had to complete in a computer science class. I was tasked to design any website that was to utilize HTML/CSS/JS and that functions. I decided, at the time, that it was most appropriate to learn how to use an API and integrate it into an application. While it is nothing outstanding, this project will forever stay close at heart.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

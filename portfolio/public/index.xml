@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ExampleSite</title>
+    <title>McSlarrowPortfolio</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on ExampleSite</description>
+    <description>Recent content on McSlarrowPortfolio</description>
     <image>
-      <title>ExampleSite</title>
+      <title>McSlarrowPortfolio</title>
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
@@ -196,7 +196,15 @@ weighted avg       0.71      0.71      0.70      5143
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;testing&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello! 👋&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m currently a student at &lt;strong&gt;Northwestern University&lt;/strong&gt; with a strong passion for technology—especially in the areas of &lt;strong&gt;Software Engineering&lt;/strong&gt;, &lt;strong&gt;Machine Learning/Deep Learning&lt;/strong&gt;, and &lt;strong&gt;Parallel Computing&lt;/strong&gt;. I&amp;rsquo;m particularly interested in how we can harness data to drive meaningful predictions and insights 📊. Beyond the models themselves, I’m also deeply curious about &lt;strong&gt;performance&lt;/strong&gt;—whether it&amp;rsquo;s optimizing training times, improving memory efficiency, or accelerating computation through parallelism ⚡️.&lt;/p&gt;
+&lt;p&gt;Outside of my studies, I’ve been a passionate &lt;strong&gt;sports fan&lt;/strong&gt; my entire life 🏀. I played basketball at &lt;strong&gt;Willamette University&lt;/strong&gt; and remain a dedicated &lt;strong&gt;Utah Jazz&lt;/strong&gt; supporter!
+
+&lt;!-- Utah Jazz Colors --&gt;
+&lt;span style=&#34;display:inline-block;width:14px;height:14px;background-color:#002B5C;border-radius:50%;margin-right:4px;&#34;&gt;&lt;/span&gt; &lt;!-- Navy --&gt;
+&lt;span style=&#34;display:inline-block;width:14px;height:14px;background-color:#00471B;border-radius:50%;margin-right:4px;&#34;&gt;&lt;/span&gt; &lt;!-- Green --&gt;
+&lt;span style=&#34;display:inline-block;width:14px;height:14px;background-color:#F9A01B;border-radius:50%;&#34;&gt;&lt;/span&gt; &lt;!-- Yellow --&gt;
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

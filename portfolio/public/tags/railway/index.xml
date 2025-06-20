@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Railway on ExampleSite</title>
+    <title>Railway on McSlarrowPortfolio</title>
     <link>http://localhost:1313/tags/railway/</link>
-    <description>Recent content in Railway on ExampleSite</description>
+    <description>Recent content in Railway on McSlarrowPortfolio</description>
     <image>
-      <title>ExampleSite</title>
+      <title>McSlarrowPortfolio</title>
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
@@ -18,7 +18,12 @@
       <link>http://localhost:1313/projects/10_hoopeasy/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/10_hoopeasy/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Original draft: &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy&#34;&gt;https://github.com/Pmcslarrow/hoop-easy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Refactor: &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy-material-ui/&#34;&gt;https://github.com/Pmcslarrow/hoop-easy-material-ui/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The document below is my README file within my &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy-material-ui/&#34;&gt;GitHub repo&lt;/a&gt; for the refactoring of HoopEasy. The project is an application designed to help people easily find pickup basketball games near them, while also using an ELO system to track global rankings. Although it was never fully marketed or widely adopted, this was my first large-scale full-stack project completed during undergrad. It was a rewarding experience that brought together many of the skills I had learned.&lt;/p&gt;</description>
     </item>
   </channel>

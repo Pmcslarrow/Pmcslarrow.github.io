@@ -1,5 +1,5 @@
-baseURL: "https://examplesite.com/"
-title: ExampleSite
+baseURL: "https://pmcslarrow.github.io/"
+title: McSlarrowPortfolio
 pagination:
   pagerSize: 10
 theme: PaperMod
@@ -100,14 +100,10 @@ params:
 menu:
   main:
     - identifier: about
-      name: about
+      name: about me
       url: /about/
       weight: 10
     
-    - identifier: projects
-      name: projects
-      url: /projects/
-      weight: 10
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
