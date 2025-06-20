@@ -51,15 +51,19 @@
 &lt;li&gt;Unit and integration tests&lt;/li&gt;
 &lt;li&gt;Deployed via CI/CD pipeline (GitHub Actions)&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div&gt;
+    &lt;img 
+        src=&#34;http://localhost:1313/images/twitter/backend.jpg&#34;
+        alt=&#34;Ghost rows image&#34;
+        width=&#34;700px&#34;
+        style=&#34;display: block; margin: 0 auto;&#34;
+    /&gt;
+&lt;/div&gt;
+
 &lt;hr&gt;
-&lt;h3 id=&#34;-challenges--learnings&#34;&gt;📈 Challenges &amp;amp; Learnings&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Managing real-time updates with serverless&lt;/li&gt;
-&lt;li&gt;Optimizing database queries for feed generation&lt;/li&gt;
-&lt;li&gt;Implementing secure auth flows in a distributed system&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-github-repo--live-demo&#34;&gt;🔗 &lt;a href=&#34;#&#34;&gt;GitHub Repo&lt;/a&gt; | &lt;a href=&#34;#&#34;&gt;Live Demo&lt;/a&gt;&lt;/h3&gt;</description>
+&lt;h3 id=&#34;-github-repo--live-demo&#34;&gt;🔗 &lt;a href=&#34;https://github.com/Pmcslarrow/TwitterClone&#34;&gt;GitHub Repo&lt;/a&gt; | &lt;a href=&#34;https://youtu.be/gHFCrAQywpM&#34;&gt;Live Demo&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>HoopEasy</title>

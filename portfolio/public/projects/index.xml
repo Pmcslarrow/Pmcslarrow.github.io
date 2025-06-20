@@ -101,21 +101,39 @@
       <link>http://localhost:1313/projects/7_histology_classification/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/7_histology_classification/</guid>
-      <description>Insert</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This was Michael Bertagna and my final project for our introduction to machine learning class. We designed a convolutional neural network (CNN) that takes in images of cell types, and attempts to classify them. We were able to achieve significant improvements compared to the KNN baseline used.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;h4 id=&#34;knn-baseline-results&#34;&gt;KNN Baseline Results&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;                precision    recall  f1-score   support
+accuracy                               0.27       259
+macro avg          0.14      0.15      0.14       259
+weighted avg       0.24      0.27      0.23       259
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;cnn-results&#34;&gt;CNN Results&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;                precision    recall  f1-score   support
+accuracy                               0.71      5143
+macro avg          0.66      0.54      0.55      5143
+weighted avg       0.71      0.71      0.70      5143
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;presentation&#34;&gt;Presentation&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;Link&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automated NBA Updates</title>
-      <link>http://localhost:1313/projects/8_automated_nba/</link>
+      <link>http://localhost:1313/projects/3_automated_nba/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/8_automated_nba/</guid>
-      <description>Insert</description>
+      <guid>http://localhost:1313/projects/3_automated_nba/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Feed-forward Neural Network from Scratch</title>
       <link>http://localhost:1313/projects/9_ffnn_scratch/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/9_ffnn_scratch/</guid>
-      <description>Insert</description>
+      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group&amp;rsquo;s work and should not be used for any future assignments.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This assignment was a stepping stone in my interest in machine learning. We were given multiple datasets to work with based on a few different distributions that I would have to learn from using a neural network. We first had to implement a PyTorch simple neural network to solve the problem(s), and once we understood what the expected solutions should look similar to, we had to implement our solutions completely from scratch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Movie Recommendation with Collaborative Filtering</title>
