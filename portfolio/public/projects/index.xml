@@ -11,20 +11,27 @@
     </image>
     <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>High-Performance Image Processing via Parallel Contrast Stretching</title>
-      <link>http://localhost:1313/projects/1_contrast_stretching/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/1_contrast_stretching/</guid>
+      <link>http://localhost:1313/projects/3_contrast_stretching/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/3_contrast_stretching/</guid>
       <description>Built with MPI in C&#43;&#43;</description>
     </item>
     <item>
+      <title>Wide and Deep Learning for Recommender Systems</title>
+      <link>http://localhost:1313/projects/2_wide_and_deep_networks/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/2_wide_and_deep_networks/</guid>
+      <description>Built a version of the Wide and Deep Learning paper for book recommendations</description>
+    </item>
+    <item>
       <title>Twitter Clone</title>
-      <link>http://localhost:1313/projects/2_twitter_clone/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/2_twitter_clone/</guid>
+      <link>http://localhost:1313/projects/4_twitter_clone/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/4_twitter_clone/</guid>
       <description>&lt;p&gt;A full-stack application replicating core Twitter functionality with modern web technologies and AWS services.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
@@ -83,15 +90,15 @@
     <item>
       <title>Distributed Deep Learning</title>
       <link>http://localhost:1313/projects/3_parallel_deep_networks/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/3_parallel_deep_networks/</guid>
       <description>Final presentation on distributed deep learning for my Parallel Computing course at Northwestern (CS358)</description>
     </item>
     <item>
       <title>DL HW4 (RNN/LSTMs)</title>
-      <link>http://localhost:1313/projects/4_dl_hw4/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/4_dl_hw4/</guid>
+      <link>http://localhost:1313/projects/5_dl_hw4/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/5_dl_hw4/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
@@ -104,7 +111,7 @@
     <item>
       <title>DL HW3 (GANs)</title>
       <link>http://localhost:1313/projects/5_dl_hw3/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/5_dl_hw3/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
@@ -117,9 +124,9 @@
     </item>
     <item>
       <title>Morphological Classification of Cells in Histology Images</title>
-      <link>http://localhost:1313/projects/7_histology_classification/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/7_histology_classification/</guid>
+      <link>http://localhost:1313/projects/6_histology_classification/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/6_histology_classification/</guid>
       <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Private url&lt;/li&gt;
@@ -146,17 +153,17 @@ weighted avg       0.71      0.71      0.70      5143
     </item>
     <item>
       <title>Automated NBA Updates</title>
-      <link>http://localhost:1313/projects/3_automated_nba/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3_automated_nba/</guid>
+      <link>http://localhost:1313/projects/4_automated_nba/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/4_automated_nba/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Feed-forward Neural Network from Scratch</title>
-      <link>http://localhost:1313/projects/9_ffnn_scratch/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/9_ffnn_scratch/</guid>
+      <link>http://localhost:1313/projects/7_ffnn_scratch/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/7_ffnn_scratch/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group&amp;rsquo;s work and should not be used for any future assignments.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
@@ -168,9 +175,9 @@ weighted avg       0.71      0.71      0.70      5143
     </item>
     <item>
       <title>HoopEasy</title>
-      <link>http://localhost:1313/projects/10_hoopeasy/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/10_hoopeasy/</guid>
+      <link>http://localhost:1313/projects/8_hoopeasy/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/8_hoopeasy/</guid>
       <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Original draft: &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy&#34;&gt;https://github.com/Pmcslarrow/hoop-easy&lt;/a&gt;&lt;/li&gt;
@@ -181,9 +188,9 @@ weighted avg       0.71      0.71      0.70      5143
     </item>
     <item>
       <title>Weather App</title>
-      <link>http://localhost:1313/projects/11_weather_app/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/11_weather_app/</guid>
+      <link>http://localhost:1313/projects/9_weather_app/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/9_weather_app/</guid>
       <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Pmcslarrow/WeatherApp&#34;&gt;https://github.com/Pmcslarrow/WeatherApp&lt;/a&gt;&lt;/li&gt;

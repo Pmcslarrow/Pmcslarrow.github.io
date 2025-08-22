@@ -11,12 +11,12 @@
     </image>
     <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/fullstack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twitter Clone</title>
       <link>http://localhost:1313/projects/2_twitter_clone/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/2_twitter_clone/</guid>
       <description>&lt;p&gt;A full-stack application replicating core Twitter functionality with modern web technologies and AWS services.&lt;/p&gt;
 &lt;hr&gt;
@@ -76,7 +76,7 @@
     <item>
       <title>HoopEasy</title>
       <link>http://localhost:1313/projects/10_hoopeasy/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/10_hoopeasy/</guid>
       <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
 &lt;ul&gt;

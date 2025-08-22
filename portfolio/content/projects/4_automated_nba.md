@@ -1,12 +1,13 @@
 ---
 title: "Automated NBA Updates"
 description: ""
-date: 2024-05-01
+date: 2024-12-01
 tags: ["Python", "AWS", "Lambda", "S3", "LLM"]
 weight: 8
 ---
 
 ## Overview
+
 This was a personal passion project of mine. It didn't take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn't mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.
 
 I am a Utah Jazz fan! However, during the school year I had a hard time finding much time to watch as many games as I wanted around the NBA. Therefore, I created this automated email solution that could keep me up-to-date about what is happening around the NBA, standings, and a more tailored description of how the Jazz are doing.
@@ -16,16 +17,18 @@ As you will see, I leveraged the services on AWS to email myself updates, every 
 ## How I did it
 
 #### Data collection
-I wrote a Python script that lives on AWS Lambda that could be spun up whenever I needed to use it. 
+
+I wrote a Python script that lives on AWS Lambda that could be spun up whenever I needed to use it.
 
 The information that I cared to scrape for my use-cases were:
-1) Stats
-2) News
-3) Schedule
-4) Standings
-5) Scores
 
-Each of the categories I cared to scrape information from required a date to gather information from. Therefore, I pass in the string format of the previous date to each endpoint to get the correct information. 
+1. Stats
+2. News
+3. Schedule
+4. Standings
+5. Scores
+
+Each of the categories I cared to scrape information from required a date to gather information from. Therefore, I pass in the string format of the previous date to each endpoint to get the correct information.
 
 ```python
 
@@ -63,7 +66,7 @@ def scrape_standings(yesterday_str):
         conference: str
         rank: int
         team: str
-        win_loss: str 
+        win_loss: str
         pct: float
         streak: str
 
@@ -73,7 +76,7 @@ def scrape_standings(yesterday_str):
         content = response.text
         soup = BeautifulSoup(content, 'html.parser')
         conferences_tables = soup.find_all('div', class_='table-wrapper-container group-section')
-        
+
     #
     # Storing relevant information in local variables
     #
@@ -82,12 +85,12 @@ def scrape_standings(yesterday_str):
         eastern_conference_table = conferences_tables[1]
         western_conference_standings = western_conference_table.find_all('tr')
         eastern_conference_standings = eastern_conference_table.find_all('tr')
-    
+
     #
     # Going through Western conference tables
     #
         for i, team_row in enumerate(western_conference_standings):
-            if i == 0: 
+            if i == 0:
                 continue
 
             rank_td = team_row.find('td', class_='cell-rank ffn-11')
@@ -108,11 +111,11 @@ def scrape_standings(yesterday_str):
             if rank and team_name and win_loss and pct and streak:
                 standings.append(Standing('West', rank, team_name, win_loss, pct, streak))
 
-        # 
+        #
         # Going through Eastern conference tables
         #
             for i, team_row in enumerate(eastern_conference_standings):
-                if i == 0:  
+                if i == 0:
                     continue
 
                 rank_td = team_row.find('td', class_='cell-rank ffn-11')
@@ -148,15 +151,14 @@ def scrape_standings(yesterday_str):
 
 ```
 
-
 #### Using an LLM to create a summary for me
 
-After I collected all of the relevant information that I wanted, I pulled all of the information into a new lambda function from the local /tmp memory. 
+After I collected all of the relevant information that I wanted, I pulled all of the information into a new lambda function from the local /tmp memory.
 
-This lambda function then utilized langchain's ChatOpenAI 
+This lambda function then utilized langchain's ChatOpenAI
 method to help me connect to the correct data loaders and functions I needed for my task.
 
-The result created a message that summarized yesterday's nba games in a single paragraph and that emphasized the Jazz, for my own interest. 
+The result created a message that summarized yesterday's nba games in a single paragraph and that emphasized the Jazz, for my own interest.
 
 ```python
 
@@ -174,15 +176,15 @@ The result created a message that summarized yesterday's nba games in a single p
     llm = ChatOpenAI(model='gpt-4o-mini')
 
 #
-# Creating a good prompt that explains my goal 
+# Creating a good prompt that explains my goal
 #
     prompt = f"""
-    You are an NBA writer. 
-    Write a three-paragraph NBA update based only on the information provided. 
-    Use things from the <context> I give you, like news articles to summarize key stories, 
+    You are an NBA writer.
+    Write a three-paragraph NBA update based only on the information provided.
+    Use things from the <context> I give you, like news articles to summarize key stories,
     and incorporate scores to highlight recent games.
-    Keep in mind that I am a Jazz fan, so I care more about Jazz info when they do play. 
-    Ensure your summary is concise and accurate. 
+    Keep in mind that I am a Jazz fan, so I care more about Jazz info when they do play.
+    Ensure your summary is concise and accurate.
 
     <context>
     {docs_content}
@@ -200,10 +202,10 @@ The result created a message that summarized yesterday's nba games in a single p
 
     ses = boto3.client('ses', region_name='us-east-2')
     subject = "Daily NBA Update!"
-    
+
     #
     # Sending an email to myself in a format that I created with HTML and CSS
-    # 
+    #
     html_body = f"""
     <html>
     <head>
@@ -276,10 +278,10 @@ The result created a message that summarized yesterday's nba games in a single p
 
 ```
 
-
 ## Final Result
 
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/nba/nba.png" 

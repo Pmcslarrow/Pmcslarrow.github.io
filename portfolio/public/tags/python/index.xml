@@ -11,12 +11,12 @@
     </image>
     <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twitter Clone</title>
       <link>http://localhost:1313/projects/2_twitter_clone/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/2_twitter_clone/</guid>
       <description>&lt;p&gt;A full-stack application replicating core Twitter functionality with modern web technologies and AWS services.&lt;/p&gt;
 &lt;hr&gt;
@@ -76,7 +76,7 @@
     <item>
       <title>DL HW4 (RNN/LSTMs)</title>
       <link>http://localhost:1313/projects/4_dl_hw4/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/4_dl_hw4/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
@@ -90,7 +90,7 @@
     <item>
       <title>DL HW3 (GANs)</title>
       <link>http://localhost:1313/projects/5_dl_hw3/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/5_dl_hw3/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
@@ -104,7 +104,7 @@
     <item>
       <title>Morphological Classification of Cells in Histology Images</title>
       <link>http://localhost:1313/projects/7_histology_classification/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/7_histology_classification/</guid>
       <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
 &lt;ul&gt;
@@ -133,7 +133,7 @@ weighted avg       0.71      0.71      0.70      5143
     <item>
       <title>Automated NBA Updates</title>
       <link>http://localhost:1313/projects/3_automated_nba/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/3_automated_nba/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
@@ -141,7 +141,7 @@ weighted avg       0.71      0.71      0.70      5143
     <item>
       <title>Feed-forward Neural Network from Scratch</title>
       <link>http://localhost:1313/projects/9_ffnn_scratch/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/9_ffnn_scratch/</guid>
       <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group&amp;rsquo;s work and should not be used for any future assignments.&lt;/em&gt;&lt;/p&gt;

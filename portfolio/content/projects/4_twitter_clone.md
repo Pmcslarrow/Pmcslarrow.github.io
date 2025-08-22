@@ -1,8 +1,9 @@
 ---
 title: "Twitter Clone"
 description: ""
-date: 2024-05-01
-tags: ["React", "Javascript", "Python", "SQL", "Lambda", "RDS", "AWS", "Fullstack"]
+date: 2025-03-01
+tags:
+  ["React", "Javascript", "Python", "SQL", "Lambda", "RDS", "AWS", "Fullstack"]
 weight: 2
 ---
 
@@ -11,14 +12,17 @@ A full-stack application replicating core Twitter functionality with modern web 
 ---
 
 ## Github Link
+
 - [https://github.com/Pmcslarrow/TwitterClone](https://github.com/Pmcslarrow/TwitterClone)
 
 ## Live Demo
+
 - [https://youtu.be/gHFCrAQywpM](https://youtu.be/gHFCrAQywpM)
 
 ---
 
 ### 🔧 Tech Stack
+
 - **Frontend:** React, JavaScript
 - **Backend:** Python (Lambda functions)
 - **Database:** SQL (MySQL on AWS RDS)
@@ -27,6 +31,7 @@ A full-stack application replicating core Twitter functionality with modern web 
 ---
 
 ### 💡 Features
+
 - User authentication with Google API (signup/login)
 - Posting tweets (text/image)
 - Like, retweet, and comment functionality
@@ -35,10 +40,10 @@ A full-stack application replicating core Twitter functionality with modern web 
 - Infinite scrolling
 - Updating profile info
 
-
 ---
 
 ### 📦 Architecture
+
 - Serverless backend using AWS Lambda
 - API Gateway for request routing
 - RDS for persistent SQL storage
@@ -46,10 +51,12 @@ A full-stack application replicating core Twitter functionality with modern web 
 ---
 
 ### 🧪 Testing & Deployment
+
 - Unit and integration tests
 - Deployed via CI/CD pipeline (GitHub Actions)
 
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/twitter/backend.jpg"
@@ -62,5 +69,4 @@ A full-stack application replicating core Twitter functionality with modern web 
 
 ---
 
-*This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment*
-
+_This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment_

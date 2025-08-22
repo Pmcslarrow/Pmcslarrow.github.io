@@ -1,23 +1,27 @@
 ---
 title: "Morphological Classification of Cells in Histology Images"
 description: ""
-date: 2024-05-01
+date: 2024-12-01
 tags: ["ML", "DL", "Python", "PyTorch"]
 weight: 7
 ---
 
 ## Github Link
+
 - Private url
 
 ## Presentation Link
+
 - [https://youtu.be/gkKt3p52Kz8](https://youtu.be/gkKt3p52Kz8)
 
 ## Overview
+
 This was Michael Bertagna and my final project for our introduction to machine learning class. We designed a convolutional neural network (CNN) that takes in images of cell types, and attempts to classify them. We were able to achieve significant improvements compared to the KNN baseline used.
 
 ## Results
 
 #### KNN Baseline Results
+
 ```
                 precision    recall  f1-score   support
 accuracy                               0.27       259

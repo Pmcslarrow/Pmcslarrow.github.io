@@ -1,34 +1,35 @@
 ---
 title: "Feed-forward Neural Network from Scratch"
 description: ""
-date: 2024-05-01
+date: 2024-12-01
 tags: ["Python", "PyTorch"]
 weight: 9
 ---
 
 ## Note to reader
 
-*This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group's work and should not be used for any future assignments.*
+_This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group's work and should not be used for any future assignments._
 
 ## Github Link
+
 - Private url
 
 ## Overview
 
-This assignment was a stepping stone in my interest in machine learning. We were given multiple datasets to work with based on a few different distributions that I would have to learn from using a neural network. We first had to implement a PyTorch simple neural network to solve the problem(s), and once we understood what the expected solutions should look similar to, we had to implement our solutions completely from scratch. 
+This assignment was a stepping stone in my interest in machine learning. We were given multiple datasets to work with based on a few different distributions that I would have to learn from using a neural network. We first had to implement a PyTorch simple neural network to solve the problem(s), and once we understood what the expected solutions should look similar to, we had to implement our solutions completely from scratch.
 
 In doing so, I more clearly understood the math that was working within a neural network. It both debunked any fear on the subject and ignited a passion for the subject.
 
 The dataset distributions that we needed to learn decision boundaries for were (also illustrated below):
-1) XOR
-2) Spiral
-3) Gaussian
-4) Center surround
 
+1. XOR
+2. Spiral
+3. Gaussian
+4. Center surround
 
 ## PyTorch Implementation
 
-Part one of this assignment was to utilize PyTorch to simply create a FFNN that could create the decision bounadies that are illustrated above. 
+Part one of this assignment was to utilize PyTorch to simply create a FFNN that could create the decision bounadies that are illustrated above.
 
 Because this is an assignment that future students are likely to replicate, I will only include a few PyTorch snippets to get an idea of how this solution worked.
 
@@ -64,10 +65,10 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
     criterion: Loss function
     optimizer: Optimization function
     """
-    
+
     train_losses = []
     valid_losses = []
-    
+
     for epoch in range(num_epochs):
         model.train()
         running_train_loss = 0.0
@@ -103,24 +104,26 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
             for features, labels in valid_loader:
                 outputs = model(features)
                 loss = criterion(outputs, labels)
-                
+
                 running_valid_loss += loss.item()
-    
+
         epoch_valid_loss = running_valid_loss / len(valid_loader)
         valid_losses.append(epoch_valid_loss)
-        
+
         if (epoch + 1) % 50 == 0:
             print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {epoch_train_loss:.4f}, Valid Loss: {epoch_valid_loss:.4f}")
-        
+
     return train_losses, valid_losses
 ```
 
 #### PyTorch Results
 
-- The PyTorch results, after training, are found below and compare the difference between utilizing MSE and MCE for the task at hand. 
+- The PyTorch results, after training, are found below and compare the difference between utilizing MSE and MCE for the task at hand.
 
 #### XOR
+
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/ml_hw3/pytorch_xor.png"
@@ -132,7 +135,9 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
 {{< /rawhtml >}}
 
 #### Spiral
+
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/ml_hw3/pytorch_spiral.png"
@@ -144,7 +149,9 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
 {{< /rawhtml >}}
 
 #### Gaussian
+
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/ml_hw3/pytorch_gaussian.png"
@@ -156,7 +163,9 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
 {{< /rawhtml >}}
 
 #### Center Surround
+
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/ml_hw3/pytorch_center_surround.png"
@@ -167,19 +176,15 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
 </div>
 {{< /rawhtml >}}
 
-
-
-
-
-
 ## FFNN from Scratch
 
-When implementing the NN from scratch, the first things that we had to accomplish was create the helper functions that were needed for calculating activations, as well as the derivatives of the functions. 
+When implementing the NN from scratch, the first things that we had to accomplish was create the helper functions that were needed for calculating activations, as well as the derivatives of the functions.
 
 #### Conceptual explaination
+
 ---
 
-For those who may be reading this and have 0 experience with neural networks, we need to use derivatives to properly calculate our backpropogation. The forward pass of the model (moving left to right) calculates a final prediction for what the solution should be given the data at hand. Once we have the prediction, we calculate the loss (how off the mark and/ or accurate we are compared to our expected output), and then we backpropogate to learn by how much to adjust the internal values of our neural network. So at first, our neural network contains weights and biases that are unlearned semi-random values, after each step, though, we update these parameters to help *minimize the loss* (minimize how many mistakes we make in our calculations), but taking the derivative of the loss function with respect to the paramaters within the model. All this means, is that we take the derivatives (calculus) to see by how much to adjust each of the weights within the network so that the model can perform better (hopefully) on the next iteration. I don't expect this to have taught you neural networks, but I hope it was somewhat helpful to reframe it maybe a little bit differently for any newcomers. 
+For those who may be reading this and have 0 experience with neural networks, we need to use derivatives to properly calculate our backpropogation. The forward pass of the model (moving left to right) calculates a final prediction for what the solution should be given the data at hand. Once we have the prediction, we calculate the loss (how off the mark and/ or accurate we are compared to our expected output), and then we backpropogate to learn by how much to adjust the internal values of our neural network. So at first, our neural network contains weights and biases that are unlearned semi-random values, after each step, though, we update these parameters to help _minimize the loss_ (minimize how many mistakes we make in our calculations), but taking the derivative of the loss function with respect to the paramaters within the model. All this means, is that we take the derivatives (calculus) to see by how much to adjust each of the weights within the network so that the model can perform better (hopefully) on the next iteration. I don't expect this to have taught you neural networks, but I hope it was somewhat helpful to reframe it maybe a little bit differently for any newcomers.
 
 ---
 
@@ -208,7 +213,7 @@ def z_score(df, scaler):
 
     features = features[indices_order]
     labels = labels[indices_order]
-    
+
     return features, labels
 
 
@@ -276,7 +281,7 @@ def softmax(logits):
     -------
     np.array: of values after performing softmax (values sum to 1)
     """
-    exp_logits = np.exp(logits - np.max(logits, axis=1, keepdims=True))  
+    exp_logits = np.exp(logits - np.max(logits, axis=1, keepdims=True))
     return exp_logits / np.sum(exp_logits, axis=1, keepdims=True)
 
 def mcce(softmax_logits, labels):
@@ -284,7 +289,7 @@ def mcce(softmax_logits, labels):
     Parameters
     ----------
     softmax_logits: np.array of softmaxed logits (class probabilities)
-    labels: np.array of true labels 
+    labels: np.array of true labels
 
     Returns
     -------
@@ -341,13 +346,11 @@ def relu_derivative(activated):
     return (activated > 0).astype(float)
 ```
 
-
-
 #### Forward pass
 
-We decided that it would be best to create a model architecture that is similar to that of the PyTorch implementation. Therefore, our forward pass consists of a fully connected layer between the inputs and the first hidden layer, then we add the bias term, then we use the relu activation function to get the output of the first hidden layer. 
+We decided that it would be best to create a model architecture that is similar to that of the PyTorch implementation. Therefore, our forward pass consists of a fully connected layer between the inputs and the first hidden layer, then we add the bias term, then we use the relu activation function to get the output of the first hidden layer.
 
-Next we have another fully connected layer between the results from the first hidden layer and the weights of the second hidden layer, again add the bias terms, and then take the softmax activation function. The softmax function is used here to create a probability distribution of our predictions, and we will then use this vector of percentages that add up to 1, to take our prediction. 
+Next we have another fully connected layer between the results from the first hidden layer and the weights of the second hidden layer, again add the bias terms, and then take the softmax activation function. The softmax function is used here to create a probability distribution of our predictions, and we will then use this vector of percentages that add up to 1, to take our prediction.
 
 The forward pass (the shapes between the input to first hidden layer and the hidden layer to the output layer are not shown, but exist in shape_i_h, shape_h_o):
 
@@ -371,10 +374,10 @@ def forward(self, features, train=False):
     i_h_b = i_h + self.b_i_h
     forward_results['i_h_b'] = i_h_b
     a_i_h_b = relu(i_h_b)
-    forward_results['a_i_h_b'] = a_i_h_b        
+    forward_results['a_i_h_b'] = a_i_h_b
 
     h_o = a_i_h_b @ self.w_h_o
-    forward_results['h_o'] = h_o        
+    forward_results['h_o'] = h_o
     h_o_b = h_o + self.b_h_o
     forward_results['h_o_b'] = h_o_b
     a_h_o_b = softmax(h_o_b)
@@ -388,7 +391,7 @@ def forward(self, features, train=False):
 
 #### Backward pass
 
-This is where we have to calculate the derivative of the loss function with respect to the model paramters to learn by how much to adjust the model parameters to minimize the loss function. Also, for learning purposes, the derivative of the loss function with respect to the model paramters will calculate by how much to adjust the values to maximize the loss function we negate this to minimize it. 
+This is where we have to calculate the derivative of the loss function with respect to the model paramters to learn by how much to adjust the model parameters to minimize the loss function. Also, for learning purposes, the derivative of the loss function with respect to the model paramters will calculate by how much to adjust the values to maximize the loss function we negate this to minimize it.
 
 All calculations were done by hand outside of the code, and then later implemented based on our calculations.
 
@@ -406,19 +409,19 @@ def backward(self, forward_results, labels):
     dict: of gradient matrices of weight and bias matrices
     """
     gradients = {}
-    
+
     probs = forward_results['a_h_o_b']
-    
+
     dL_dh_o_b = probs - labels
-    
+
     a_i_h_b = forward_results['a_i_h_b']
     gradients['w_h_o'] = a_i_h_b.T @ dL_dh_o_b
     gradients['b_h_o'] = np.sum(dL_dh_o_b, axis=0, keepdims=True)
 
-    dL_da_i_h_b = dL_dh_o_b @ self.w_h_o.T 
+    dL_da_i_h_b = dL_dh_o_b @ self.w_h_o.T
     dL_di_h_b = dL_da_i_h_b * relu_derivative(forward_results['a_i_h_b'])
 
-    gradients['w_i_h'] = forward_results['features'].T @ dL_di_h_b 
+    gradients['w_i_h'] = forward_results['features'].T @ dL_di_h_b
     gradients['b_i_h'] = np.sum(dL_di_h_b, axis=0, keepdims=True)
 
     return gradients
@@ -427,7 +430,7 @@ def backward(self, forward_results, labels):
 
 #### Updating the parameters
 
-Now that we have backpropogated, we have a way to adjust the actual weights and biases within the model. 
+Now that we have backpropogated, we have a way to adjust the actual weights and biases within the model.
 
 ```python
 def update_weights(self, gradients, learning_rate):
@@ -447,11 +450,12 @@ def update_weights(self, gradients, learning_rate):
 
 Training the model works extremely similarly to the PyTorch implementation, it just uses our own helper functions that I have included above to go throught he forward pass, backward pass, and then how we should update our weights for the next iteration.
 
-
 #### FFNN from Scratch Results
 
 #### Spiral
+
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/ml_hw3/scratch_spiral.png"
@@ -463,7 +467,9 @@ Training the model works extremely similarly to the PyTorch implementation, it j
 {{< /rawhtml >}}
 
 #### XOR
+
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/ml_hw3/scratch_xor.png"
@@ -475,7 +481,9 @@ Training the model works extremely similarly to the PyTorch implementation, it j
 {{< /rawhtml >}}
 
 #### Gaussian
+
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/ml_hw3/scratch_gaussian.png"
@@ -487,7 +495,9 @@ Training the model works extremely similarly to the PyTorch implementation, it j
 {{< /rawhtml >}}
 
 #### Center Surround
+
 {{< rawhtml >}}
+
 <div>
     <img 
         src="/images/ml_hw3/scratch_center_surround.png"
@@ -497,7 +507,6 @@ Training the model works extremely similarly to the PyTorch implementation, it j
     />
 </div>
 {{< /rawhtml >}}
-
 
 ## Conclusion
 
