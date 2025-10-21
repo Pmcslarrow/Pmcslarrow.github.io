@@ -33,7 +33,7 @@ This assignment challenged us to learn more about sequence modeling, and better 
 - The MLP fails to effectively reconstruct the input image. It fails to do so because the model was trained to reconstruct a masked left half of an image, therefore, the model doesn't fully understand that how to differentiate a 3 from an 8. This explains why the left half is less prominent -- there were times during training where it correctly learned to associate a 3 with a 3, but there were times where the right half of the image looked like a 3, but happened to be an 8. Therefore our reconstruction, while wrong, and an incredibly interesting concept to think about.
 - It is also a great reminder that models will only know to predict things within its learned weights and biases, and cannot go outside of this distribution.
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -43,7 +43,7 @@ This assignment challenged us to learn more about sequence modeling, and better 
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ---
 
@@ -56,7 +56,7 @@ This assignment challenged us to learn more about sequence modeling, and better 
 
 #### RNN Training Loss
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -66,11 +66,11 @@ This assignment challenged us to learn more about sequence modeling, and better 
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### LSTM Loss
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -80,7 +80,7 @@ This assignment challenged us to learn more about sequence modeling, and better 
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### Conclusion
 

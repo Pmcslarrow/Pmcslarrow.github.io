@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LLM on McSlarrowPortfolio</title>
     <link>http://localhost:1313/tags/llm/</link>
     <description>Recent content in LLM on McSlarrowPortfolio</description>
-    <image>
-      <title>McSlarrowPortfolio</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automated NBA Updates</title>
-      <link>http://localhost:1313/projects/3_automated_nba/</link>
+      <link>http://localhost:1313/projects/4_automated_nba/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3_automated_nba/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/projects/4_automated_nba/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

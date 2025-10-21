@@ -30,7 +30,7 @@ For example, a model is always going to be an output based on the network archit
 
 We could have a simple FFNN that takes an input image, and it has a class associated with it. In the example below, we as humans know that this is a picture of a panda. However, by adjusting the pixels ever-so-slightly utilizing gradient-based attacks, the model actually classified this image as "bucket".
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -40,9 +40,9 @@ We could have a simple FFNN that takes an input image, and it has a class associ
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
 
-{{< rawhtml >}}
+
+
 
 <div>
     <img 
@@ -52,11 +52,11 @@ We could have a simple FFNN that takes an input image, and it has a class associ
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### Gradient-based attack to misclassify digits from MNIST
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -66,7 +66,7 @@ We could have a simple FFNN that takes an input image, and it has a class associ
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ```python
 # ...
@@ -111,7 +111,7 @@ The beauty of a GAN's architecture lies in its adversarial nature. It can be tho
 
 #### Training and generated examples from a CNN-based GAN
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -121,9 +121,9 @@ The beauty of a GAN's architecture lies in its adversarial nature. It can be tho
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
 
-{{< rawhtml >}}
+
+
 
 <div>
     <img 
@@ -133,4 +133,4 @@ The beauty of a GAN's architecture lies in its adversarial nature. It can be tho
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+

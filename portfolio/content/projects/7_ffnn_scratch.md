@@ -122,7 +122,7 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
 
 #### XOR
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -132,11 +132,11 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### Spiral
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -146,11 +146,11 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### Gaussian
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -160,11 +160,11 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### Center Surround
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -174,7 +174,7 @@ def train(model, train_loader, valid_loader, num_epochs, criterion, optimizer):
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ## FFNN from Scratch
 
@@ -454,7 +454,7 @@ Training the model works extremely similarly to the PyTorch implementation, it j
 
 #### Spiral
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -464,11 +464,11 @@ Training the model works extremely similarly to the PyTorch implementation, it j
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### XOR
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -478,11 +478,11 @@ Training the model works extremely similarly to the PyTorch implementation, it j
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### Gaussian
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -492,11 +492,11 @@ Training the model works extremely similarly to the PyTorch implementation, it j
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 #### Center Surround
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -506,7 +506,7 @@ Training the model works extremely similarly to the PyTorch implementation, it j
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ## Conclusion
 

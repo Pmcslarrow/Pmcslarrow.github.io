@@ -26,7 +26,7 @@ The outputs of these two components are combined and updated jointly, with the g
 
 While the ratings in the dataset are between 0 and 5, I simplified the rating to be 1 for ratings >= 4 and 0 otherwise. With a binary goal in mind, we are able to train our model using binary cross-entropy loss (BCE).
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -35,7 +35,7 @@ While the ratings in the dataset are between 0 and 5, I simplified the rating to
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ---
 

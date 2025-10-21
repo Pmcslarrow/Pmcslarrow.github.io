@@ -1,202 +1,89 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on McSlarrowPortfolio</title>
     <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on McSlarrowPortfolio</description>
-    <image>
-      <title>McSlarrowPortfolio</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wide and Deep Learning for Recommender Systems</title>
+      <link>http://localhost:1313/projects/2_wide_and_deep_networks/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/2_wide_and_deep_networks/</guid>
+      <description>&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The code can be found &lt;a href=&#34;http://localhost:1313/images/wide_and_deep/wide_and_deep.pdf&#34;&gt;within this PDF&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Can also be found within this repo at static/images/wide_and_deep/wide_and_deep.pdf&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This is a passion project I&amp;rsquo;ve been working on to deepen my understanding of recommender systems in my free time. While I&amp;rsquo;ve previously implemented simpler methods—such as matrix factorization or with basic content-based filtering, this project is my attempt to implement a more elegant solution inspired by &lt;a href=&#34;https://arxiv.org/abs/1606.07792&#34;&gt;this paper&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;architecture-summary&#34;&gt;Architecture Summary&lt;/h2&gt;&#xA;&lt;p&gt;The model processes inputs related to &lt;strong&gt;user–item pairs&lt;/strong&gt; and leverages two components:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>High-Performance Image Processing via Parallel Contrast Stretching</title>
       <link>http://localhost:1313/projects/3_contrast_stretching/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/3_contrast_stretching/</guid>
-      <description>Built with MPI in C&#43;&#43;</description>
-    </item>
-    <item>
-      <title>Wide and Deep Learning for Recommender Systems</title>
-      <link>http://localhost:1313/projects/2_wide_and_deep_networks/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/2_wide_and_deep_networks/</guid>
-      <description>Built a version of the Wide and Deep Learning paper for book recommendations</description>
+      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my parallel computing course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Private url&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This project parallelizes a contrast stretching algorithm using MPI to enable high-performance image processing on distributed systems. The final implementation achieved approximately a &lt;strong&gt;10× speedup&lt;/strong&gt; over the sequential baseline.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Twitter Clone</title>
       <link>http://localhost:1313/projects/4_twitter_clone/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/4_twitter_clone/</guid>
-      <description>&lt;p&gt;A full-stack application replicating core Twitter functionality with modern web technologies and AWS services.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Pmcslarrow/TwitterClone&#34;&gt;https://github.com/Pmcslarrow/TwitterClone&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;live-demo&#34;&gt;Live Demo&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://youtu.be/gHFCrAQywpM&#34;&gt;https://youtu.be/gHFCrAQywpM&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-tech-stack&#34;&gt;🔧 Tech Stack&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; React, JavaScript&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Backend:&lt;/strong&gt; Python (Lambda functions)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Database:&lt;/strong&gt; SQL (MySQL on AWS RDS)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cloud Infrastructure:&lt;/strong&gt; AWS Lambda, RDS, API Gateway&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-features&#34;&gt;💡 Features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;User authentication with Google API (signup/login)&lt;/li&gt;
-&lt;li&gt;Posting tweets (text/image)&lt;/li&gt;
-&lt;li&gt;Like, retweet, and comment functionality&lt;/li&gt;
-&lt;li&gt;Blocking/unblocking&lt;/li&gt;
-&lt;li&gt;Follower/following system&lt;/li&gt;
-&lt;li&gt;Infinite scrolling&lt;/li&gt;
-&lt;li&gt;Updating profile info&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-architecture&#34;&gt;📦 Architecture&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Serverless backend using AWS Lambda&lt;/li&gt;
-&lt;li&gt;API Gateway for request routing&lt;/li&gt;
-&lt;li&gt;RDS for persistent SQL storage&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-testing--deployment&#34;&gt;🧪 Testing &amp;amp; Deployment&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Unit and integration tests&lt;/li&gt;
-&lt;li&gt;Deployed via CI/CD pipeline (GitHub Actions)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div&gt;
-    &lt;img 
-        src=&#34;http://localhost:1313/images/twitter/backend.jpg&#34;
-        alt=&#34;Ghost rows image&#34;
-        width=&#34;700px&#34;
-        style=&#34;display: block; margin: 0 auto;&#34;
-    /&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A full-stack application replicating core Twitter functionality with modern web technologies and AWS services.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/Pmcslarrow/TwitterClone&#34;&gt;https://github.com/Pmcslarrow/TwitterClone&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;live-demo&#34;&gt;Live Demo&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/gHFCrAQywpM&#34;&gt;https://youtu.be/gHFCrAQywpM&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-tech-stack&#34;&gt;🔧 Tech Stack&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; React, JavaScript&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Backend:&lt;/strong&gt; Python (Lambda functions)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Database:&lt;/strong&gt; SQL (MySQL on AWS RDS)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cloud Infrastructure:&lt;/strong&gt; AWS Lambda, RDS, API Gateway&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-features&#34;&gt;💡 Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;User authentication with Google API (signup/login)&lt;/li&gt;&#xA;&lt;li&gt;Posting tweets (text/image)&lt;/li&gt;&#xA;&lt;li&gt;Like, retweet, and comment functionality&lt;/li&gt;&#xA;&lt;li&gt;Blocking/unblocking&lt;/li&gt;&#xA;&lt;li&gt;Follower/following system&lt;/li&gt;&#xA;&lt;li&gt;Infinite scrolling&lt;/li&gt;&#xA;&lt;li&gt;Updating profile info&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-architecture&#34;&gt;📦 Architecture&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Serverless backend using AWS Lambda&lt;/li&gt;&#xA;&lt;li&gt;API Gateway for request routing&lt;/li&gt;&#xA;&lt;li&gt;RDS for persistent SQL storage&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-testing--deployment&#34;&gt;🧪 Testing &amp;amp; Deployment&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Unit and integration tests&lt;/li&gt;&#xA;&lt;li&gt;Deployed via CI/CD pipeline (GitHub Actions)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div&gt;&#xA;    &lt;img &#xA;        src=&#34;http://localhost:1313/images/twitter/backend.jpg&#34;&#xA;        alt=&#34;Ghost rows image&#34;&#xA;        width=&#34;700px&#34;&#xA;        style=&#34;display: block; margin: 0 auto;&#34;&#xA;    /&gt;&#xA;&lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Distributed Deep Learning</title>
       <link>http://localhost:1313/projects/3_parallel_deep_networks/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/3_parallel_deep_networks/</guid>
-      <description>Final presentation on distributed deep learning for my Parallel Computing course at Northwestern (CS358)</description>
+      <description>&lt;h2 id=&#34;view-presentation&#34;&gt;View Presentation&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://youtu.be/7fSQUjhvmt0&#34;&gt;https://youtu.be/7fSQUjhvmt0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This is a non-technical, passion-driven presentation that explores the foundations of distributed deep learning. I explain key concepts such as &lt;strong&gt;data parallelism&lt;/strong&gt; and &lt;strong&gt;model parallelism&lt;/strong&gt;, and then dive into a research paper that caught my attention: &lt;strong&gt;ZeRO (Zero Redundancy Optimizer)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The presentation is conceptual in nature—no code was used—focusing instead on the ideas and motivations behind distributed approaches to training deep learning models.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DL HW4 (RNN/LSTMs)</title>
       <link>http://localhost:1313/projects/5_dl_hw4/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/5_dl_hw4/</guid>
-      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Private url&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This assignment challenged us to learn more about sequence modeling, and better understand the conceptual pros/cons between RNNs and LSTMs. We implemented RNNs, LSTMs, and a deep reinforcement learning model to play pong. I find that the sequence modeling and autoencoder information is more interesting in this project, so I didn&amp;rsquo;t include it here.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Private url&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This assignment challenged us to learn more about sequence modeling, and better understand the conceptual pros/cons between RNNs and LSTMs. We implemented RNNs, LSTMs, and a deep reinforcement learning model to play pong. I find that the sequence modeling and autoencoder information is more interesting in this project, so I didn&amp;rsquo;t include it here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DL HW3 (GANs)</title>
       <link>http://localhost:1313/projects/5_dl_hw3/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/5_dl_hw3/</guid>
-      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Private url&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This assignment focused on Generative Adversarial Networks (GANs), adversarial examples, model collapse, and latent interpolation. We will touch on Adversarial examples and GANs&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my deep learning course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Private url&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This assignment focused on Generative Adversarial Networks (GANs), adversarial examples, model collapse, and latent interpolation. We will touch on Adversarial examples and GANs&lt;/p&gt;</description>
     </item>
     <item>
       <title>Morphological Classification of Cells in Histology Images</title>
       <link>http://localhost:1313/projects/6_histology_classification/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/6_histology_classification/</guid>
-      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Private url&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;presentation-link&#34;&gt;Presentation Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://youtu.be/gkKt3p52Kz8&#34;&gt;https://youtu.be/gkKt3p52Kz8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This was Michael Bertagna and my final project for our introduction to machine learning class. We designed a convolutional neural network (CNN) that takes in images of cell types, and attempts to classify them. We were able to achieve significant improvements compared to the KNN baseline used.&lt;/p&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;h4 id=&#34;knn-baseline-results&#34;&gt;KNN Baseline Results&lt;/h4&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;                precision    recall  f1-score   support
-accuracy                               0.27       259
-macro avg          0.14      0.15      0.14       259
-weighted avg       0.24      0.27      0.23       259
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;cnn-results&#34;&gt;CNN Results&lt;/h4&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;                precision    recall  f1-score   support
-accuracy                               0.71      5143
-macro avg          0.66      0.54      0.55      5143
-weighted avg       0.71      0.71      0.70      5143
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;presentation&#34;&gt;Presentation&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;Link&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Private url&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;presentation-link&#34;&gt;Presentation Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/gkKt3p52Kz8&#34;&gt;https://youtu.be/gkKt3p52Kz8&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This was Michael Bertagna and my final project for our introduction to machine learning class. We designed a convolutional neural network (CNN) that takes in images of cell types, and attempts to classify them. We were able to achieve significant improvements compared to the KNN baseline used.&lt;/p&gt;&#xA;&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;&#xA;&lt;h4 id=&#34;knn-baseline-results&#34;&gt;KNN Baseline Results&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;                precision    recall  f1-score   support&#xA;accuracy                               0.27       259&#xA;macro avg          0.14      0.15      0.14       259&#xA;weighted avg       0.24      0.27      0.23       259&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;cnn-results&#34;&gt;CNN Results&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;                precision    recall  f1-score   support&#xA;accuracy                               0.71      5143&#xA;macro avg          0.66      0.54      0.55      5143&#xA;weighted avg       0.71      0.71      0.70      5143&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;presentation&#34;&gt;Presentation&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;#&#34; alt=&#34;Link&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automated NBA Updates</title>
       <link>http://localhost:1313/projects/4_automated_nba/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/4_automated_nba/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Feed-forward Neural Network from Scratch</title>
       <link>http://localhost:1313/projects/7_ffnn_scratch/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/7_ffnn_scratch/</guid>
-      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group&amp;rsquo;s work and should not be used for any future assignments.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Private url&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This assignment was a stepping stone in my interest in machine learning. We were given multiple datasets to work with based on a few different distributions that I would have to learn from using a neural network. We first had to implement a PyTorch simple neural network to solve the problem(s), and once we understood what the expected solutions should look similar to, we had to implement our solutions completely from scratch.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;This was an assignment for my ML class at Northwestern, and while I do include the code in this, I want to be clear that this is my group&amp;rsquo;s work and should not be used for any future assignments.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Private url&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This assignment was a stepping stone in my interest in machine learning. We were given multiple datasets to work with based on a few different distributions that I would have to learn from using a neural network. We first had to implement a PyTorch simple neural network to solve the problem(s), and once we understood what the expected solutions should look similar to, we had to implement our solutions completely from scratch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HoopEasy</title>
       <link>http://localhost:1313/projects/8_hoopeasy/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/8_hoopeasy/</guid>
-      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Original draft: &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy&#34;&gt;https://github.com/Pmcslarrow/hoop-easy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Refactor: &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy-material-ui/&#34;&gt;https://github.com/Pmcslarrow/hoop-easy-material-ui/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;The document below is my README file within my &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy-material-ui/&#34;&gt;GitHub repo&lt;/a&gt; for the refactoring of HoopEasy. The project is an application designed to help people easily find pickup basketball games near them, while also using an ELO system to track global rankings. Although it was never fully marketed or widely adopted, this was my first large-scale full-stack project completed during undergrad. It was a rewarding experience that brought together many of the skills I had learned.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Original draft: &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy&#34;&gt;https://github.com/Pmcslarrow/hoop-easy&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Refactor: &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy-material-ui/&#34;&gt;https://github.com/Pmcslarrow/hoop-easy-material-ui/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The document below is my README file within my &lt;a href=&#34;https://github.com/Pmcslarrow/hoop-easy-material-ui/&#34;&gt;GitHub repo&lt;/a&gt; for the refactoring of HoopEasy. The project is an application designed to help people easily find pickup basketball games near them, while also using an ELO system to track global rankings. Although it was never fully marketed or widely adopted, this was my first large-scale full-stack project completed during undergrad. It was a rewarding experience that brought together many of the skills I had learned.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weather App</title>
       <link>http://localhost:1313/projects/9_weather_app/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/9_weather_app/</guid>
-      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Pmcslarrow/WeatherApp&#34;&gt;https://github.com/Pmcslarrow/WeatherApp&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This was my very first personal project I had to complete in a computer science class. I was tasked to design any website that was to utilize HTML/CSS/JS and that functions. I decided, at the time, that it was most appropriate to learn how to use an API and integrate it into an application. While it is nothing outstanding, this project will forever stay close at heart.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/Pmcslarrow/WeatherApp&#34;&gt;https://github.com/Pmcslarrow/WeatherApp&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This was my very first personal project I had to complete in a computer science class. I was tasked to design any website that was to utilize HTML/CSS/JS and that functions. I decided, at the time, that it was most appropriate to learn how to use an API and integrate it into an application. While it is nothing outstanding, this project will forever stay close at heart.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

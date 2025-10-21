@@ -55,7 +55,7 @@ A full-stack application replicating core Twitter functionality with modern web 
 - Unit and integration tests
 - Deployed via CI/CD pipeline (GitHub Actions)
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -65,7 +65,7 @@ A full-stack application replicating core Twitter functionality with modern web 
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ---
 

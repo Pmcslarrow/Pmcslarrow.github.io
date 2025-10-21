@@ -26,7 +26,7 @@ Contrast stretching enhances image clarity by expanding the range of pixel inten
 
 It's essentially a _nearest neighbors_ operation, where each pixel’s new value depends on its neighboring pixels. In a sequential setting, this simply means iterating over every non-boundary pixel and adjusting its value accordingly.
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -36,7 +36,7 @@ It's essentially a _nearest neighbors_ operation, where each pixel’s new value
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ## The Sequential vs. Distributed Approach
 
@@ -49,7 +49,7 @@ Instead, a more optimal strategy involves:
 - Each worker processes only its assigned chunk.
 - Processed chunks are gathered and stitched together.
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -59,7 +59,7 @@ Instead, a more optimal strategy involves:
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ```cpp
 //
@@ -99,7 +99,7 @@ Example:
 
 These are known as **ghost rows** and must be exchanged between adjacent processes before each computation step.
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -109,7 +109,7 @@ These are known as **ghost rows** and must be exchanged between adjacent process
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
 
 ```cpp
 

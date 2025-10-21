@@ -1,85 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lambda on McSlarrowPortfolio</title>
     <link>http://localhost:1313/tags/lambda/</link>
     <description>Recent content in Lambda on McSlarrowPortfolio</description>
-    <image>
-      <title>McSlarrowPortfolio</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twitter Clone</title>
-      <link>http://localhost:1313/projects/2_twitter_clone/</link>
+      <link>http://localhost:1313/projects/4_twitter_clone/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/2_twitter_clone/</guid>
-      <description>&lt;p&gt;A full-stack application replicating core Twitter functionality with modern web technologies and AWS services.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Pmcslarrow/TwitterClone&#34;&gt;https://github.com/Pmcslarrow/TwitterClone&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;live-demo&#34;&gt;Live Demo&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://youtu.be/gHFCrAQywpM&#34;&gt;https://youtu.be/gHFCrAQywpM&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-tech-stack&#34;&gt;🔧 Tech Stack&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; React, JavaScript&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Backend:&lt;/strong&gt; Python (Lambda functions)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Database:&lt;/strong&gt; SQL (MySQL on AWS RDS)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cloud Infrastructure:&lt;/strong&gt; AWS Lambda, RDS, API Gateway&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-features&#34;&gt;💡 Features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;User authentication with Google API (signup/login)&lt;/li&gt;
-&lt;li&gt;Posting tweets (text/image)&lt;/li&gt;
-&lt;li&gt;Like, retweet, and comment functionality&lt;/li&gt;
-&lt;li&gt;Blocking/unblocking&lt;/li&gt;
-&lt;li&gt;Follower/following system&lt;/li&gt;
-&lt;li&gt;Infinite scrolling&lt;/li&gt;
-&lt;li&gt;Updating profile info&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-architecture&#34;&gt;📦 Architecture&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Serverless backend using AWS Lambda&lt;/li&gt;
-&lt;li&gt;API Gateway for request routing&lt;/li&gt;
-&lt;li&gt;RDS for persistent SQL storage&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-testing--deployment&#34;&gt;🧪 Testing &amp;amp; Deployment&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Unit and integration tests&lt;/li&gt;
-&lt;li&gt;Deployed via CI/CD pipeline (GitHub Actions)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div&gt;
-    &lt;img 
-        src=&#34;http://localhost:1313/images/twitter/backend.jpg&#34;
-        alt=&#34;Ghost rows image&#34;
-        width=&#34;700px&#34;
-        style=&#34;display: block; margin: 0 auto;&#34;
-    /&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/projects/4_twitter_clone/</guid>
+      <description>&lt;p&gt;A full-stack application replicating core Twitter functionality with modern web technologies and AWS services.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/Pmcslarrow/TwitterClone&#34;&gt;https://github.com/Pmcslarrow/TwitterClone&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;live-demo&#34;&gt;Live Demo&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/gHFCrAQywpM&#34;&gt;https://youtu.be/gHFCrAQywpM&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-tech-stack&#34;&gt;🔧 Tech Stack&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; React, JavaScript&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Backend:&lt;/strong&gt; Python (Lambda functions)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Database:&lt;/strong&gt; SQL (MySQL on AWS RDS)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cloud Infrastructure:&lt;/strong&gt; AWS Lambda, RDS, API Gateway&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-features&#34;&gt;💡 Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;User authentication with Google API (signup/login)&lt;/li&gt;&#xA;&lt;li&gt;Posting tweets (text/image)&lt;/li&gt;&#xA;&lt;li&gt;Like, retweet, and comment functionality&lt;/li&gt;&#xA;&lt;li&gt;Blocking/unblocking&lt;/li&gt;&#xA;&lt;li&gt;Follower/following system&lt;/li&gt;&#xA;&lt;li&gt;Infinite scrolling&lt;/li&gt;&#xA;&lt;li&gt;Updating profile info&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-architecture&#34;&gt;📦 Architecture&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Serverless backend using AWS Lambda&lt;/li&gt;&#xA;&lt;li&gt;API Gateway for request routing&lt;/li&gt;&#xA;&lt;li&gt;RDS for persistent SQL storage&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-testing--deployment&#34;&gt;🧪 Testing &amp;amp; Deployment&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Unit and integration tests&lt;/li&gt;&#xA;&lt;li&gt;Deployed via CI/CD pipeline (GitHub Actions)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div&gt;&#xA;    &lt;img &#xA;        src=&#34;http://localhost:1313/images/twitter/backend.jpg&#34;&#xA;        alt=&#34;Ghost rows image&#34;&#xA;        width=&#34;700px&#34;&#xA;        style=&#34;display: block; margin: 0 auto;&#34;&#xA;    /&gt;&#xA;&lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;This repo is the public version and does not contain the most up-to-date test builds. The private version that passes all the tests was submitted for the assignment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automated NBA Updates</title>
-      <link>http://localhost:1313/projects/3_automated_nba/</link>
+      <link>http://localhost:1313/projects/4_automated_nba/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3_automated_nba/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/projects/4_automated_nba/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This was a personal passion project of mine. It didn&amp;rsquo;t take very long to build (only a day), but it is something that was fun to create and was useful to my everyday life. I later stopped the project because I realized that it went against the robots.txt that I found on a site and didn&amp;rsquo;t mean to go against any regulations. So while it is no longer active, I still had a great time learning more about web scraping and how to automate things through AWS.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pandas on McSlarrowPortfolio</title>
     <link>http://localhost:1313/tags/pandas/</link>
     <description>Recent content in Pandas on McSlarrowPortfolio</description>
-    <image>
-      <title>McSlarrowPortfolio</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wide and Deep Learning for Recommender Systems</title>
-      <link>http://localhost:1313/projects/0_wide_and_deep_networks/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/0_wide_and_deep_networks/</guid>
-      <description>Built a version of the Wide and Deep Learning paper for book recommendations</description>
+      <link>http://localhost:1313/projects/2_wide_and_deep_networks/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/2_wide_and_deep_networks/</guid>
+      <description>&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The code can be found &lt;a href=&#34;http://localhost:1313/images/wide_and_deep/wide_and_deep.pdf&#34;&gt;within this PDF&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Can also be found within this repo at static/images/wide_and_deep/wide_and_deep.pdf&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This is a passion project I&amp;rsquo;ve been working on to deepen my understanding of recommender systems in my free time. While I&amp;rsquo;ve previously implemented simpler methods—such as matrix factorization or with basic content-based filtering, this project is my attempt to implement a more elegant solution inspired by &lt;a href=&#34;https://arxiv.org/abs/1606.07792&#34;&gt;this paper&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;architecture-summary&#34;&gt;Architecture Summary&lt;/h2&gt;&#xA;&lt;p&gt;The model processes inputs related to &lt;strong&gt;user–item pairs&lt;/strong&gt; and leverages two components:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -280,8 +280,6 @@ The result created a message that summarized yesterday's nba games in a single p
 
 ## Final Result
 
-{{< rawhtml >}}
-
 <div>
     <img 
         src="/images/nba/nba.png" 
@@ -289,4 +287,3 @@ The result created a message that summarized yesterday's nba games in a single p
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}

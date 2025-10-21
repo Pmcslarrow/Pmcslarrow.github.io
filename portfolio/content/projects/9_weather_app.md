@@ -22,7 +22,7 @@ This was my very first personal project I had to complete in a computer science 
 
 ## Visual without the api set-up
 
-{{< rawhtml >}}
+
 
 <div>
     <img 
@@ -32,4 +32,4 @@ This was my very first personal project I had to complete in a computer science 
         style="display: block; margin: 0 auto;"
     />
 </div>
-{{< /rawhtml >}}
+
