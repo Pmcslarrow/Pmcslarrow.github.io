@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>C&#43;&#43; on McSlarrowPortfolio</title>
     <link>http://localhost:1313/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on McSlarrowPortfolio</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>McSlarrowPortfolio</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,7 @@
       <link>http://localhost:1313/projects/3_contrast_stretching/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/3_contrast_stretching/</guid>
-      <description>&lt;h2 id=&#34;note-to-reader&#34;&gt;Note to reader&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;I do not include large code snippets as this was an assignment for my parallel computing course at Northwestern and I don&amp;rsquo;t want future students copying it. It exists in a private repo of mine containing my school assignments. I will try to do my best to illustrate the work I did with fewer code examples&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;github-link&#34;&gt;Github Link&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Private url&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This project parallelizes a contrast stretching algorithm using MPI to enable high-performance image processing on distributed systems. The final implementation achieved approximately a &lt;strong&gt;10× speedup&lt;/strong&gt; over the sequential baseline.&lt;/p&gt;</description>
+      <description>Built with MPI in C&#43;&#43;</description>
     </item>
   </channel>
 </rss>

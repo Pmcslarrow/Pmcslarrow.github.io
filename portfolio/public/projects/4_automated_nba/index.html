@@ -31,7 +31,7 @@ This was a personal passion project of mine. It didn&rsquo;t take very long to b
 </span></span><span class=line><span class=cl>        <span class=n>conference</span><span class=p>:</span> <span class=nb>str</span>
 </span></span><span class=line><span class=cl>        <span class=n>rank</span><span class=p>:</span> <span class=nb>int</span>
 </span></span><span class=line><span class=cl>        <span class=n>team</span><span class=p>:</span> <span class=nb>str</span>
-</span></span><span class=line><span class=cl>        <span class=n>win_loss</span><span class=p>:</span> <span class=nb>str</span> 
+</span></span><span class=line><span class=cl>        <span class=n>win_loss</span><span class=p>:</span> <span class=nb>str</span>
 </span></span><span class=line><span class=cl>        <span class=n>pct</span><span class=p>:</span> <span class=nb>float</span>
 </span></span><span class=line><span class=cl>        <span class=n>streak</span><span class=p>:</span> <span class=nb>str</span>
 </span></span><span class=line><span class=cl>
@@ -41,7 +41,7 @@ This was a personal passion project of mine. It didn&rsquo;t take very long to b
 </span></span><span class=line><span class=cl>        <span class=n>content</span> <span class=o>=</span> <span class=n>response</span><span class=o>.</span><span class=n>text</span>
 </span></span><span class=line><span class=cl>        <span class=n>soup</span> <span class=o>=</span> <span class=n>BeautifulSoup</span><span class=p>(</span><span class=n>content</span><span class=p>,</span> <span class=s1>&#39;html.parser&#39;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>        <span class=n>conferences_tables</span> <span class=o>=</span> <span class=n>soup</span><span class=o>.</span><span class=n>find_all</span><span class=p>(</span><span class=s1>&#39;div&#39;</span><span class=p>,</span> <span class=n>class_</span><span class=o>=</span><span class=s1>&#39;table-wrapper-container group-section&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>        
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=c1>#</span>
 </span></span><span class=line><span class=cl>    <span class=c1># Storing relevant information in local variables</span>
 </span></span><span class=line><span class=cl>    <span class=c1>#</span>
@@ -50,12 +50,12 @@ This was a personal passion project of mine. It didn&rsquo;t take very long to b
 </span></span><span class=line><span class=cl>        <span class=n>eastern_conference_table</span> <span class=o>=</span> <span class=n>conferences_tables</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span>
 </span></span><span class=line><span class=cl>        <span class=n>western_conference_standings</span> <span class=o>=</span> <span class=n>western_conference_table</span><span class=o>.</span><span class=n>find_all</span><span class=p>(</span><span class=s1>&#39;tr&#39;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>        <span class=n>eastern_conference_standings</span> <span class=o>=</span> <span class=n>eastern_conference_table</span><span class=o>.</span><span class=n>find_all</span><span class=p>(</span><span class=s1>&#39;tr&#39;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=c1>#</span>
 </span></span><span class=line><span class=cl>    <span class=c1># Going through Western conference tables</span>
 </span></span><span class=line><span class=cl>    <span class=c1>#</span>
 </span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>i</span><span class=p>,</span> <span class=n>team_row</span> <span class=ow>in</span> <span class=nb>enumerate</span><span class=p>(</span><span class=n>western_conference_standings</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>i</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span> 
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>i</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
 </span></span><span class=line><span class=cl>                <span class=k>continue</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            <span class=n>rank_td</span> <span class=o>=</span> <span class=n>team_row</span><span class=o>.</span><span class=n>find</span><span class=p>(</span><span class=s1>&#39;td&#39;</span><span class=p>,</span> <span class=n>class_</span><span class=o>=</span><span class=s1>&#39;cell-rank ffn-11&#39;</span><span class=p>)</span>
@@ -76,11 +76,11 @@ This was a personal passion project of mine. It didn&rsquo;t take very long to b
 </span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>rank</span> <span class=ow>and</span> <span class=n>team_name</span> <span class=ow>and</span> <span class=n>win_loss</span> <span class=ow>and</span> <span class=n>pct</span> <span class=ow>and</span> <span class=n>streak</span><span class=p>:</span>
 </span></span><span class=line><span class=cl>                <span class=n>standings</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>Standing</span><span class=p>(</span><span class=s1>&#39;West&#39;</span><span class=p>,</span> <span class=n>rank</span><span class=p>,</span> <span class=n>team_name</span><span class=p>,</span> <span class=n>win_loss</span><span class=p>,</span> <span class=n>pct</span><span class=p>,</span> <span class=n>streak</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>        <span class=c1># </span>
+</span></span><span class=line><span class=cl>        <span class=c1>#</span>
 </span></span><span class=line><span class=cl>        <span class=c1># Going through Eastern conference tables</span>
 </span></span><span class=line><span class=cl>        <span class=c1>#</span>
 </span></span><span class=line><span class=cl>            <span class=k>for</span> <span class=n>i</span><span class=p>,</span> <span class=n>team_row</span> <span class=ow>in</span> <span class=nb>enumerate</span><span class=p>(</span><span class=n>eastern_conference_standings</span><span class=p>):</span>
-</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=n>i</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>  
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=n>i</span> <span class=o>==</span> <span class=mi>0</span><span class=p>:</span>
 </span></span><span class=line><span class=cl>                    <span class=k>continue</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>                <span class=n>rank_td</span> <span class=o>=</span> <span class=n>team_row</span><span class=o>.</span><span class=n>find</span><span class=p>(</span><span class=s1>&#39;td&#39;</span><span class=p>,</span> <span class=n>class_</span><span class=o>=</span><span class=s1>&#39;cell-rank ffn-11&#39;</span><span class=p>)</span>
@@ -129,15 +129,15 @@ method to help me connect to the correct data loaders and functions I needed for
 </span></span><span class=line><span class=cl>    <span class=n>llm</span> <span class=o>=</span> <span class=n>ChatOpenAI</span><span class=p>(</span><span class=n>model</span><span class=o>=</span><span class=s1>&#39;gpt-4o-mini&#39;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>#</span>
-</span></span><span class=line><span class=cl><span class=c1># Creating a good prompt that explains my goal </span>
+</span></span><span class=line><span class=cl><span class=c1># Creating a good prompt that explains my goal</span>
 </span></span><span class=line><span class=cl><span class=c1>#</span>
 </span></span><span class=line><span class=cl>    <span class=n>prompt</span> <span class=o>=</span> <span class=sa>f</span><span class=s2>&#34;&#34;&#34;
-</span></span></span><span class=line><span class=cl><span class=s2>    You are an NBA writer. 
-</span></span></span><span class=line><span class=cl><span class=s2>    Write a three-paragraph NBA update based only on the information provided. 
-</span></span></span><span class=line><span class=cl><span class=s2>    Use things from the &lt;context&gt; I give you, like news articles to summarize key stories, 
+</span></span></span><span class=line><span class=cl><span class=s2>    You are an NBA writer.
+</span></span></span><span class=line><span class=cl><span class=s2>    Write a three-paragraph NBA update based only on the information provided.
+</span></span></span><span class=line><span class=cl><span class=s2>    Use things from the &lt;context&gt; I give you, like news articles to summarize key stories,
 </span></span></span><span class=line><span class=cl><span class=s2>    and incorporate scores to highlight recent games.
-</span></span></span><span class=line><span class=cl><span class=s2>    Keep in mind that I am a Jazz fan, so I care more about Jazz info when they do play. 
-</span></span></span><span class=line><span class=cl><span class=s2>    Ensure your summary is concise and accurate. 
+</span></span></span><span class=line><span class=cl><span class=s2>    Keep in mind that I am a Jazz fan, so I care more about Jazz info when they do play.
+</span></span></span><span class=line><span class=cl><span class=s2>    Ensure your summary is concise and accurate.
 </span></span></span><span class=line><span class=cl><span class=s2>
 </span></span></span><span class=line><span class=cl><span class=s2>    &lt;context&gt;
 </span></span></span><span class=line><span class=cl><span class=s2>    </span><span class=si>{</span><span class=n>docs_content</span><span class=si>}</span><span class=s2>
@@ -155,10 +155,10 @@ method to help me connect to the correct data loaders and functions I needed for
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=n>ses</span> <span class=o>=</span> <span class=n>boto3</span><span class=o>.</span><span class=n>client</span><span class=p>(</span><span class=s1>&#39;ses&#39;</span><span class=p>,</span> <span class=n>region_name</span><span class=o>=</span><span class=s1>&#39;us-east-2&#39;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=n>subject</span> <span class=o>=</span> <span class=s2>&#34;Daily NBA Update!&#34;</span>
-</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=c1>#</span>
 </span></span><span class=line><span class=cl>    <span class=c1># Sending an email to myself in a format that I created with HTML and CSS</span>
-</span></span><span class=line><span class=cl>    <span class=c1># </span>
+</span></span><span class=line><span class=cl>    <span class=c1>#</span>
 </span></span><span class=line><span class=cl>    <span class=n>html_body</span> <span class=o>=</span> <span class=sa>f</span><span class=s2>&#34;&#34;&#34;
 </span></span></span><span class=line><span class=cl><span class=s2>    &lt;html&gt;
 </span></span></span><span class=line><span class=cl><span class=s2>    &lt;head&gt;
@@ -232,4 +232,4 @@ method to help me connect to the correct data loaders and functions I needed for
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><link rel=stylesheet href=https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css><script src=https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js></script><df-messenger location=us-central1 project-id=wide-valve-415901 agent-id=0d590b45-1ea2-4155-887f-0d2b0eb5e45f language-code=en max-query-length=-1><df-messenger-chat-bubble chat-title=Agent></df-messenger-chat-bubble></df-messenger><style>df-messenger{z-index:999;position:fixed;--df-messenger-font-color:#000;--df-messenger-font-family:Google Sans;--df-messenger-chat-background:#f3f6fc;--df-messenger-message-user-background:#d3e3fd;--df-messenger-message-bot-background:#fff;bottom:16px;right:16px}</style></body></html>

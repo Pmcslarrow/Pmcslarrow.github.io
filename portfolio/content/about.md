@@ -4,7 +4,7 @@ title: "About Me"
 
 Hello! 👋
 
-I'm currently a student at **Northwestern University** with a strong passion for technology—especially in the areas of **Software Engineering**, **Machine Learning/Deep Learning**, and **Parallel Computing**. I'm particularly interested in how we can harness data to drive meaningful predictions and insights 📊. Beyond the models themselves, I’m also deeply curious about **performance**—whether it's optimizing training times, improving memory efficiency, or accelerating computation through parallelism ⚡️.
+I'm currently a student at **Northwestern University** with a strong passion for technology—especially in the areas of **Software Engineering**, **Machine Learning/Deep Learning**, **Parallel Computing**, and **Recommender Systems**. I'm particularly interested in how we can harness data to drive meaningful predictions and insights. Beyond the models themselves, I’m also deeply curious about **performance**—whether it's optimizing training times, improving memory efficiency, or accelerating computation through parallelism ⚡️.
 
 Outside of my studies, I’ve been a passionate **sports fan** my entire life 🏀. I played basketball at **Willamette University** and remain a dedicated **Utah Jazz** supporter!
 
